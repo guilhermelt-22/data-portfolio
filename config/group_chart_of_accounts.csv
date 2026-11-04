@@ -1,0 +1,28 @@
+account,account_name,account_type,statement_line
+1000,Cash,asset,Cash
+1100,Accounts Receivable,asset,Accounts Receivable
+1150,Intercompany Receivable,asset,Intercompany
+2000,Accounts Payable,liability,Accounts Payable
+2100,Accrued Liabilities,liability,Accrued Liabilities
+2150,Intercompany Payable,liability,Intercompany
+3000,Equity,equity,Equity
+4000,Subscription Revenue,revenue,Revenue
+4100,Professional Services Revenue,revenue,Revenue
+4900,Intercompany Revenue,revenue,Intercompany
+5000,Hosting & Infrastructure,cogs,Cost of Revenue
+5100,Customer Support Payroll,cogs,Cost of Revenue
+5200,Third-party Software (COGS),cogs,Cost of Revenue
+5300,Payment Processing Fees,cogs,Cost of Revenue
+6000,Salaries & Wages,opex,Payroll
+6010,Payroll Taxes & Benefits,opex,Payroll
+6100,Contractors,opex,Contractors
+6200,Software & Subscriptions,opex,Software
+6300,Advertising & Paid Media,opex,Marketing Programs
+6310,Events & Sponsorships,opex,Marketing Programs
+6400,Travel & Entertainment,opex,Travel & Entertainment
+6500,Rent & Facilities,opex,Facilities
+6600,Professional Fees,opex,Professional Fees
+6700,Recruiting,opex,Recruiting
+6900,Intercompany Expense,opex,Intercompany
+7000,Interest Income,other,Other Income/Expense
+7100,FX Gain/Loss,other,Other Income/Expense

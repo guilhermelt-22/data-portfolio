@@ -1,0 +1,74 @@
+entity,local_account,local_account_name,group_account
+US,1000,Operating Checking,1000
+US,1100,Accounts Receivable (A/R),1100
+US,2000,Accounts Payable (A/P),2000
+US,2100,Accrued Liabilities,2100
+US,2150,Due to Affiliates,2150
+US,3000,Opening Balance Equity,3000
+US,4000,Subscription Revenue,4000
+US,4100,Professional Services Revenue,4100
+US,5000,Cloud Hosting,5000
+US,5100,Customer Support Salaries,5100
+US,5200,COGS - Software,5200
+US,5300,Merchant Processing Fees,5300
+US,6000,Salaries & Wages,6000
+US,6010,Payroll Taxes & Benefits,6010
+US,6100,Contractors,6100
+US,6200,Software & SaaS Tools,6200
+US,6301,Advertising:Search Ads,6300
+US,6302,Advertising:Social Ads,6300
+US,6310,Events & Conferences,6310
+US,6400,Travel & Meals,6400
+US,6500,Rent & Office,6500
+US,6600,Legal & Accounting,6600
+US,6700,Recruiting Fees,6700
+US,6900,Intercompany R&D Services,6900
+US,7000,Interest Income,7000
+UK,090,Business Bank Account,1000
+UK,610,Accounts Receivable,1100
+UK,615,Due from Group Companies,1150
+UK,800,Accounts Payable,2000
+UK,825,Accruals,2100
+UK,970,Share Capital,3000
+UK,200,Sales - Subscriptions,4000
+UK,210,Sales - Professional Services,4100
+UK,260,Intercompany Recharge Income,4900
+UK,310,Hosting Costs,5000
+UK,320,Support Team Salaries,5100
+UK,330,Cost of Sales - Software,5200
+UK,340,Card Processing Fees,5300
+UK,477,Salaries,6000
+UK,478,Employer NI & Pension,6010
+UK,480,Contractors,6100
+UK,485,Subscriptions,6200
+UK,400,Advertising,6300
+UK,405,Events,6310
+UK,493,Travel - International,6400
+UK,469,Rent,6500
+UK,412,Consulting & Accounting,6600
+UK,470,Recruitment,6700
+UK,499,Foreign Currency Gains and Losses,7100
+DE,1200,Bank,1000
+DE,1400,Forderungen aus Lieferungen und Leistungen,1100
+DE,1590,Forderungen gegen verbundene Unternehmen,1150
+DE,1600,Verbindlichkeiten aus Lieferungen und Leistungen,2000
+DE,1700,Sonstige Verbindlichkeiten,2100
+DE,0800,Gezeichnetes Kapital,3000
+DE,8400,Erlöse Abonnements,4000
+DE,8401,Erlöse Dienstleistungen,4100
+DE,8402,Erlöse verbundene Unternehmen,4900
+DE,3100,Fremdleistungen Hosting,5000
+DE,4125,Gehälter Kundenservice,5100
+DE,3110,Software Wareneinsatz,5200
+DE,4970,Nebenkosten des Geldverkehrs,5300
+DE,4120,Gehälter,6000
+DE,4130,Gesetzliche soziale Aufwendungen,6010
+DE,4780,Fremdarbeiten,6100
+DE,4806,Software-Abonnements,6200
+DE,4600,Werbekosten,6300
+DE,4610,Messen und Veranstaltungen,6310
+DE,4670,Reisekosten,6400
+DE,4210,Miete,6500
+DE,4950,Rechts- und Beratungskosten,6600
+DE,4955,Personalbeschaffung,6700
+DE,2150,Aufwendungen aus Kursdifferenzen,7100

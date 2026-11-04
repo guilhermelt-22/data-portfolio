@@ -1,0 +1,5 @@
+* text=auto
+# Raw exports are kept byte-for-byte as the source systems would produce them (CRLF, cp1252, BOM).
+data/raw/** -text
+*.xlsx binary
+*.png binary

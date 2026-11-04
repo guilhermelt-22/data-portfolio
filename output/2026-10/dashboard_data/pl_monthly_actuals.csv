@@ -1,0 +1,2016 @@
+entity,period,account,account_name,account_type,statement_line,department,actual_local,actual_usd
+DE,2025-01,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,102109.89,110278.6812
+DE,2025-01,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,5614.4400000000005,6063.5952
+DE,2025-01,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9330.02,-10076.421600000001
+DE,2025-01,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13354.79,-14423.173200000001
+DE,2025-01,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1445.62,-1561.2696
+DE,2025-01,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-1825.79,-1971.8532
+DE,2025-01,6000,Salaries & Wages,opex,Payroll,GA,-11959.56,-12916.3248
+DE,2025-01,6000,Salaries & Wages,opex,Payroll,MKT,-6082.52,-6569.121600000001
+DE,2025-01,6000,Salaries & Wages,opex,Payroll,RND,-85098.32,-91906.18560000001
+DE,2025-01,6000,Salaries & Wages,opex,Payroll,SAL,-25888.74,-27959.839200000002
+DE,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2670.96,-2884.6368
+DE,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2391.91,-2583.2628
+DE,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1216.5,-1313.8200000000002
+DE,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-17019.66,-18381.2328
+DE,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-5177.75,-5591.97
+DE,2025-01,6100,Contractors,opex,Contractors,GA,-1115.07,-1204.2756
+DE,2025-01,6100,Contractors,opex,Contractors,RND,-5071.02,-5476.7016
+DE,2025-01,6200,Software & Subscriptions,opex,Software,CS,-793.56,-857.0448
+DE,2025-01,6200,Software & Subscriptions,opex,Software,GA,-517.96,-559.3968000000001
+DE,2025-01,6200,Software & Subscriptions,opex,Software,MKT,-254.87,-275.25960000000003
+DE,2025-01,6200,Software & Subscriptions,opex,Software,RND,-3032.44,-3275.0352000000003
+DE,2025-01,6200,Software & Subscriptions,opex,Software,SAL,-1010.2,-1091.016
+DE,2025-01,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6074.110000000001,-6560.0388
+DE,2025-01,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2234.83,-2413.6164
+DE,2025-01,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-748.83,-808.7364000000001
+DE,2025-01,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-388.56,-419.64480000000003
+DE,2025-01,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3292.01,-3555.3708000000006
+DE,2025-01,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-9720.0
+DE,2025-01,6600,Professional Fees,opex,Professional Fees,GA,-5112.55,-5521.554
+DE,2025-01,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-333.93,-360.6444
+UK,2025-01,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,187379.48000000004,237971.9396
+UK,2025-01,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,11046.330000000002,14028.839100000001
+UK,2025-01,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-16639.4,-21132.038
+UK,2025-01,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18096.71,-22982.8217
+UK,2025-01,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2956.7,-3755.009
+UK,2025-01,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-3693.55,-4690.8085
+UK,2025-01,6000,Salaries & Wages,opex,Payroll,GA,-12053.09,-15307.4243
+UK,2025-01,6000,Salaries & Wages,opex,Payroll,MKT,-17935.65,-22778.275500000003
+UK,2025-01,6000,Salaries & Wages,opex,Payroll,RND,-75690.33,-96126.7191
+UK,2025-01,6000,Salaries & Wages,opex,Payroll,SAL,-52379.58,-66522.0666
+UK,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2497.35,-3171.6345
+UK,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1663.33,-2112.4291
+UK,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2475.12,-3143.4024
+UK,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-10445.27,-13265.492900000001
+UK,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-7228.38,-9180.0426
+UK,2025-01,6100,Contractors,opex,Contractors,GA,-2354.26,-2989.9102000000003
+UK,2025-01,6100,Contractors,opex,Contractors,RND,-3372.96,-4283.6592
+UK,2025-01,6200,Software & Subscriptions,opex,Software,CS,-982.2,-1247.394
+UK,2025-01,6200,Software & Subscriptions,opex,Software,GA,-484.29,-615.0483
+UK,2025-01,6200,Software & Subscriptions,opex,Software,MKT,-722.64,-917.7528
+UK,2025-01,6200,Software & Subscriptions,opex,Software,RND,-2449.1,-3110.357
+UK,2025-01,6200,Software & Subscriptions,opex,Software,SAL,-2115.74,-2686.9898
+UK,2025-01,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-18324.22,-23271.7594
+UK,2025-01,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4829.6,-6133.592000000001
+UK,2025-01,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1009.3,-1281.811
+UK,2025-01,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-376.1,-477.64700000000005
+UK,2025-01,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-4755.22,-6039.129400000001
+UK,2025-01,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-15240.0
+UK,2025-01,6600,Professional Fees,opex,Professional Fees,GA,-4958.67,-6297.5109
+UK,2025-01,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,789.99,1003.2873000000001
+US,2025-01,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,893576.49,893576.49
+US,2025-01,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,49661.41,49661.41
+US,2025-01,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-76067.85,-76067.85
+US,2025-01,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-75238.59,-75238.59
+US,2025-01,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-13794.67,-13794.67
+US,2025-01,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-20340.95,-20340.95
+US,2025-01,6000,Salaries & Wages,opex,Payroll,GA,-80717.18,-80717.18
+US,2025-01,6000,Salaries & Wages,opex,Payroll,MKT,-75704.72,-75704.72
+US,2025-01,6000,Salaries & Wages,opex,Payroll,RND,-321302.54,-321302.54
+US,2025-01,6000,Salaries & Wages,opex,Payroll,SAL,-199007.24,-199007.24
+US,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-7523.86,-7523.86
+US,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-8071.72,-8071.72
+US,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-7570.47,-7570.47
+US,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-32130.25,-32130.25
+US,2025-01,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-19900.72,-19900.72
+US,2025-01,6100,Contractors,opex,Contractors,GA,-7355.27,-7355.27
+US,2025-01,6100,Contractors,opex,Contractors,RND,-15924.329999999998,-15924.329999999998
+US,2025-01,6200,Software & Subscriptions,opex,Software,CS,-2933.94,-2933.94
+US,2025-01,6200,Software & Subscriptions,opex,Software,GA,-2453.34,-2453.34
+US,2025-01,6200,Software & Subscriptions,opex,Software,MKT,-2539.51,-2539.51
+US,2025-01,6200,Software & Subscriptions,opex,Software,RND,-8068.67,-8068.67
+US,2025-01,6200,Software & Subscriptions,opex,Software,SAL,-5898.51,-5898.51
+US,2025-01,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-123008.18,-123008.18
+US,2025-01,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-25705.06,-25705.06
+US,2025-01,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3223.43,-3223.43
+US,2025-01,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1947.64,-1947.64
+US,2025-01,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-17119.35,-17119.35
+US,2025-01,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-01,6600,Professional Fees,opex,Professional Fees,GA,-14896.890000000001,-14896.890000000001
+US,2025-01,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,52339.22,52339.22
+DE,2025-02,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,102523.63999999998,113380.89347600001
+DE,2025-02,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,4974.12,5500.879308
+DE,2025-02,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9269.31,-10250.929929
+DE,2025-02,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13576.26,-15013.985934000002
+DE,2025-02,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1520.37,-1681.377183
+DE,2025-02,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-1849.63,-2045.5058170000002
+DE,2025-02,6000,Salaries & Wages,opex,Payroll,GA,-11992.18,-13262.151862000002
+DE,2025-02,6000,Salaries & Wages,opex,Payroll,MKT,-6094.05,-6739.409895000001
+DE,2025-02,6000,Salaries & Wages,opex,Payroll,RND,-83328.51,-92152.999209
+DE,2025-02,6000,Salaries & Wages,opex,Payroll,SAL,-25933.4,-28679.747060000005
+DE,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2715.25,-3002.7949750000002
+DE,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2398.44,-2652.4347960000005
+DE,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1218.81,-1347.881979
+DE,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-16665.7,-18430.597630000004
+DE,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-5186.68,-5735.949412000001
+DE,2025-02,6100,Contractors,opex,Contractors,GA,-2435.83,-2693.7843970000004
+DE,2025-02,6100,Contractors,opex,Contractors,RND,-5927.62,-6555.354958
+DE,2025-02,6200,Software & Subscriptions,opex,Software,CS,-781.84,-864.6368560000001
+DE,2025-02,6200,Software & Subscriptions,opex,Software,GA,-493.16,-545.3856440000001
+DE,2025-02,6200,Software & Subscriptions,opex,Software,MKT,-241.08,-266.61037200000004
+DE,2025-02,6200,Software & Subscriptions,opex,Software,RND,-3369.65,-3726.4959350000004
+DE,2025-02,6200,Software & Subscriptions,opex,Software,SAL,-1019.36,-1127.310224
+DE,2025-02,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6423.049999999999,-7103.250995
+DE,2025-02,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2613.33,-2890.081647
+DE,2025-02,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-785.94,-869.1710460000002
+DE,2025-02,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-357.7,-395.58043000000004
+DE,2025-02,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3025.7,-3346.12163
+DE,2025-02,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-9953.100000000002
+DE,2025-02,6600,Professional Fees,opex,Professional Fees,GA,-5155.0,-5700.914500000001
+DE,2025-02,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-43.89,-48.53795100000001
+UK,2025-02,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,197189.83999999997,254986.182104
+UK,2025-02,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,16340.369999999999,21129.732447
+UK,2025-02,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-18068.09,-23363.847178999997
+UK,2025-02,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18033.11,-23318.614541
+UK,2025-02,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2491.64,-3221.9396839999995
+UK,2025-02,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-3903.63,-5047.783953
+UK,2025-02,6000,Salaries & Wages,opex,Payroll,GA,-11908.4,-15398.75204
+UK,2025-02,6000,Salaries & Wages,opex,Payroll,MKT,-17782.11,-22994.046441
+UK,2025-02,6000,Salaries & Wages,opex,Payroll,RND,-74984.3,-96962.19833
+UK,2025-02,6000,Salaries & Wages,opex,Payroll,SAL,-51364.37,-66419.266847
+UK,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2488.57,-3217.969867
+UK,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1643.36,-2125.0288159999996
+UK,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2453.93,-3173.1768829999996
+UK,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-10347.83,-13380.778972999999
+UK,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-7088.28,-9165.854867999999
+UK,2025-02,6100,Contractors,opex,Contractors,GA,-2887.39,-3733.6840089999996
+UK,2025-02,6100,Contractors,opex,Contractors,RND,-3907.77,-5053.137387
+UK,2025-02,6200,Software & Subscriptions,opex,Software,CS,-901.76,-1166.065856
+UK,2025-02,6200,Software & Subscriptions,opex,Software,GA,-470.57,-608.494067
+UK,2025-02,6200,Software & Subscriptions,opex,Software,MKT,-718.23,-928.743213
+UK,2025-02,6200,Software & Subscriptions,opex,Software,RND,-2412.89,-3120.1080589999997
+UK,2025-02,6200,Software & Subscriptions,opex,Software,SAL,-1864.02,-2410.3642619999996
+UK,2025-02,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-18198.59,-23532.596728999997
+UK,2025-02,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-5426.82,-7017.420942
+UK,2025-02,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-974.94,-1260.694914
+UK,2025-02,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-335.19,-433.43418899999995
+UK,2025-02,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6393.38,-8267.279677999999
+UK,2025-02,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-15517.199999999999
+UK,2025-02,6600,Professional Fees,opex,Professional Fees,GA,-6438.76,-8325.960556
+UK,2025-02,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-10.05,-12.995655
+US,2025-02,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,924203.4800000003,924203.4800000003
+US,2025-02,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,59195.909999999996,59195.909999999996
+US,2025-02,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-91009.01999999999,-91009.01999999999
+US,2025-02,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-74386.49,-74386.49
+US,2025-02,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-13515.24,-13515.24
+US,2025-02,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-20765.25,-20765.25
+US,2025-02,6000,Salaries & Wages,opex,Payroll,GA,-80850.41,-80850.41
+US,2025-02,6000,Salaries & Wages,opex,Payroll,MKT,-76007.13,-76007.13
+US,2025-02,6000,Salaries & Wages,opex,Payroll,RND,-329212.79,-329212.79
+US,2025-02,6000,Salaries & Wages,opex,Payroll,SAL,-196933.91,-196933.91
+US,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-7438.65,-7438.65
+US,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-8085.04,-8085.04
+US,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-7600.71,-7600.71
+US,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-32921.28,-32921.28
+US,2025-02,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-19693.39,-19693.39
+US,2025-02,6100,Contractors,opex,Contractors,GA,-6013.37,-6013.37
+US,2025-02,6100,Contractors,opex,Contractors,RND,-24713.6,-24713.6
+US,2025-02,6200,Software & Subscriptions,opex,Software,CS,-3105.51,-3105.51
+US,2025-02,6200,Software & Subscriptions,opex,Software,GA,-2483.6,-2483.6
+US,2025-02,6200,Software & Subscriptions,opex,Software,MKT,-2301.09,-2301.09
+US,2025-02,6200,Software & Subscriptions,opex,Software,RND,-7963.48,-7963.48
+US,2025-02,6200,Software & Subscriptions,opex,Software,SAL,-6203.129999999999,-6203.129999999999
+US,2025-02,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-115025.35,-115025.35
+US,2025-02,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-26175.58,-26175.58
+US,2025-02,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-2865.92,-2865.92
+US,2025-02,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1721.74,-1721.74
+US,2025-02,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-18838.71,-18838.71
+US,2025-02,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-02,6600,Professional Fees,opex,Professional Fees,GA,-16932.71,-16932.71
+US,2025-02,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,48351.41,48351.41
+DE,2025-03,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,105594.48999999999,119638.55716999999
+DE,2025-03,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,3738.1099999999997,4235.27863
+DE,2025-03,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9760.529999999999,-11058.680489999999
+DE,2025-03,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13560.45,-15363.989850000002
+DE,2025-03,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1572.4,-1781.5292000000002
+DE,2025-03,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-1812.51,-2053.57383
+DE,2025-03,6000,Salaries & Wages,opex,Payroll,GA,-11730.62,-13290.79246
+DE,2025-03,6000,Salaries & Wages,opex,Payroll,MKT,-5929.51,-6718.13483
+DE,2025-03,6000,Salaries & Wages,opex,Payroll,RND,-83622.09,-94743.82797
+DE,2025-03,6000,Salaries & Wages,opex,Payroll,SAL,-26286.63,-29782.751790000002
+DE,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2712.09,-3072.79797
+DE,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2346.12,-2658.15396
+DE,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1185.9,-1343.6247
+DE,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-16724.42,-18948.76786
+DE,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-5257.33,-5956.55489
+DE,2025-03,6100,Contractors,opex,Contractors,GA,-2178.76,-2468.53508
+DE,2025-03,6100,Contractors,opex,Contractors,RND,-4605.9,-5218.4847
+DE,2025-03,6200,Software & Subscriptions,opex,Software,CS,-872.79,-988.8710699999999
+DE,2025-03,6200,Software & Subscriptions,opex,Software,GA,-503.76,-570.76008
+DE,2025-03,6200,Software & Subscriptions,opex,Software,MKT,-247.07,-279.93031
+DE,2025-03,6200,Software & Subscriptions,opex,Software,RND,-3024.03,-3426.2259900000004
+DE,2025-03,6200,Software & Subscriptions,opex,Software,SAL,-1164.89,-1319.8203700000001
+DE,2025-03,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6061.76,-6867.97408
+DE,2025-03,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-5912.709999999999,-6699.1004299999995
+DE,2025-03,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-934.79,-1059.11707
+DE,2025-03,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-386.67,-438.09711000000004
+DE,2025-03,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3483.33,-3946.61289
+DE,2025-03,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-10197.0
+DE,2025-03,6600,Professional Fees,opex,Professional Fees,GA,-18482.11,-20940.230630000002
+DE,2025-03,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,746.41,845.6825299999999
+UK,2025-03,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,191758.52000000002,242708.758764
+UK,2025-03,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,8218.93,10402.699701000001
+UK,2025-03,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-17004.56,-21522.671592000002
+UK,2025-03,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18205.2,-23042.321640000002
+UK,2025-03,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3326.1,-4209.84477
+UK,2025-03,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-3685.84,-4665.167688
+UK,2025-03,6000,Salaries & Wages,opex,Payroll,GA,-12082.12,-15292.339284000001
+UK,2025-03,6000,Salaries & Wages,opex,Payroll,MKT,-17830.27,-22567.772739
+UK,2025-03,6000,Salaries & Wages,opex,Payroll,RND,-76206.49,-96454.55439300001
+UK,2025-03,6000,Salaries & Wages,opex,Payroll,SAL,-51765.79,-65519.960403000005
+UK,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2512.32,-3179.843424
+UK,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1667.33,-2110.339581
+UK,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2460.58,-3114.356106
+UK,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-10516.5,-13310.734050000001
+UK,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-7143.68,-9041.755776
+UK,2025-03,6100,Contractors,opex,Contractors,GA,-2061.25,-2608.924125
+UK,2025-03,6100,Contractors,opex,Contractors,RND,-4979.7,-6302.80629
+UK,2025-03,6200,Software & Subscriptions,opex,Software,CS,-1012.87,-1281.989559
+UK,2025-03,6200,Software & Subscriptions,opex,Software,GA,-490.42,-620.724594
+UK,2025-03,6200,Software & Subscriptions,opex,Software,MKT,-687.14,-869.7130980000001
+UK,2025-03,6200,Software & Subscriptions,opex,Software,RND,-2329.68,-2948.675976
+UK,2025-03,6200,Software & Subscriptions,opex,Software,SAL,-1741.96,-2204.798772
+UK,2025-03,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-20232.09,-25607.756313
+UK,2025-03,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-13460.119999999999,-17036.473884
+UK,2025-03,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1156.13,-1463.3137410000002
+UK,2025-03,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-334.51,-423.38930700000003
+UK,2025-03,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6564.0599999999995,-8308.130742000001
+UK,2025-03,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-15188.400000000001
+UK,2025-03,6600,Professional Fees,opex,Professional Fees,GA,-24116.18,-30523.849026000004
+UK,2025-03,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,3255.51,4120.499007
+US,2025-03,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,945668.42,945668.42
+US,2025-03,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,50620.03,50620.03
+US,2025-03,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-87163.02,-87163.02
+US,2025-03,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-75160.4,-75160.4
+US,2025-03,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-14879.85,-14879.85
+US,2025-03,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-20004.27,-20004.27
+US,2025-03,6000,Salaries & Wages,opex,Payroll,GA,-80153.52,-80153.52
+US,2025-03,6000,Salaries & Wages,opex,Payroll,MKT,-74866.47,-74866.47
+US,2025-03,6000,Salaries & Wages,opex,Payroll,RND,-337101.97,-337101.97
+US,2025-03,6000,Salaries & Wages,opex,Payroll,SAL,-213652.59,-213652.59
+US,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-7516.04,-7516.04
+US,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-8015.35,-8015.35
+US,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-7486.65,-7486.65
+US,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-33710.2,-33710.2
+US,2025-03,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-21365.26,-21365.26
+US,2025-03,6100,Contractors,opex,Contractors,GA,-5952.04,-5952.04
+US,2025-03,6100,Contractors,opex,Contractors,RND,-20569.67,-20569.67
+US,2025-03,6200,Software & Subscriptions,opex,Software,CS,-3192.43,-3192.43
+US,2025-03,6200,Software & Subscriptions,opex,Software,GA,-2587.6,-2587.6
+US,2025-03,6200,Software & Subscriptions,opex,Software,MKT,-2322.86,-2322.86
+US,2025-03,6200,Software & Subscriptions,opex,Software,RND,-8290.45,-8290.45
+US,2025-03,6200,Software & Subscriptions,opex,Software,SAL,-6218.73,-6218.73
+US,2025-03,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-97349.56,-97349.56
+US,2025-03,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-62692.950000000004,-62692.950000000004
+US,2025-03,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3076.0,-3076.0
+US,2025-03,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1925.16,-1925.16
+US,2025-03,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-19672.27,-19672.27
+US,2025-03,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-03,6600,Professional Fees,opex,Professional Fees,GA,-58509.83,-58509.83
+US,2025-03,6700,Recruiting,opex,Recruiting,RND,-4500.03,-4500.03
+US,2025-03,6700,Recruiting,opex,Recruiting,SAL,-3603.55,-3603.55
+US,2025-03,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,50931.59,50931.59
+DE,2025-04,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,108271.68000000002,121285.935936
+DE,2025-04,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,4084.4,4575.34488
+DE,2025-04,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9519.490000000002,-10663.732698000002
+DE,2025-04,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13414.9,-15027.370980000002
+DE,2025-04,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1612.8,-1806.65856
+DE,2025-04,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2007.87,-2249.215974
+DE,2025-04,6000,Salaries & Wages,opex,Payroll,GA,-12075.63,-13527.120726000001
+DE,2025-04,6000,Salaries & Wages,opex,Payroll,MKT,-6078.69,-6809.348538
+DE,2025-04,6000,Salaries & Wages,opex,Payroll,RND,-84020.37,-94119.618474
+DE,2025-04,6000,Salaries & Wages,opex,Payroll,SAL,-25613.83,-28692.612366000005
+DE,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2682.98,-3005.474196
+DE,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2415.13,-2705.4286260000003
+DE,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1215.74,-1361.8719480000002
+DE,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-16804.07,-18823.919214
+DE,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-5122.77,-5738.526954000001
+DE,2025-04,6100,Contractors,opex,Contractors,GA,-1933.45,-2165.85069
+DE,2025-04,6100,Contractors,opex,Contractors,RND,-5440.71,-6094.683342
+DE,2025-04,6200,Software & Subscriptions,opex,Software,CS,-772.19,-865.0072380000001
+DE,2025-04,6200,Software & Subscriptions,opex,Software,GA,-474.12,-531.109224
+DE,2025-04,6200,Software & Subscriptions,opex,Software,MKT,-259.07,-290.210214
+DE,2025-04,6200,Software & Subscriptions,opex,Software,RND,-3027.4,-3391.2934800000003
+DE,2025-04,6200,Software & Subscriptions,opex,Software,SAL,-1068.47,-1196.900094
+DE,2025-04,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6398.65,-7167.7677300000005
+DE,2025-04,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2345.91,-2627.888382
+DE,2025-04,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-776.44,-869.7680880000001
+DE,2025-04,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-426.46,-477.72049200000004
+DE,2025-04,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3258.84,-3650.5525680000005
+DE,2025-04,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-10081.800000000001
+DE,2025-04,6600,Professional Fees,opex,Professional Fees,GA,-22782.96,-25521.471792
+DE,2025-04,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,2092.79,2344.343358
+UK,2025-04,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,199511.64,251264.95941600003
+UK,2025-04,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,13598.960000000001,17126.530224000002
+UK,2025-04,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-17675.29,-22260.260226000002
+UK,2025-04,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18142.13,-22848.198522000002
+UK,2025-04,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2881.32,-3628.7344080000003
+UK,2025-04,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-4184.75,-5270.27415
+UK,2025-04,6000,Salaries & Wages,opex,Payroll,GA,-11911.55,-15001.406069999999
+UK,2025-04,6000,Salaries & Wages,opex,Payroll,MKT,-18213.3,-22937.83002
+UK,2025-04,6000,Salaries & Wages,opex,Payroll,RND,-75258.0,-94779.92520000001
+UK,2025-04,6000,Salaries & Wages,opex,Payroll,SAL,-52111.97,-65629.81501800001
+UK,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2503.61,-3153.0464340000003
+UK,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1643.79,-2070.189126
+UK,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2513.44,-3165.4263360000004
+UK,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-10385.6,-13079.624640000002
+UK,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-7191.45,-9056.91213
+UK,2025-04,6100,Contractors,opex,Contractors,GA,-2392.09,-3012.5981460000003
+UK,2025-04,6100,Contractors,opex,Contractors,RND,-4173.87,-5256.571878
+UK,2025-04,6200,Software & Subscriptions,opex,Software,CS,-996.5,-1254.9921000000002
+UK,2025-04,6200,Software & Subscriptions,opex,Software,GA,-485.75,-611.75355
+UK,2025-04,6200,Software & Subscriptions,opex,Software,MKT,-740.25,-932.2708500000001
+UK,2025-04,6200,Software & Subscriptions,opex,Software,RND,-2426.4,-3055.8081600000005
+UK,2025-04,6200,Software & Subscriptions,opex,Software,SAL,-1964.35,-2473.90239
+UK,2025-04,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-18318.2,-23069.941080000004
+UK,2025-04,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4891.89,-6160.8462660000005
+UK,2025-04,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1051.84,-1324.687296
+UK,2025-04,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-367.34,-462.627996
+UK,2025-04,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-5762.11,-7256.801334
+UK,2025-04,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-15112.800000000001
+UK,2025-04,6600,Professional Fees,opex,Professional Fees,GA,-26497.69,-33371.190786
+UK,2025-04,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-1429.04,-1799.732976
+US,2025-04,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,952062.5399999999,952062.5399999999
+US,2025-04,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,61958.729999999996,61958.729999999996
+US,2025-04,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-83749.87,-83749.87
+US,2025-04,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-73929.58,-73929.58
+US,2025-04,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-14353.599999999999,-14353.599999999999
+US,2025-04,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-21659.71,-21659.71
+US,2025-04,6000,Salaries & Wages,opex,Payroll,GA,-80042.81,-80042.81
+US,2025-04,6000,Salaries & Wages,opex,Payroll,MKT,-75615.92,-75615.92
+US,2025-04,6000,Salaries & Wages,opex,Payroll,RND,-338877.79,-338877.79
+US,2025-04,6000,Salaries & Wages,opex,Payroll,SAL,-211123.32,-211123.32
+US,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-7392.96,-7392.96
+US,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-8004.28,-8004.28
+US,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-7561.59,-7561.59
+US,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-33887.78,-33887.78
+US,2025-04,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-21112.33,-21112.33
+US,2025-04,6100,Contractors,opex,Contractors,GA,-7554.56,-7554.56
+US,2025-04,6100,Contractors,opex,Contractors,RND,-18188.36,-18188.36
+US,2025-04,6200,Software & Subscriptions,opex,Software,CS,-3056.06,-3056.06
+US,2025-04,6200,Software & Subscriptions,opex,Software,GA,-2619.43,-2619.43
+US,2025-04,6200,Software & Subscriptions,opex,Software,MKT,-2526.0,-2526.0
+US,2025-04,6200,Software & Subscriptions,opex,Software,RND,-7901.719999999999,-7901.719999999999
+US,2025-04,6200,Software & Subscriptions,opex,Software,SAL,-6820.95,-6820.95
+US,2025-04,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-122327.37,-122327.37
+US,2025-04,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-27285.95,-27285.95
+US,2025-04,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3454.08,-3454.08
+US,2025-04,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1678.72,-1678.72
+US,2025-04,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-19065.0,-19065.0
+US,2025-04,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-04,6600,Professional Fees,opex,Professional Fees,GA,-62497.93,-62497.93
+US,2025-04,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,47365.99,47365.99
+DE,2025-05,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,111866.98000000001,124038.10742400003
+DE,2025-05,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,6350.08,7040.968704
+DE,2025-05,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9769.0,-10831.8672
+DE,2025-05,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13822.04,-15325.877952
+DE,2025-05,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1643.89,-1822.7452320000002
+DE,2025-05,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-1985.57,-2201.600016
+DE,2025-05,6000,Salaries & Wages,opex,Payroll,GA,-12036.9,-13346.51472
+DE,2025-05,6000,Salaries & Wages,opex,Payroll,MKT,-5986.07,-6637.354416
+DE,2025-05,6000,Salaries & Wages,opex,Payroll,RND,-89988.98,-99779.781024
+DE,2025-05,6000,Salaries & Wages,opex,Payroll,SAL,-25800.86,-28607.993568
+DE,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2764.41,-3065.177808
+DE,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2407.38,-2669.302944
+DE,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1197.21,-1327.4664480000001
+DE,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-17997.8,-19955.96064
+DE,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-5160.17,-5721.596496
+DE,2025-05,6100,Contractors,opex,Contractors,GA,-1627.51,-1804.583088
+DE,2025-05,6100,Contractors,opex,Contractors,RND,-6195.42,-6869.481696
+DE,2025-05,6200,Software & Subscriptions,opex,Software,CS,-876.89,-972.295632
+DE,2025-05,6200,Software & Subscriptions,opex,Software,GA,-537.42,-595.891296
+DE,2025-05,6200,Software & Subscriptions,opex,Software,MKT,-263.14,-291.769632
+DE,2025-05,6200,Software & Subscriptions,opex,Software,RND,-3285.94,-3643.450272
+DE,2025-05,6200,Software & Subscriptions,opex,Software,SAL,-1053.55,-1168.17624
+DE,2025-05,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6367.42,-7060.195296
+DE,2025-05,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2478.64,-2748.3160319999997
+DE,2025-05,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-828.93,-919.117584
+DE,2025-05,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-419.66,-465.31900800000005
+DE,2025-05,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-2807.28,-3112.7120640000003
+DE,2025-05,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-9979.2
+DE,2025-05,6600,Professional Fees,opex,Professional Fees,GA,-5458.62,-6052.517856
+DE,2025-05,6700,Recruiting,opex,Recruiting,RND,-3221.31,-3571.788528
+DE,2025-05,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-60.13,-66.672144
+UK,2025-05,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,199061.84,249902.233936
+UK,2025-05,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,9483.45,11905.52313
+UK,2025-05,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-17910.93,-22485.381522000003
+UK,2025-05,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-17943.87,-22526.734398
+UK,2025-05,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3014.56,-3784.4786240000003
+UK,2025-05,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-3818.25,-4793.43105
+UK,2025-05,6000,Salaries & Wages,opex,Payroll,GA,-11981.6,-15041.700640000001
+UK,2025-05,6000,Salaries & Wages,opex,Payroll,MKT,-18207.21,-22857.331434
+UK,2025-05,6000,Salaries & Wages,opex,Payroll,RND,-73911.48,-92788.471992
+UK,2025-05,6000,Salaries & Wages,opex,Payroll,SAL,-51483.01,-64631.770754000005
+UK,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2476.25,-3108.6842500000002
+UK,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1653.46,-2075.7536840000002
+UK,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2512.59,-3154.305486
+UK,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-10199.78,-12804.803812000002
+UK,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-7104.66,-8919.190164
+UK,2025-05,6100,Contractors,opex,Contractors,GA,-2559.36,-3213.0205440000004
+UK,2025-05,6100,Contractors,opex,Contractors,RND,-4176.37,-5243.014898
+UK,2025-05,6200,Software & Subscriptions,opex,Software,CS,-949.22,-1191.6507880000001
+UK,2025-05,6200,Software & Subscriptions,opex,Software,GA,-451.35,-566.6247900000001
+UK,2025-05,6200,Software & Subscriptions,opex,Software,MKT,-693.6,-870.74544
+UK,2025-05,6200,Software & Subscriptions,opex,Software,RND,-2450.74,-3076.658996
+UK,2025-05,6200,Software & Subscriptions,opex,Software,SAL,-1892.64,-2376.0202560000002
+UK,2025-05,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-18063.42,-22676.817468
+UK,2025-05,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4312.29,-5413.648866
+UK,2025-05,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-903.46,-1134.203684
+UK,2025-05,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-406.76,-510.646504
+UK,2025-05,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-5827.76,-7316.169904
+UK,2025-05,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-15064.800000000003
+UK,2025-05,6600,Professional Fees,opex,Professional Fees,GA,-5726.62,-7189.198748000001
+UK,2025-05,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-129.89,-163.063906
+US,2025-05,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,960145.7200000001,960145.7200000001
+US,2025-05,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,73847.01,73847.01
+US,2025-05,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-81889.25,-81889.25
+US,2025-05,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-83481.84,-83481.84
+US,2025-05,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-13493.619999999999,-13493.619999999999
+US,2025-05,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-21615.11,-21615.11
+US,2025-05,6000,Salaries & Wages,opex,Payroll,GA,-79382.09,-79382.09
+US,2025-05,6000,Salaries & Wages,opex,Payroll,MKT,-75835.99,-75835.99
+US,2025-05,6000,Salaries & Wages,opex,Payroll,RND,-336205.75,-336205.75
+US,2025-05,6000,Salaries & Wages,opex,Payroll,SAL,-209696.23,-209696.23
+US,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-8348.18,-8348.18
+US,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-7938.21,-7938.21
+US,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-7583.6,-7583.6
+US,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-33620.57,-33620.57
+US,2025-05,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-20969.62,-20969.62
+US,2025-05,6100,Contractors,opex,Contractors,GA,-5029.28,-5029.28
+US,2025-05,6100,Contractors,opex,Contractors,RND,-21459.8,-21459.8
+US,2025-05,6200,Software & Subscriptions,opex,Software,CS,-3523.89,-3523.89
+US,2025-05,6200,Software & Subscriptions,opex,Software,GA,-2502.99,-2502.99
+US,2025-05,6200,Software & Subscriptions,opex,Software,MKT,-2587.44,-2587.44
+US,2025-05,6200,Software & Subscriptions,opex,Software,RND,-8421.8,-8421.8
+US,2025-05,6200,Software & Subscriptions,opex,Software,SAL,-6867.77,-6867.77
+US,2025-05,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-114589.24,-114589.24
+US,2025-05,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-30007.62,-30007.62
+US,2025-05,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3661.7,-3661.7
+US,2025-05,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1889.45,-1889.45
+US,2025-05,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-21728.84,-21728.84
+US,2025-05,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-05,6600,Professional Fees,opex,Professional Fees,GA,-13456.0,-13456.0
+US,2025-05,6700,Recruiting,opex,Recruiting,CS,-4115.7,-4115.7
+US,2025-05,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,46607.79,46607.79
+DE,2025-06,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,108741.48999999999,122725.64561400001
+DE,2025-06,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,7036.41,7941.292326000001
+DE,2025-06,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9366.130000000001,-10570.614318
+DE,2025-06,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13377.5,-15097.846500000001
+DE,2025-06,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1492.32,-1684.232352
+DE,2025-06,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-1907.77,-2153.109222
+DE,2025-06,6000,Salaries & Wages,opex,Payroll,GA,-12180.68,-13747.115448
+DE,2025-06,6000,Salaries & Wages,opex,Payroll,MKT,-5950.56,-6715.802016000001
+DE,2025-06,6000,Salaries & Wages,opex,Payroll,RND,-90630.51,-102285.593586
+DE,2025-06,6000,Salaries & Wages,opex,Payroll,SAL,-25721.29,-29029.047894000003
+DE,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2675.5,-3019.5693
+DE,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2436.14,-2749.427604
+DE,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1190.11,-1343.158146
+DE,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-18126.1,-20457.116459999997
+DE,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-5144.26,-5805.811836000001
+DE,2025-06,6100,Contractors,opex,Contractors,GA,-2009.7,-2268.1474200000002
+DE,2025-06,6100,Contractors,opex,Contractors,RND,-6071.0,-6851.730600000001
+DE,2025-06,6200,Software & Subscriptions,opex,Software,CS,-742.96,-838.5046560000001
+DE,2025-06,6200,Software & Subscriptions,opex,Software,GA,-535.38,-604.229868
+DE,2025-06,6200,Software & Subscriptions,opex,Software,MKT,-243.08,-274.34008800000004
+DE,2025-06,6200,Software & Subscriptions,opex,Software,RND,-3028.96,-3418.484256
+DE,2025-06,6200,Software & Subscriptions,opex,Software,SAL,-1080.22,-1219.1362920000001
+DE,2025-06,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-5684.29,-6415.289694
+DE,2025-06,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-7460.73,-8420.179877999999
+DE,2025-06,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-762.91,-861.020226
+DE,2025-06,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-356.86,-402.752196
+DE,2025-06,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3236.82,-3653.075052
+DE,2025-06,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-10157.400000000001
+DE,2025-06,6600,Professional Fees,opex,Professional Fees,GA,-5082.38,-5735.9740679999995
+DE,2025-06,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-959.58,-1082.981988
+UK,2025-06,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,202463.95000000004,252249.83530500002
+UK,2025-06,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,11339.859999999999,14128.331574
+UK,2025-06,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-18752.46,-23363.689914000002
+UK,2025-06,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18141.5,-22602.49485
+UK,2025-06,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3116.49,-3882.834891
+UK,2025-06,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-4005.38,-4990.302942
+UK,2025-06,6000,Salaries & Wages,opex,Payroll,GA,-11981.65,-14927.937735
+UK,2025-06,6000,Salaries & Wages,opex,Payroll,MKT,-18148.66,-22611.415494
+UK,2025-06,6000,Salaries & Wages,opex,Payroll,RND,-82806.78,-103168.967202
+UK,2025-06,6000,Salaries & Wages,opex,Payroll,SAL,-58683.46,-73113.722814
+UK,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2503.53,-3119.148027
+UK,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1653.47,-2060.058273
+UK,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2504.52,-3120.381468
+UK,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-11427.33,-14237.310447
+UK,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-8098.32,-10089.696888
+UK,2025-06,6100,Contractors,opex,Contractors,GA,-1811.95,-2257.5085050000002
+UK,2025-06,6100,Contractors,opex,Contractors,RND,-4872.84,-6071.071356
+UK,2025-06,6200,Software & Subscriptions,opex,Software,CS,-933.76,-1163.371584
+UK,2025-06,6200,Software & Subscriptions,opex,Software,GA,-454.98,-566.859582
+UK,2025-06,6200,Software & Subscriptions,opex,Software,MKT,-683.6,-851.6972400000001
+UK,2025-06,6200,Software & Subscriptions,opex,Software,RND,-2503.34,-3118.9113060000004
+UK,2025-06,6200,Software & Subscriptions,opex,Software,SAL,-2229.67,-2777.945853
+UK,2025-06,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-18436.33,-22969.823547
+UK,2025-06,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-18329.760000000002,-22837.047984
+UK,2025-06,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-961.86,-1198.381374
+UK,2025-06,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-372.23,-463.76135700000003
+UK,2025-06,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6613.78,-8240.108502
+UK,2025-06,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-14950.8
+UK,2025-06,6600,Professional Fees,opex,Professional Fees,GA,-5965.06,-7431.868254000001
+UK,2025-06,6700,Recruiting,opex,Recruiting,RND,-3994.67,-4976.959353
+UK,2025-06,6700,Recruiting,opex,Recruiting,SAL,-4005.75,-4990.763925
+UK,2025-06,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,1790.87,2231.244933
+US,2025-06,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1020877.9300000002,1020877.9300000002
+US,2025-06,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,61297.54,61297.54
+US,2025-06,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-92485.75,-92485.75
+US,2025-06,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-82506.8,-82506.8
+US,2025-06,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-14908.400000000001,-14908.400000000001
+US,2025-06,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-23097.01,-23097.01
+US,2025-06,6000,Salaries & Wages,opex,Payroll,GA,-82192.64,-82192.64
+US,2025-06,6000,Salaries & Wages,opex,Payroll,MKT,-75878.57,-75878.57
+US,2025-06,6000,Salaries & Wages,opex,Payroll,RND,-349443.84,-349443.84
+US,2025-06,6000,Salaries & Wages,opex,Payroll,SAL,-221472.3,-221472.3
+US,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-8250.68,-8250.68
+US,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-8219.26,-8219.26
+US,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-7587.86,-7587.86
+US,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-34944.38,-34944.38
+US,2025-06,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-22147.23,-22147.23
+US,2025-06,6100,Contractors,opex,Contractors,GA,-5322.48,-5322.48
+US,2025-06,6100,Contractors,opex,Contractors,RND,-20924.94,-20924.94
+US,2025-06,6200,Software & Subscriptions,opex,Software,CS,-3426.37,-3426.37
+US,2025-06,6200,Software & Subscriptions,opex,Software,GA,-2739.84,-2739.84
+US,2025-06,6200,Software & Subscriptions,opex,Software,MKT,-2314.97,-2314.97
+US,2025-06,6200,Software & Subscriptions,opex,Software,RND,-8097.23,-8097.23
+US,2025-06,6200,Software & Subscriptions,opex,Software,SAL,-6837.74,-6837.74
+US,2025-06,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-115966.11,-115966.11
+US,2025-06,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-92813.20000000001,-92813.20000000001
+US,2025-06,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3591.62,-3591.62
+US,2025-06,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1324.38,-1324.38
+US,2025-06,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-22782.800000000003,-22782.800000000003
+US,2025-06,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-06,6600,Professional Fees,opex,Professional Fees,GA,-14765.34,-14765.34
+US,2025-06,6700,Recruiting,opex,Recruiting,RND,-4201.48,-4201.48
+US,2025-06,6700,Recruiting,opex,Recruiting,SAL,-5244.95,-5244.95
+US,2025-06,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,45730.83,45730.83
+DE,2025-07,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,112385.37,127332.62421
+DE,2025-07,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,5481.39,6210.4148700000005
+DE,2025-07,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9757.95,-11055.75735
+DE,2025-07,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13513.92,-15311.27136
+DE,2025-07,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1647.03,-1866.08499
+DE,2025-07,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-1927.96,-2184.3786800000003
+DE,2025-07,6000,Salaries & Wages,opex,Payroll,GA,-11969.24,-13561.14892
+DE,2025-07,6000,Salaries & Wages,opex,Payroll,MKT,-6000.68,-6798.77044
+DE,2025-07,6000,Salaries & Wages,opex,Payroll,RND,-91223.51,-103356.23683
+DE,2025-07,6000,Salaries & Wages,opex,Payroll,SAL,-25593.94,-28997.934019999997
+DE,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2702.78,-3062.24974
+DE,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2393.85,-2712.23205
+DE,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1200.14,-1359.75862
+DE,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-18244.7,-20671.2451
+DE,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-5118.79,-5799.58907
+DE,2025-07,6100,Contractors,opex,Contractors,GA,-1508.46,-1709.08518
+DE,2025-07,6100,Contractors,opex,Contractors,RND,-6079.02,-6887.52966
+DE,2025-07,6200,Software & Subscriptions,opex,Software,CS,-730.55,-827.7131499999999
+DE,2025-07,6200,Software & Subscriptions,opex,Software,GA,-531.05,-601.6796499999999
+DE,2025-07,6200,Software & Subscriptions,opex,Software,MKT,-279.1,-316.2203
+DE,2025-07,6200,Software & Subscriptions,opex,Software,RND,-3313.43,-3754.1161899999997
+DE,2025-07,6200,Software & Subscriptions,opex,Software,SAL,-1064.75,-1206.36175
+DE,2025-07,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6373.58,-7221.26614
+DE,2025-07,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2125.56,-2408.25948
+DE,2025-07,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-925.1,-1048.1383
+DE,2025-07,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-384.31,-435.42323
+DE,2025-07,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-2022.78,-2291.80974
+DE,2025-07,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-10197.0
+DE,2025-07,6600,Professional Fees,opex,Professional Fees,GA,-5362.629999999999,-6075.85979
+DE,2025-07,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,222.77,252.39841
+UK,2025-07,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,210701.34,263081.693124
+UK,2025-07,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,11960.97,14934.467141999998
+UK,2025-07,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-17996.38,-22470.280068
+UK,2025-07,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-17879.24,-22324.019064
+UK,2025-07,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2996.41,-3741.317526
+UK,2025-07,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-4236.48,-5289.668927999999
+UK,2025-07,6000,Salaries & Wages,opex,Payroll,GA,-11961.62,-14935.278732
+UK,2025-07,6000,Salaries & Wages,opex,Payroll,MKT,-18010.98,-22488.509628
+UK,2025-07,6000,Salaries & Wages,opex,Payroll,RND,-80320.44,-100288.101384
+UK,2025-07,6000,Salaries & Wages,opex,Payroll,SAL,-59758.93,-74614.999998
+UK,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2467.34,-3080.720724
+UK,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1650.7,-2061.06402
+UK,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2485.52,-3103.420272
+UK,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-11084.22,-13839.757091999998
+UK,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-8246.73,-10296.867078
+UK,2025-07,6100,Contractors,opex,Contractors,GA,-1905.77,-2379.544422
+UK,2025-07,6100,Contractors,opex,Contractors,RND,-5131.110000000001,-6406.703946
+UK,2025-07,6200,Software & Subscriptions,opex,Software,CS,-865.36,-1080.488496
+UK,2025-07,6200,Software & Subscriptions,opex,Software,GA,-503.68,-628.894848
+UK,2025-07,6200,Software & Subscriptions,opex,Software,MKT,-760.0,-948.9359999999999
+UK,2025-07,6200,Software & Subscriptions,opex,Software,RND,-2663.33,-3325.433838
+UK,2025-07,6200,Software & Subscriptions,opex,Software,SAL,-2123.84,-2651.826624
+UK,2025-07,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-19552.66,-24413.451276
+UK,2025-07,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4622.38,-5771.503667999999
+UK,2025-07,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-955.01,-1192.4254859999999
+UK,2025-07,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-387.99,-484.44431399999996
+UK,2025-07,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6120.200000000001,-7641.6817200000005
+UK,2025-07,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-14983.2
+UK,2025-07,6600,Professional Fees,opex,Professional Fees,GA,-6168.65,-7702.1763900000005
+UK,2025-07,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-1922.58,-2400.533388
+US,2025-07,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1007834.3100000003,1007834.3100000003
+US,2025-07,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,33016.03,33016.03
+US,2025-07,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-95419.2,-95419.2
+US,2025-07,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-84029.63,-84029.63
+US,2025-07,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-14891.25,-14891.25
+US,2025-07,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-21422.1,-21422.1
+US,2025-07,6000,Salaries & Wages,opex,Payroll,GA,-79944.6,-79944.6
+US,2025-07,6000,Salaries & Wages,opex,Payroll,MKT,-77228.54,-77228.54
+US,2025-07,6000,Salaries & Wages,opex,Payroll,RND,-349670.78,-349670.78
+US,2025-07,6000,Salaries & Wages,opex,Payroll,SAL,-219559.22,-219559.22
+US,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-8402.96,-8402.96
+US,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-7994.46,-7994.46
+US,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-7722.85,-7722.85
+US,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-34967.08,-34967.08
+US,2025-07,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-21955.92,-21955.92
+US,2025-07,6100,Contractors,opex,Contractors,GA,-5979.58,-5979.58
+US,2025-07,6100,Contractors,opex,Contractors,RND,-17492.93,-17492.93
+US,2025-07,6200,Software & Subscriptions,opex,Software,CS,-3150.11,-3150.11
+US,2025-07,6200,Software & Subscriptions,opex,Software,GA,-2445.38,-2445.38
+US,2025-07,6200,Software & Subscriptions,opex,Software,MKT,-2637.76,-2637.76
+US,2025-07,6200,Software & Subscriptions,opex,Software,RND,-8168.85,-8168.85
+US,2025-07,6200,Software & Subscriptions,opex,Software,SAL,-6819.56,-6819.56
+US,2025-07,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-117416.73,-117416.73
+US,2025-07,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-31232.64,-31232.64
+US,2025-07,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3766.65,-3766.65
+US,2025-07,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1772.83,-1772.83
+US,2025-07,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-18507.6,-18507.6
+US,2025-07,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-07,6600,Professional Fees,opex,Professional Fees,GA,-15051.67,-15051.67
+US,2025-07,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,45487.82,45487.82
+DE,2025-08,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,114728.24,129390.50907200002
+DE,2025-08,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,7659.630000000001,8638.530714
+DE,2025-08,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9200.400000000001,-10376.21112
+DE,2025-08,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13260.39,-14955.067841999999
+DE,2025-08,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1617.37,-1824.0698859999998
+DE,2025-08,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2083.33,-2349.579574
+DE,2025-08,6000,Salaries & Wages,opex,Payroll,GA,-11627.16,-13113.111047999999
+DE,2025-08,6000,Salaries & Wages,opex,Payroll,MKT,-6039.23,-6811.043593999999
+DE,2025-08,6000,Salaries & Wages,opex,Payroll,RND,-91450.46,-103137.828788
+DE,2025-08,6000,Salaries & Wages,opex,Payroll,SAL,-25796.72,-29093.540816
+DE,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2652.08,-2991.0158239999996
+DE,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2325.43,-2622.619954
+DE,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1207.85,-1362.2132299999998
+DE,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-18290.09,-20627.563501999997
+DE,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-5159.34,-5818.703652
+DE,2025-08,6100,Contractors,opex,Contractors,GA,-1901.53,-2144.545534
+DE,2025-08,6100,Contractors,opex,Contractors,RND,-5646.799999999999,-6368.461039999999
+DE,2025-08,6200,Software & Subscriptions,opex,Software,CS,-812.27,-916.0781059999999
+DE,2025-08,6200,Software & Subscriptions,opex,Software,GA,-548.8,-618.9366399999999
+DE,2025-08,6200,Software & Subscriptions,opex,Software,MKT,-255.7,-288.37845999999996
+DE,2025-08,6200,Software & Subscriptions,opex,Software,RND,-3464.44,-3907.195432
+DE,2025-08,6200,Software & Subscriptions,opex,Software,SAL,-982.03,-1107.533434
+DE,2025-08,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6629.780000000001,-7477.065884
+DE,2025-08,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2569.33,-2897.690374
+DE,2025-08,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-867.86,-978.7725079999999
+DE,2025-08,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-303.22,-341.971516
+DE,2025-08,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-2862.78,-3228.6432839999998
+DE,2025-08,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-10150.199999999999
+DE,2025-08,6600,Professional Fees,opex,Professional Fees,GA,-5093.04,-5743.930511999999
+DE,2025-08,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,735.35,829.32773
+UK,2025-08,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,213145.08999999997,265706.669194
+UK,2025-08,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,11880.0,14809.607999999998
+UK,2025-08,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-18811.05,-23449.854929999998
+UK,2025-08,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18209.45,-22699.90037
+UK,2025-08,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3183.81,-3968.9375459999997
+UK,2025-08,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-4442.61,-5538.157625999999
+UK,2025-08,6000,Salaries & Wages,opex,Payroll,GA,-12017.73,-14981.302217999999
+UK,2025-08,6000,Salaries & Wages,opex,Payroll,MKT,-17665.32,-22021.587912
+UK,2025-08,6000,Salaries & Wages,opex,Payroll,RND,-81276.85,-101319.72121
+UK,2025-08,6000,Salaries & Wages,opex,Payroll,SAL,-59059.78,-73623.921748
+UK,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2512.9,-3132.58114
+UK,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1658.45,-2067.42377
+UK,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2437.81,-3038.9739459999996
+UK,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-11216.21,-13982.127385999998
+UK,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-8150.25,-10160.101649999999
+UK,2025-08,6100,Contractors,opex,Contractors,GA,-2061.11,-2569.379726
+UK,2025-08,6100,Contractors,opex,Contractors,RND,-5264.24,-6562.401583999999
+UK,2025-08,6200,Software & Subscriptions,opex,Software,CS,-885.59,-1103.976494
+UK,2025-08,6200,Software & Subscriptions,opex,Software,GA,-485.52,-605.2492319999999
+UK,2025-08,6200,Software & Subscriptions,opex,Software,MKT,-699.98,-872.595068
+UK,2025-08,6200,Software & Subscriptions,opex,Software,RND,-2563.33,-3195.447178
+UK,2025-08,6200,Software & Subscriptions,opex,Software,SAL,-1968.33,-2453.7201779999996
+UK,2025-08,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-18088.06,-22548.575596
+UK,2025-08,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4798.55,-5981.872429999999
+UK,2025-08,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-985.55,-1228.5866299999998
+UK,2025-08,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-374.83,-467.26307799999995
+UK,2025-08,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-7172.95,-8941.799469999998
+UK,2025-08,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-14959.199999999999
+UK,2025-08,6600,Professional Fees,opex,Professional Fees,GA,-6239.889999999999,-7778.646873999999
+UK,2025-08,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,896.12,1117.103192
+US,2025-08,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1081277.6400000001,1081277.6400000001
+US,2025-08,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,48219.719999999994,48219.719999999994
+US,2025-08,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-98747.09,-98747.09
+US,2025-08,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-81524.77,-81524.77
+US,2025-08,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-15519.170000000002,-15519.170000000002
+US,2025-08,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-25110.68,-25110.68
+US,2025-08,6000,Salaries & Wages,opex,Payroll,GA,-78848.33,-78848.33
+US,2025-08,6000,Salaries & Wages,opex,Payroll,MKT,-85703.25,-85703.25
+US,2025-08,6000,Salaries & Wages,opex,Payroll,RND,-346774.74,-346774.74
+US,2025-08,6000,Salaries & Wages,opex,Payroll,SAL,-219360.01,-219360.01
+US,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-8152.48,-8152.48
+US,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-7884.83,-7884.83
+US,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8570.32,-8570.32
+US,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-34677.47,-34677.47
+US,2025-08,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-21936.0,-21936.0
+US,2025-08,6100,Contractors,opex,Contractors,GA,-6765.78,-6765.78
+US,2025-08,6100,Contractors,opex,Contractors,RND,-20084.47,-20084.47
+US,2025-08,6200,Software & Subscriptions,opex,Software,CS,-3540.44,-3540.44
+US,2025-08,6200,Software & Subscriptions,opex,Software,GA,-2582.34,-2582.34
+US,2025-08,6200,Software & Subscriptions,opex,Software,MKT,-2695.27,-2695.27
+US,2025-08,6200,Software & Subscriptions,opex,Software,RND,-9003.77,-9003.77
+US,2025-08,6200,Software & Subscriptions,opex,Software,SAL,-6567.18,-6567.18
+US,2025-08,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-122349.89,-122349.89
+US,2025-08,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-33364.29,-33364.29
+US,2025-08,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3339.01,-3339.01
+US,2025-08,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1996.82,-1996.82
+US,2025-08,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-17392.800000000003,-17392.800000000003
+US,2025-08,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-08,6600,Professional Fees,opex,Professional Fees,GA,-11299.779999999999,-11299.779999999999
+US,2025-08,6700,Recruiting,opex,Recruiting,MKT,-4703.87,-4703.87
+US,2025-08,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,43698.2,43698.2
+DE,2025-09,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,112513.06,126374.66899200002
+DE,2025-09,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,7082.32,7954.861824
+DE,2025-09,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9865.369999999999,-11080.783584
+DE,2025-09,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13544.15,-15212.789279999999
+DE,2025-09,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1647.76,-1850.764032
+DE,2025-09,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2017.26,-2265.786432
+DE,2025-09,6000,Salaries & Wages,opex,Payroll,GA,-12059.52,-13545.252864
+DE,2025-09,6000,Salaries & Wages,opex,Payroll,MKT,-6037.53,-6781.353695999999
+DE,2025-09,6000,Salaries & Wages,opex,Payroll,RND,-91506.45,-102780.04464
+DE,2025-09,6000,Salaries & Wages,opex,Payroll,SAL,-32176.39,-36140.521248
+DE,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2708.83,-3042.557856
+DE,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2411.9,-2709.04608
+DE,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1207.51,-1356.275232
+DE,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-18301.29,-20556.008928
+DE,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6435.28,-7228.106495999999
+DE,2025-09,6100,Contractors,opex,Contractors,GA,-2237.15,-2512.76688
+DE,2025-09,6100,Contractors,opex,Contractors,RND,-5153.030000000001,-5787.883296
+DE,2025-09,6200,Software & Subscriptions,opex,Software,CS,-740.21,-831.403872
+DE,2025-09,6200,Software & Subscriptions,opex,Software,GA,-567.52,-637.438464
+DE,2025-09,6200,Software & Subscriptions,opex,Software,MKT,-274.33,-308.127456
+DE,2025-09,6200,Software & Subscriptions,opex,Software,RND,-3502.72,-3934.255104
+DE,2025-09,6200,Software & Subscriptions,opex,Software,SAL,-1185.29,-1331.317728
+DE,2025-09,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6324.35,-7103.50992
+DE,2025-09,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-5857.91,-6579.604512
+DE,2025-09,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-695.83,-781.5562560000001
+DE,2025-09,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-249.74,-280.507968
+DE,2025-09,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3636.81,-4084.864992
+DE,2025-09,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-10108.8
+DE,2025-09,6600,Professional Fees,opex,Professional Fees,GA,-5570.0,-6256.224
+DE,2025-09,6700,Recruiting,opex,Recruiting,SAL,-2864.43,-3217.3277759999996
+DE,2025-09,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-498.12,-559.488384
+UK,2025-09,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,215295.16000000003,264468.574544
+UK,2025-09,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,10300.14,12652.691975999998
+UK,2025-09,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-18753.75,-23037.106499999998
+UK,2025-09,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-22312.6,-27408.797839999996
+UK,2025-09,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2929.01,-3597.995884
+UK,2025-09,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-4268.08,-5242.909471999999
+UK,2025-09,6000,Salaries & Wages,opex,Payroll,GA,-12152.91,-14928.634644
+UK,2025-09,6000,Salaries & Wages,opex,Payroll,MKT,-18016.92,-22131.984527999997
+UK,2025-09,6000,Salaries & Wages,opex,Payroll,RND,-82180.73,-100950.80873199999
+UK,2025-09,6000,Salaries & Wages,opex,Payroll,SAL,-59195.39,-72715.617076
+UK,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3079.14,-3782.415576
+UK,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1677.1,-2060.1496399999996
+UK,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2486.34,-3054.220056
+UK,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-11340.94,-13931.210696
+UK,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-8168.96,-10034.750463999999
+UK,2025-09,6100,Contractors,opex,Contractors,GA,-2859.04,-3512.044736
+UK,2025-09,6100,Contractors,opex,Contractors,RND,-5245.25,-6443.2651
+UK,2025-09,6200,Software & Subscriptions,opex,Software,CS,-1283.88,-1577.1181920000001
+UK,2025-09,6200,Software & Subscriptions,opex,Software,GA,-469.58,-576.8320719999999
+UK,2025-09,6200,Software & Subscriptions,opex,Software,MKT,-705.59,-866.746756
+UK,2025-09,6200,Software & Subscriptions,opex,Software,RND,-2530.13,-3108.011692
+UK,2025-09,6200,Software & Subscriptions,opex,Software,SAL,-2100.88,-2580.720992
+UK,2025-09,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-19550.09,-24015.330556
+UK,2025-09,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-10944.59,-13444.334356
+UK,2025-09,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-945.02,-1160.862568
+UK,2025-09,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-305.39,-375.14107599999994
+UK,2025-09,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-7130.73,-8759.388732
+UK,2025-09,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-14740.8
+UK,2025-09,6600,Professional Fees,opex,Professional Fees,GA,-6173.71,-7583.785364
+UK,2025-09,6700,Recruiting,opex,Recruiting,CS,-2602.52,-3196.935568
+UK,2025-09,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,435.29,534.710236
+US,2025-09,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1059197.5199999996,1059197.5199999996
+US,2025-09,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,60996.58,60996.58
+US,2025-09,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-97994.0,-97994.0
+US,2025-09,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-83260.5,-83260.5
+US,2025-09,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-16822.63,-16822.63
+US,2025-09,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-23227.24,-23227.24
+US,2025-09,6000,Salaries & Wages,opex,Payroll,GA,-89770.78,-89770.78
+US,2025-09,6000,Salaries & Wages,opex,Payroll,MKT,-86666.85,-86666.85
+US,2025-09,6000,Salaries & Wages,opex,Payroll,RND,-365985.69,-365985.69
+US,2025-09,6000,Salaries & Wages,opex,Payroll,SAL,-227294.71,-227294.71
+US,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-8326.05,-8326.05
+US,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-8977.08,-8977.08
+US,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8666.68,-8666.68
+US,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-36598.57,-36598.57
+US,2025-09,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-22729.47,-22729.47
+US,2025-09,6100,Contractors,opex,Contractors,GA,-5392.32,-5392.32
+US,2025-09,6100,Contractors,opex,Contractors,RND,-21654.83,-21654.83
+US,2025-09,6200,Software & Subscriptions,opex,Software,CS,-3344.12,-3344.12
+US,2025-09,6200,Software & Subscriptions,opex,Software,GA,-2685.05,-2685.05
+US,2025-09,6200,Software & Subscriptions,opex,Software,MKT,-2730.76,-2730.76
+US,2025-09,6200,Software & Subscriptions,opex,Software,RND,-8671.779999999999,-8671.779999999999
+US,2025-09,6200,Software & Subscriptions,opex,Software,SAL,-6817.6,-6817.6
+US,2025-09,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-129782.0,-129782.0
+US,2025-09,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-65214.44,-65214.44
+US,2025-09,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3294.55,-3294.55
+US,2025-09,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1803.93,-1803.93
+US,2025-09,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-24282.27,-24282.27
+US,2025-09,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-09,6600,Professional Fees,opex,Professional Fees,GA,-15209.18,-15209.18
+US,2025-09,6700,Recruiting,opex,Recruiting,GA,-3815.98,-3815.98
+US,2025-09,6700,Recruiting,opex,Recruiting,RND,-4510.52,-4510.52
+US,2025-09,6700,Recruiting,opex,Recruiting,SAL,-4027.82,-4027.82
+US,2025-09,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,42053.2,42053.2
+DE,2025-10,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,117116.71,130397.74491399998
+DE,2025-10,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,3190.8900000000003,3552.7369259999996
+DE,2025-10,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-10079.16,-11222.136744
+DE,2025-10,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13696.42,-15249.594028
+DE,2025-10,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1741.07,-1938.507338
+DE,2025-10,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2112.63,-2352.202242
+DE,2025-10,6000,Salaries & Wages,opex,Payroll,GA,-12063.26,-13431.233683999999
+DE,2025-10,6000,Salaries & Wages,opex,Payroll,MKT,-6024.75,-6707.95665
+DE,2025-10,6000,Salaries & Wages,opex,Payroll,RND,-91884.5,-102304.20229999999
+DE,2025-10,6000,Salaries & Wages,opex,Payroll,SAL,-32432.2,-36110.01148
+DE,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2739.28,-3049.9143520000002
+DE,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2412.65,-2686.24451
+DE,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1204.95,-1341.59133
+DE,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-18376.9,-20460.84046
+DE,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6486.44,-7222.002295999999
+DE,2025-10,6100,Contractors,opex,Contractors,GA,-1882.75,-2096.25385
+DE,2025-10,6100,Contractors,opex,Contractors,RND,-5993.65,-6673.3299099999995
+DE,2025-10,6200,Software & Subscriptions,opex,Software,CS,-799.44,-890.096496
+DE,2025-10,6200,Software & Subscriptions,opex,Software,GA,-457.07,-508.90173799999997
+DE,2025-10,6200,Software & Subscriptions,opex,Software,MKT,-258.31,-287.602354
+DE,2025-10,6200,Software & Subscriptions,opex,Software,RND,-3430.89,-3819.9529259999995
+DE,2025-10,6200,Software & Subscriptions,opex,Software,SAL,-1267.61,-1411.3569739999998
+DE,2025-10,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-5681.6,-6325.89344
+DE,2025-10,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2511.82,-2796.6603880000002
+DE,2025-10,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-651.69,-725.591646
+DE,2025-10,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-417.14,-464.443676
+DE,2025-10,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3696.87,-4116.095058
+DE,2025-10,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-10020.599999999999
+DE,2025-10,6600,Professional Fees,opex,Professional Fees,GA,-4844.69,-5394.077845999999
+DE,2025-10,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,2415.25,2689.13935
+UK,2025-10,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,219705.30999999994,267952.59607599996
+UK,2025-10,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,9651.46,11770.920616
+UK,2025-10,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-21707.879999999997,-26474.930448
+UK,2025-10,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-22433.43,-27359.811228000002
+UK,2025-10,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3298.54,-4022.899384
+UK,2025-10,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-4320.85,-5269.70866
+UK,2025-10,6000,Salaries & Wages,opex,Payroll,GA,-11869.48,-14476.017808
+UK,2025-10,6000,Salaries & Wages,opex,Payroll,MKT,-17675.29,-21556.783684
+UK,2025-10,6000,Salaries & Wages,opex,Payroll,RND,-81548.53,-99456.587188
+UK,2025-10,6000,Salaries & Wages,opex,Payroll,SAL,-58854.25,-71778.6433
+UK,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3095.81,-3775.649876
+UK,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1637.99,-1997.692604
+UK,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2439.19,-2974.836124
+UK,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-11253.7,-13725.01252
+UK,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-8121.89,-9905.457044
+UK,2025-10,6100,Contractors,opex,Contractors,GA,-2141.13,-2611.322148
+UK,2025-10,6100,Contractors,opex,Contractors,RND,-4824.35,-5883.777260000001
+UK,2025-10,6200,Software & Subscriptions,opex,Software,CS,-1198.61,-1461.824756
+UK,2025-10,6200,Software & Subscriptions,opex,Software,GA,-503.92,-614.580832
+UK,2025-10,6200,Software & Subscriptions,opex,Software,MKT,-686.55,-837.31638
+UK,2025-10,6200,Software & Subscriptions,opex,Software,RND,-2592.55,-3161.8739800000003
+UK,2025-10,6200,Software & Subscriptions,opex,Software,SAL,-2134.31,-2603.004476
+UK,2025-10,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-18279.27,-22293.397692000002
+UK,2025-10,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-5680.48,-6927.913408
+UK,2025-10,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1130.4,-1378.6358400000001
+UK,2025-10,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-349.72,-426.51851200000004
+UK,2025-10,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6229.85,-7597.9250600000005
+UK,2025-10,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-14635.2
+UK,2025-10,6600,Professional Fees,opex,Professional Fees,GA,-6639.13,-8097.082948
+UK,2025-10,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-174.41,-212.710436
+US,2025-10,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1083970.84,1083970.84
+US,2025-10,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,49330.16,49330.16
+US,2025-10,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-96898.02,-96898.02
+US,2025-10,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-81876.16,-81876.16
+US,2025-10,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-17982.25,-17982.25
+US,2025-10,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-25023.91,-25023.91
+US,2025-10,6000,Salaries & Wages,opex,Payroll,GA,-90356.76,-90356.76
+US,2025-10,6000,Salaries & Wages,opex,Payroll,MKT,-83899.08,-83899.08
+US,2025-10,6000,Salaries & Wages,opex,Payroll,RND,-357885.77,-357885.77
+US,2025-10,6000,Salaries & Wages,opex,Payroll,SAL,-229271.54,-229271.54
+US,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-8187.62,-8187.62
+US,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9035.68,-9035.68
+US,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8389.91,-8389.91
+US,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-35788.58,-35788.58
+US,2025-10,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-22927.15,-22927.15
+US,2025-10,6100,Contractors,opex,Contractors,GA,-6614.49,-6614.49
+US,2025-10,6100,Contractors,opex,Contractors,RND,-20191.84,-20191.84
+US,2025-10,6200,Software & Subscriptions,opex,Software,CS,-3166.73,-3166.73
+US,2025-10,6200,Software & Subscriptions,opex,Software,GA,-3032.57,-3032.57
+US,2025-10,6200,Software & Subscriptions,opex,Software,MKT,-2781.49,-2781.49
+US,2025-10,6200,Software & Subscriptions,opex,Software,RND,-8899.45,-8899.45
+US,2025-10,6200,Software & Subscriptions,opex,Software,SAL,-7651.98,-7651.98
+US,2025-10,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-120490.49,-120490.49
+US,2025-10,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-27005.06,-27005.06
+US,2025-10,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3347.14,-3347.14
+US,2025-10,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-2137.9,-2137.9
+US,2025-10,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-20588.53,-20588.53
+US,2025-10,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-10,6600,Professional Fees,opex,Professional Fees,GA,-13790.06,-13790.06
+US,2025-10,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,40867.86,40867.86
+DE,2025-11,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,118982.18999999999,136151.32001700002
+DE,2025-11,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,5502.01,6295.950043000001
+DE,2025-11,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-9936.27,-11370.073761
+DE,2025-11,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-13519.3,-15470.13499
+DE,2025-11,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1806.07,-2066.6859010000003
+DE,2025-11,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2069.56,-2368.197508
+DE,2025-11,6000,Salaries & Wages,opex,Payroll,GA,-11887.11,-13602.419973000002
+DE,2025-11,6000,Salaries & Wages,opex,Payroll,MKT,-6052.19,-6925.521017
+DE,2025-11,6000,Salaries & Wages,opex,Payroll,RND,-98081.65,-112234.832095
+DE,2025-11,6000,Salaries & Wages,opex,Payroll,SAL,-32869.32,-37612.362876
+DE,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-2703.86,-3094.0269980000003
+DE,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2377.42,-2720.4817060000005
+DE,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1210.44,-1385.1064920000001
+DE,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-19616.33,-22446.966419000004
+DE,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6573.86,-7522.467998
+DE,2025-11,6100,Contractors,opex,Contractors,GA,-2492.81,-2852.522483
+DE,2025-11,6100,Contractors,opex,Contractors,RND,-5681.85,-6501.740955
+DE,2025-11,6200,Software & Subscriptions,opex,Software,CS,-862.74,-987.2333820000001
+DE,2025-11,6200,Software & Subscriptions,opex,Software,GA,-501.12,-573.4316160000001
+DE,2025-11,6200,Software & Subscriptions,opex,Software,MKT,-233.67,-267.388581
+DE,2025-11,6200,Software & Subscriptions,opex,Software,RND,-3568.8,-4083.7778400000007
+DE,2025-11,6200,Software & Subscriptions,opex,Software,SAL,-1207.86,-1382.154198
+DE,2025-11,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6215.219999999999,-7112.0762460000005
+DE,2025-11,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-7602.68,-8699.746724
+DE,2025-11,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-802.53,-918.3350790000001
+DE,2025-11,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-348.15,-398.38804500000003
+DE,2025-11,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-4194.16,-4799.377288000001
+DE,2025-11,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-10298.7
+DE,2025-11,6600,Professional Fees,opex,Professional Fees,GA,-4923.3,-5633.732190000001
+DE,2025-11,6700,Recruiting,opex,Recruiting,RND,-4138.23,-4735.3765889999995
+DE,2025-11,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-1030.59,-1179.304137
+UK,2025-11,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,219525.14,270564.7350500001
+UK,2025-11,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,18039.91,22234.189074999995
+UK,2025-11,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-18833.62,-23212.436649999996
+UK,2025-11,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-22564.92,-27811.263899999994
+UK,2025-11,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3222.45,-3971.6696249999995
+UK,2025-11,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-4301.42,-5301.50015
+UK,2025-11,6000,Salaries & Wages,opex,Payroll,GA,-12045.42,-14845.98015
+UK,2025-11,6000,Salaries & Wages,opex,Payroll,MKT,-17920.75,-22087.324375
+UK,2025-11,6000,Salaries & Wages,opex,Payroll,RND,-82476.93,-101652.81622499999
+UK,2025-11,6000,Salaries & Wages,opex,Payroll,SAL,-58386.78,-71961.70635
+UK,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3113.96,-3837.9557
+UK,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1662.27,-2048.747775
+UK,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2473.06,-3048.04645
+UK,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-11381.82,-14028.093149999999
+UK,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-8057.37,-9930.708525
+UK,2025-11,6100,Contractors,opex,Contractors,GA,-2005.51,-2471.7910749999996
+UK,2025-11,6100,Contractors,opex,Contractors,RND,-5264.610000000001,-6488.631825
+UK,2025-11,6200,Software & Subscriptions,opex,Software,CS,-1256.91,-1549.141575
+UK,2025-11,6200,Software & Subscriptions,opex,Software,GA,-457.3,-563.62225
+UK,2025-11,6200,Software & Subscriptions,opex,Software,MKT,-660.6,-814.1895
+UK,2025-11,6200,Software & Subscriptions,opex,Software,RND,-2595.4,-3198.8305
+UK,2025-11,6200,Software & Subscriptions,opex,Software,SAL,-2296.28,-2830.1651
+UK,2025-11,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-19733.91,-24322.044074999998
+UK,2025-11,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-12763.71,-15731.272574999999
+UK,2025-11,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1497.23,-1845.335975
+UK,2025-11,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-360.71,-444.57507499999997
+UK,2025-11,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-5778.3099999999995,-7121.767075
+UK,2025-11,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-14790.0
+UK,2025-11,6600,Professional Fees,opex,Professional Fees,GA,-5798.29,-7146.392425
+UK,2025-11,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-565.07,-696.4487750000001
+US,2025-11,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1143490.0500000005,1143490.0500000005
+US,2025-11,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,55042.46000000001,55042.46000000001
+US,2025-11,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-102071.05,-102071.05
+US,2025-11,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-90197.95,-90197.95
+US,2025-11,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-15896.06,-15896.06
+US,2025-11,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-25852.17,-25852.17
+US,2025-11,6000,Salaries & Wages,opex,Payroll,GA,-89387.63,-89387.63
+US,2025-11,6000,Salaries & Wages,opex,Payroll,MKT,-85873.77,-85873.77
+US,2025-11,6000,Salaries & Wages,opex,Payroll,RND,-368494.73,-368494.73
+US,2025-11,6000,Salaries & Wages,opex,Payroll,SAL,-230425.85,-230425.85
+US,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-9019.8,-9019.8
+US,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-8938.76,-8938.76
+US,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8587.38,-8587.38
+US,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-36849.47,-36849.47
+US,2025-11,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-23042.58,-23042.58
+US,2025-11,6100,Contractors,opex,Contractors,GA,-7657.18,-7657.18
+US,2025-11,6100,Contractors,opex,Contractors,RND,-18862.55,-18862.55
+US,2025-11,6200,Software & Subscriptions,opex,Software,CS,-3454.73,-3454.73
+US,2025-11,6200,Software & Subscriptions,opex,Software,GA,-2585.19,-2585.19
+US,2025-11,6200,Software & Subscriptions,opex,Software,MKT,-2695.98,-2695.98
+US,2025-11,6200,Software & Subscriptions,opex,Software,RND,-9008.970000000001,-9008.970000000001
+US,2025-11,6200,Software & Subscriptions,opex,Software,SAL,-7053.530000000001,-7053.530000000001
+US,2025-11,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-132905.41999999998,-132905.41999999998
+US,2025-11,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-78308.41,-78308.41
+US,2025-11,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3232.08,-3232.08
+US,2025-11,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-2616.8,-2616.8
+US,2025-11,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-16622.14,-16622.14
+US,2025-11,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-11,6600,Professional Fees,opex,Professional Fees,GA,-16144.170000000002,-16144.170000000002
+US,2025-11,6700,Recruiting,opex,Recruiting,CS,-4040.84,-4040.84
+US,2025-11,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,38857.3,38857.3
+DE,2025-12,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,122236.23000000001,139764.905382
+DE,2025-12,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,5778.07,6606.645238
+DE,2025-12,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-11636.54,-13305.219836
+DE,2025-12,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-17936.97,-20509.131498000002
+DE,2025-12,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1897.18,-2169.235612
+DE,2025-12,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2223.41,-2542.2469939999996
+DE,2025-12,6000,Salaries & Wages,opex,Payroll,GA,-12042.51,-13769.405934
+DE,2025-12,6000,Salaries & Wages,opex,Payroll,MKT,-5940.7,-6792.59638
+DE,2025-12,6000,Salaries & Wages,opex,Payroll,RND,-97681.0,-111688.45539999999
+DE,2025-12,6000,Salaries & Wages,opex,Payroll,SAL,-32574.39,-37245.557526
+DE,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3587.39,-4101.821726
+DE,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2408.5,-2753.8789
+DE,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1188.14,-1358.519276
+DE,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-19536.2,-22337.69108
+DE,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6514.88,-7449.113792
+DE,2025-12,6100,Contractors,opex,Contractors,GA,-2002.76,-2289.9557839999998
+DE,2025-12,6100,Contractors,opex,Contractors,RND,-6106.51,-6982.183534
+DE,2025-12,6200,Software & Subscriptions,opex,Software,CS,-1050.05,-1200.62717
+DE,2025-12,6200,Software & Subscriptions,opex,Software,GA,-529.4,-605.3159599999999
+DE,2025-12,6200,Software & Subscriptions,opex,Software,MKT,-262.92,-300.622728
+DE,2025-12,6200,Software & Subscriptions,opex,Software,RND,-3537.45,-4044.7203299999996
+DE,2025-12,6200,Software & Subscriptions,opex,Software,SAL,-1383.5,-1581.8939
+DE,2025-12,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-7075.87,-8090.549757999999
+DE,2025-12,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2211.46,-2528.583364
+DE,2025-12,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1298.08,-1484.2246719999998
+DE,2025-12,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-345.61,-395.170474
+DE,2025-12,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3803.84,-4349.310656
+DE,2025-12,6500,Rent & Facilities,opex,Facilities,GA,-9000.0,-10290.599999999999
+DE,2025-12,6600,Professional Fees,opex,Professional Fees,GA,-4731.16,-5409.608343999999
+DE,2025-12,6700,Recruiting,opex,Recruiting,CS,-2542.77,-2907.403218
+DE,2025-12,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-899.15,-1028.08811
+UK,2025-12,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,233613.6,293488.76567999995
+UK,2025-12,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,11309.189999999999,14207.735396999999
+UK,2025-12,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-21019.05,-26406.232515
+UK,2025-12,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-22996.95,-28891.068285
+UK,2025-12,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3309.87,-4158.189681
+UK,2025-12,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-4654.51,-5847.460913
+UK,2025-12,6000,Salaries & Wages,opex,Payroll,GA,-12111.77,-15216.016651
+UK,2025-12,6000,Salaries & Wages,opex,Payroll,MKT,-17994.94,-22607.043122
+UK,2025-12,6000,Salaries & Wages,opex,Payroll,RND,-82449.42,-103581.20634599999
+UK,2025-12,6000,Salaries & Wages,opex,Payroll,SAL,-58425.8,-73400.33254
+UK,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3173.58,-3986.968554
+UK,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1671.42,-2099.804946
+UK,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2483.3,-3119.7697900000003
+UK,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-11378.02,-14294.206526
+UK,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-8062.76,-10129.245388
+UK,2025-12,6100,Contractors,opex,Contractors,GA,-2677.79,-3364.1075769999998
+UK,2025-12,6100,Contractors,opex,Contractors,RND,-4445.62,-5585.032405999999
+UK,2025-12,6200,Software & Subscriptions,opex,Software,CS,-1131.67,-1421.7170210000002
+UK,2025-12,6200,Software & Subscriptions,opex,Software,GA,-476.96,-599.204848
+UK,2025-12,6200,Software & Subscriptions,opex,Software,MKT,-694.94,-873.053122
+UK,2025-12,6200,Software & Subscriptions,opex,Software,RND,-2621.07,-3292.850241
+UK,2025-12,6200,Software & Subscriptions,opex,Software,SAL,-2031.18,-2551.771434
+UK,2025-12,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-21432.42,-26925.549246000002
+UK,2025-12,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4565.34,-5735.436642
+UK,2025-12,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1202.7,-1510.95201
+UK,2025-12,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-398.79,-500.999877
+UK,2025-12,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6829.0,-8579.2727
+UK,2025-12,6500,Rent & Facilities,opex,Facilities,GA,-12000.0,-15075.599999999999
+UK,2025-12,6600,Professional Fees,opex,Professional Fees,GA,-6934.42,-8711.711846
+UK,2025-12,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-1803.28,-2265.4606639999997
+US,2025-12,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1151935.63,1151935.63
+US,2025-12,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,39261.39,39261.39
+US,2025-12,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-105845.73000000001,-105845.73000000001
+US,2025-12,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-90934.11,-90934.11
+US,2025-12,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-16833.73,-16833.73
+US,2025-12,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-27103.79,-27103.79
+US,2025-12,6000,Salaries & Wages,opex,Payroll,GA,-89225.01,-89225.01
+US,2025-12,6000,Salaries & Wages,opex,Payroll,MKT,-85773.92,-85773.92
+US,2025-12,6000,Salaries & Wages,opex,Payroll,RND,-386743.88,-386743.88
+US,2025-12,6000,Salaries & Wages,opex,Payroll,SAL,-246816.25,-246816.25
+US,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-9093.41,-9093.41
+US,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-8922.5,-8922.5
+US,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8577.39,-8577.39
+US,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-38674.39,-38674.39
+US,2025-12,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-24681.62,-24681.62
+US,2025-12,6100,Contractors,opex,Contractors,GA,-5622.42,-5622.42
+US,2025-12,6100,Contractors,opex,Contractors,RND,-26073.489999999998,-26073.489999999998
+US,2025-12,6200,Software & Subscriptions,opex,Software,CS,-3769.08,-3769.08
+US,2025-12,6200,Software & Subscriptions,opex,Software,GA,-2789.29,-2789.29
+US,2025-12,6200,Software & Subscriptions,opex,Software,MKT,-2949.26,-2949.26
+US,2025-12,6200,Software & Subscriptions,opex,Software,RND,-8008.639999999999,-8008.639999999999
+US,2025-12,6200,Software & Subscriptions,opex,Software,SAL,-7798.73,-7798.73
+US,2025-12,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-122707.23999999999,-122707.23999999999
+US,2025-12,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-28145.72,-28145.72
+US,2025-12,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3339.44,-3339.44
+US,2025-12,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1814.94,-1814.94
+US,2025-12,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-25926.67,-25926.67
+US,2025-12,6500,Rent & Facilities,opex,Facilities,GA,-40000.0,-40000.0
+US,2025-12,6600,Professional Fees,opex,Professional Fees,GA,-14843.89,-14843.89
+US,2025-12,6700,Recruiting,opex,Recruiting,RND,-5214.53,-5214.53
+US,2025-12,6700,Recruiting,opex,Recruiting,SAL,-4029.31,-4029.31
+US,2025-12,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,36621.25,36621.25
+DE,2026-01,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,128518.11,147410.27217
+DE,2026-01,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,6319.39,7248.34033
+DE,2026-01,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-11562.89,-13262.63483
+DE,2026-01,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-19052.52,-21853.24044
+DE,2026-01,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1946.13,-2232.21111
+DE,2026-01,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2258.03,-2589.96041
+DE,2026-01,6000,Salaries & Wages,opex,Payroll,GA,-12719.04,-14588.73888
+DE,2026-01,6000,Salaries & Wages,opex,Payroll,MKT,-6259.06,-7179.141820000001
+DE,2026-01,6000,Salaries & Wages,opex,Payroll,RND,-102113.4,-117124.0698
+DE,2026-01,6000,Salaries & Wages,opex,Payroll,SAL,-34013.14,-39013.07158
+DE,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3810.5,-4370.6435
+DE,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2543.81,-2917.75007
+DE,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1251.81,-1435.82607
+DE,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-20422.68,-23424.81396
+DE,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6802.63,-7802.61661
+DE,2026-01,6100,Contractors,opex,Contractors,GA,-1988.7,-2281.0389
+DE,2026-01,6100,Contractors,opex,Contractors,RND,-6006.13,-6889.03111
+DE,2026-01,6200,Software & Subscriptions,opex,Software,CS,-1112.69,-1276.2554300000002
+DE,2026-01,6200,Software & Subscriptions,opex,Software,GA,-499.27,-572.66269
+DE,2026-01,6200,Software & Subscriptions,opex,Software,MKT,-247.73,-284.14630999999997
+DE,2026-01,6200,Software & Subscriptions,opex,Software,RND,-3575.41,-4100.99527
+DE,2026-01,6200,Software & Subscriptions,opex,Software,SAL,-1276.82,-1464.51254
+DE,2026-01,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-5889.98,-6755.807059999999
+DE,2026-01,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2078.96,-2384.56712
+DE,2026-01,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-988.03,-1133.27041
+DE,2026-01,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-494.92,-567.6732400000001
+DE,2026-01,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-4319.25,-4954.17975
+DE,2026-01,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-10839.150000000001
+DE,2026-01,6600,Professional Fees,opex,Professional Fees,GA,-5305.6,-6085.5232
+DE,2026-01,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-1211.11,-1389.1431699999998
+UK,2026-01,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,240764.52000000002,296958.95896799996
+UK,2026-01,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,10121.1,12483.36474
+UK,2026-01,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-22047.51,-27193.398834
+UK,2026-01,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23246.8,-28672.60312
+UK,2026-01,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3620.56,-4465.598704
+UK,2026-01,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-4850.49,-5982.594366
+UK,2026-01,6000,Salaries & Wages,opex,Payroll,GA,-12625.46,-15572.242364
+UK,2026-01,6000,Salaries & Wages,opex,Payroll,MKT,-18761.26,-23140.138084
+UK,2026-01,6000,Salaries & Wages,opex,Payroll,RND,-92920.5,-114608.1447
+UK,2026-01,6000,Salaries & Wages,opex,Payroll,SAL,-68077.08,-83966.270472
+UK,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3208.06,-3956.8212040000003
+UK,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1742.31,-2148.965154
+UK,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2589.05,-3193.3342700000003
+UK,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-12823.03,-15815.925202000002
+UK,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-9394.64,-11587.348976
+UK,2026-01,6100,Contractors,opex,Contractors,GA,-2318.0,-2859.0212
+UK,2026-01,6100,Contractors,opex,Contractors,RND,-5298.200000000001,-6534.7998800000005
+UK,2026-01,6200,Software & Subscriptions,opex,Software,CS,-1220.39,-1505.2290260000002
+UK,2026-01,6200,Software & Subscriptions,opex,Software,GA,-474.94,-585.7909960000001
+UK,2026-01,6200,Software & Subscriptions,opex,Software,MKT,-741.84,-914.9854560000001
+UK,2026-01,6200,Software & Subscriptions,opex,Software,RND,-2739.06,-3378.356604
+UK,2026-01,6200,Software & Subscriptions,opex,Software,SAL,-2428.53,-2995.348902
+UK,2026-01,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-19470.440000000002,-24014.840696
+UK,2026-01,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4542.37,-5602.559158
+UK,2026-01,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1397.39,-1723.5408260000002
+UK,2026-01,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-363.32,-448.118888
+UK,2026-01,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-7268.4400000000005,-8964.893896
+UK,2026-01,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-15540.84
+UK,2026-01,6600,Professional Fees,opex,Professional Fees,GA,-5145.98,-6347.051732
+UK,2026-01,6700,Recruiting,opex,Recruiting,RND,-3002.24,-3702.9628159999997
+UK,2026-01,6700,Recruiting,opex,Recruiting,SAL,-3453.83,-4259.953922
+UK,2026-01,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-1115.11,-1375.3766739999999
+US,2026-01,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1171002.2300000002,1171002.2300000002
+US,2026-01,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,70923.47,70923.47
+US,2026-01,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-109460.76,-109460.76
+US,2026-01,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-93800.12,-93800.12
+US,2026-01,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-17373.71,-17373.71
+US,2026-01,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-26926.73,-26926.73
+US,2026-01,6000,Salaries & Wages,opex,Payroll,GA,-94927.98,-94927.98
+US,2026-01,6000,Salaries & Wages,opex,Payroll,MKT,-89731.35,-89731.35
+US,2026-01,6000,Salaries & Wages,opex,Payroll,RND,-392772.12,-392772.12
+US,2026-01,6000,Salaries & Wages,opex,Payroll,SAL,-249044.98,-249044.98
+US,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-9380.01,-9380.01
+US,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9492.8,-9492.8
+US,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8973.14,-8973.14
+US,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-39277.21,-39277.21
+US,2026-01,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-24904.5,-24904.5
+US,2026-01,6100,Contractors,opex,Contractors,GA,-6074.0,-6074.0
+US,2026-01,6100,Contractors,opex,Contractors,RND,-23989.08,-23989.08
+US,2026-01,6200,Software & Subscriptions,opex,Software,CS,-3515.01,-3515.01
+US,2026-01,6200,Software & Subscriptions,opex,Software,GA,-2900.33,-2900.33
+US,2026-01,6200,Software & Subscriptions,opex,Software,MKT,-2589.84,-2589.84
+US,2026-01,6200,Software & Subscriptions,opex,Software,RND,-9351.02,-9351.02
+US,2026-01,6200,Software & Subscriptions,opex,Software,SAL,-7475.77,-7475.77
+US,2026-01,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-116145.04,-116145.04
+US,2026-01,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-24249.47,-24249.47
+US,2026-01,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-4898.3,-4898.3
+US,2026-01,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1939.31,-1939.31
+US,2026-01,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-18065.31,-18065.31
+US,2026-01,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-01,6600,Professional Fees,opex,Professional Fees,GA,-14854.66,-14854.66
+US,2026-01,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,37335.18,37335.18
+DE,2026-02,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,131376.01,149729.238597
+DE,2026-02,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,5431.24,6189.984228
+DE,2026-02,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-12244.92,-13955.535323999999
+DE,2026-02,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18757.48,-21377.899955999997
+DE,2026-02,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-1730.63,-1972.399011
+DE,2026-02,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2433.34,-2773.277598
+DE,2026-02,6000,Salaries & Wages,opex,Payroll,GA,-12625.61,-14389.407717
+DE,2026-02,6000,Salaries & Wages,opex,Payroll,MKT,-6257.72,-7131.923484
+DE,2026-02,6000,Salaries & Wages,opex,Payroll,RND,-103486.38,-117943.427286
+DE,2026-02,6000,Salaries & Wages,opex,Payroll,SAL,-34314.76,-39108.531972
+DE,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3751.5,-4275.58455
+DE,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2525.12,-2877.8792639999997
+DE,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1251.54,-1426.380138
+DE,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-20697.28,-23588.690015999997
+DE,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6862.95,-7821.704115
+DE,2026-02,6100,Contractors,opex,Contractors,GA,-1587.89,-1809.718233
+DE,2026-02,6100,Contractors,opex,Contractors,RND,-6099.62,-6951.736913999999
+DE,2026-02,6200,Software & Subscriptions,opex,Software,CS,-988.72,-1126.844184
+DE,2026-02,6200,Software & Subscriptions,opex,Software,GA,-510.1,-581.36097
+DE,2026-02,6200,Software & Subscriptions,opex,Software,MKT,-257.54,-293.518338
+DE,2026-02,6200,Software & Subscriptions,opex,Software,RND,-3734.21,-4255.879137
+DE,2026-02,6200,Software & Subscriptions,opex,Software,SAL,-1279.33,-1458.052401
+DE,2026-02,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6517.95,-7428.5076149999995
+DE,2026-02,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2398.35,-2733.3994949999997
+DE,2026-02,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1415.29,-1613.006013
+DE,2026-02,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-337.6,-384.76272
+DE,2026-02,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-4042.66,-4607.419602
+DE,2026-02,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-10770.164999999999
+DE,2026-02,6600,Professional Fees,opex,Professional Fees,GA,-5089.02,-5799.956093999999
+DE,2026-02,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-694.83,-791.897751
+UK,2026-02,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,248749.06999999998,303424.115586
+UK,2026-02,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,9460.1,11539.42998
+UK,2026-02,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-22411.8,-27337.91364
+UK,2026-02,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23678.34,-28882.839132
+UK,2026-02,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3838.87,-4682.653626
+UK,2026-02,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-5016.94,-6119.663412
+UK,2026-02,6000,Salaries & Wages,opex,Payroll,GA,-12586.46,-15352.963908
+UK,2026-02,6000,Salaries & Wages,opex,Payroll,MKT,-18628.05,-22722.49539
+UK,2026-02,6000,Salaries & Wages,opex,Payroll,RND,-91314.11,-111384.951378
+UK,2026-02,6000,Salaries & Wages,opex,Payroll,SAL,-68237.17,-83235.699966
+UK,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3267.61,-3985.8306780000003
+UK,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1736.93,-2118.707214
+UK,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2570.67,-3135.703266
+UK,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-12601.35,-15371.12673
+UK,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-9416.73,-11486.527253999999
+UK,2026-02,6100,Contractors,opex,Contractors,GA,-2455.8,-2995.58484
+UK,2026-02,6100,Contractors,opex,Contractors,RND,-5995.6900000000005,-7313.542662
+UK,2026-02,6200,Software & Subscriptions,opex,Software,CS,-1225.23,-1494.535554
+UK,2026-02,6200,Software & Subscriptions,opex,Software,GA,-489.09,-596.5919819999999
+UK,2026-02,6200,Software & Subscriptions,opex,Software,MKT,-760.86,-928.097028
+UK,2026-02,6200,Software & Subscriptions,opex,Software,RND,-2784.59,-3396.642882
+UK,2026-02,6200,Software & Subscriptions,opex,Software,SAL,-2568.93,-3133.580814
+UK,2026-02,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-20266.66,-24721.271867999996
+UK,2026-02,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4088.78,-4987.4938440000005
+UK,2026-02,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1081.73,-1319.494254
+UK,2026-02,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-339.01,-413.52439799999996
+UK,2026-02,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-7581.42,-9247.816115999998
+UK,2026-02,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-15369.48
+UK,2026-02,6600,Professional Fees,opex,Professional Fees,GA,-6776.469999999999,-8265.938106
+UK,2026-02,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,452.77,552.2888459999999
+US,2026-02,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1270196.92,1270196.92
+US,2026-02,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,55243.56,55243.56
+US,2026-02,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-108994.38,-108994.38
+US,2026-02,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-94347.45,-94347.45
+US,2026-02,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-17845.16,-17845.16
+US,2026-02,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-27583.9,-27583.9
+US,2026-02,6000,Salaries & Wages,opex,Payroll,GA,-94052.57,-94052.57
+US,2026-02,6000,Salaries & Wages,opex,Payroll,MKT,-89143.62,-89143.62
+US,2026-02,6000,Salaries & Wages,opex,Payroll,RND,-385624.9,-385624.9
+US,2026-02,6000,Salaries & Wages,opex,Payroll,SAL,-251553.7,-251553.7
+US,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-9434.74,-9434.74
+US,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9405.26,-9405.26
+US,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8914.36,-8914.36
+US,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-38562.49,-38562.49
+US,2026-02,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-25155.37,-25155.37
+US,2026-02,6100,Contractors,opex,Contractors,GA,-6458.469999999999,-6458.469999999999
+US,2026-02,6100,Contractors,opex,Contractors,RND,-22303.559999999998,-22303.559999999998
+US,2026-02,6200,Software & Subscriptions,opex,Software,CS,-3622.97,-3622.97
+US,2026-02,6200,Software & Subscriptions,opex,Software,GA,-2686.58,-2686.58
+US,2026-02,6200,Software & Subscriptions,opex,Software,MKT,-2739.81,-2739.81
+US,2026-02,6200,Software & Subscriptions,opex,Software,RND,-9368.0,-9368.0
+US,2026-02,6200,Software & Subscriptions,opex,Software,SAL,-6719.87,-6719.87
+US,2026-02,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-131160.32,-131160.32
+US,2026-02,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-27122.09,-27122.09
+US,2026-02,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-4558.37,-4558.37
+US,2026-02,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-2308.18,-2308.18
+US,2026-02,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-22885.129999999997,-22885.129999999997
+US,2026-02,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-02,6600,Professional Fees,opex,Professional Fees,GA,-16483.16,-16483.16
+US,2026-02,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,32729.19,32729.19
+DE,2026-03,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,135149.02,154218.54672200003
+DE,2026-03,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,5686.96,6489.390056
+DE,2026-03,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-11736.8,-13392.86248
+DE,2026-03,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18962.45,-21638.051695000002
+DE,2026-03,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2047.61,-2336.527771
+DE,2026-03,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2376.67,-2712.018137
+DE,2026-03,6000,Salaries & Wages,opex,Payroll,GA,-12431.11,-14185.139621
+DE,2026-03,6000,Salaries & Wages,opex,Payroll,MKT,-6228.97,-7107.877667000001
+DE,2026-03,6000,Salaries & Wages,opex,Payroll,RND,-102279.35,-116710.966285
+DE,2026-03,6000,Salaries & Wages,opex,Payroll,SAL,-33820.9,-38593.02899
+DE,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3792.49,-4327.610339
+DE,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2486.22,-2837.0256419999996
+DE,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1245.79,-1421.5709689999999
+DE,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-20455.87,-23342.193257
+DE,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6764.18,-7718.6057980000005
+DE,2026-03,6100,Contractors,opex,Contractors,GA,-1562.83,-1783.345313
+DE,2026-03,6100,Contractors,opex,Contractors,RND,-6818.09,-7780.122498999999
+DE,2026-03,6200,Software & Subscriptions,opex,Software,CS,-1064.17,-1214.3243870000001
+DE,2026-03,6200,Software & Subscriptions,opex,Software,GA,-546.59,-623.713849
+DE,2026-03,6200,Software & Subscriptions,opex,Software,MKT,-260.55,-297.313605
+DE,2026-03,6200,Software & Subscriptions,opex,Software,RND,-3377.14,-3853.654454
+DE,2026-03,6200,Software & Subscriptions,opex,Software,SAL,-1256.41,-1433.6894510000002
+DE,2026-03,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6683.62,-7626.678782
+DE,2026-03,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-6532.0,-7453.6651999999995
+DE,2026-03,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1038.03,-1184.496033
+DE,2026-03,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-371.73,-424.181103
+DE,2026-03,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3660.25,-4176.711275
+DE,2026-03,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-10783.395
+DE,2026-03,6600,Professional Fees,opex,Professional Fees,GA,-19948.510000000002,-22763.244761
+DE,2026-03,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-1885.3,-2151.31583
+UK,2026-03,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,247851.61000000002,297372.361678
+UK,2026-03,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,11879.15,14252.604169999999
+UK,2026-03,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-23388.489999999998,-28061.510302
+UK,2026-03,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23318.52,-27977.560296
+UK,2026-03,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3706.09,-4446.566782
+UK,2026-03,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-5006.95,-6007.33861
+UK,2026-03,6000,Salaries & Wages,opex,Payroll,GA,-12483.59,-14977.811282
+UK,2026-03,6000,Salaries & Wages,opex,Payroll,MKT,-18492.71,-22187.553458
+UK,2026-03,6000,Salaries & Wages,opex,Payroll,RND,-93304.61,-111946.871078
+UK,2026-03,6000,Salaries & Wages,opex,Payroll,SAL,-67302.41,-80749.431518
+UK,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3217.96,-3860.908408
+UK,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1722.74,-2066.943452
+UK,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2551.99,-3061.8776019999996
+UK,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-12876.04,-15448.672792000001
+UK,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-9287.73,-11143.418453999999
+UK,2026-03,6100,Contractors,opex,Contractors,GA,-2534.42,-3040.797116
+UK,2026-03,6100,Contractors,opex,Contractors,RND,-5795.219999999999,-6953.104955999999
+UK,2026-03,6200,Software & Subscriptions,opex,Software,CS,-1147.25,-1376.47055
+UK,2026-03,6200,Software & Subscriptions,opex,Software,GA,-465.09,-558.0149819999999
+UK,2026-03,6200,Software & Subscriptions,opex,Software,MKT,-715.73,-858.732854
+UK,2026-03,6200,Software & Subscriptions,opex,Software,RND,-2956.4,-3547.08872
+UK,2026-03,6200,Software & Subscriptions,opex,Software,SAL,-2450.37,-2939.9539259999997
+UK,2026-03,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-22097.22,-26512.244555999998
+UK,2026-03,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-10450.36,-12538.341927999998
+UK,2026-03,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1247.36,-1496.582528
+UK,2026-03,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-357.66,-429.120468
+UK,2026-03,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6845.38,-8213.086924
+UK,2026-03,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-15117.48
+UK,2026-03,6600,Professional Fees,opex,Professional Fees,GA,-24823.83,-29783.631234
+UK,2026-03,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-1767.61,-2120.7784779999997
+US,2026-03,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1268993.7899999998,1268993.7899999998
+US,2026-03,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,33655.75,33655.75
+US,2026-03,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-108935.4,-108935.4
+US,2026-03,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-93960.64,-93960.64
+US,2026-03,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-19507.93,-19507.93
+US,2026-03,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-25854.82,-25854.82
+US,2026-03,6000,Salaries & Wages,opex,Payroll,GA,-92871.71,-92871.71
+US,2026-03,6000,Salaries & Wages,opex,Payroll,MKT,-87633.73,-87633.73
+US,2026-03,6000,Salaries & Wages,opex,Payroll,RND,-403635.07,-403635.07
+US,2026-03,6000,Salaries & Wages,opex,Payroll,SAL,-257695.76,-257695.76
+US,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-9396.06,-9396.06
+US,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9287.17,-9287.17
+US,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8763.37,-8763.37
+US,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-40363.51,-40363.51
+US,2026-03,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-25769.58,-25769.58
+US,2026-03,6100,Contractors,opex,Contractors,GA,-7088.07,-7088.07
+US,2026-03,6100,Contractors,opex,Contractors,RND,-27854.260000000002,-27854.260000000002
+US,2026-03,6200,Software & Subscriptions,opex,Software,CS,-3910.79,-3910.79
+US,2026-03,6200,Software & Subscriptions,opex,Software,GA,-2801.07,-2801.07
+US,2026-03,6200,Software & Subscriptions,opex,Software,MKT,-2871.35,-2871.35
+US,2026-03,6200,Software & Subscriptions,opex,Software,RND,-9570.16,-9570.16
+US,2026-03,6200,Software & Subscriptions,opex,Software,SAL,-8483.26,-8483.26
+US,2026-03,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-138145.66,-138145.66
+US,2026-03,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-76186.79999999999,-76186.79999999999
+US,2026-03,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-4223.72,-4223.72
+US,2026-03,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-2210.89,-2210.89
+US,2026-03,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-20087.18,-20087.18
+US,2026-03,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-03,6600,Professional Fees,opex,Professional Fees,GA,-69384.02,-69384.02
+US,2026-03,6700,Recruiting,opex,Recruiting,RND,-3540.2,-3540.2
+US,2026-03,6700,Recruiting,opex,Recruiting,SAL,-4062.76,-4062.76
+US,2026-03,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,32701.11,32701.11
+DE,2026-04,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,134531.89,155855.194565
+DE,2026-04,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,6096.919999999999,7063.28182
+DE,2026-04,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-11749.17,-13611.413445000002
+DE,2026-04,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18639.03,-21593.316255
+DE,2026-04,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2212.62,-2563.32027
+DE,2026-04,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2323.24,-2691.47354
+DE,2026-04,6000,Salaries & Wages,opex,Payroll,GA,-12397.85,-14362.909225000001
+DE,2026-04,6000,Salaries & Wages,opex,Payroll,MKT,-6266.27,-7259.473795000001
+DE,2026-04,6000,Salaries & Wages,opex,Payroll,RND,-102147.45,-118337.820825
+DE,2026-04,6000,Salaries & Wages,opex,Payroll,SAL,-33753.18,-39103.059030000004
+DE,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3727.81,-4318.667885
+DE,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2479.57,-2872.5818450000006
+DE,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1253.25,-1451.8901250000001
+DE,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-20429.49,-23667.564165000003
+DE,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6750.64,-7820.616440000001
+DE,2026-04,6100,Contractors,opex,Contractors,GA,-2444.27,-2831.686795
+DE,2026-04,6100,Contractors,opex,Contractors,RND,-5199.51,-6023.632335
+DE,2026-04,6200,Software & Subscriptions,opex,Software,CS,-1078.92,-1249.92882
+DE,2026-04,6200,Software & Subscriptions,opex,Software,GA,-546.09,-632.6452650000001
+DE,2026-04,6200,Software & Subscriptions,opex,Software,MKT,-260.0,-301.21000000000004
+DE,2026-04,6200,Software & Subscriptions,opex,Software,RND,-3642.82,-4220.20697
+DE,2026-04,6200,Software & Subscriptions,opex,Software,SAL,-1208.6,-1400.1631
+DE,2026-04,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-6742.51,-7811.197835000001
+DE,2026-04,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2627.22,-3043.63437
+DE,2026-04,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1012.62,-1173.1202700000001
+DE,2026-04,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-454.03,-525.993755
+DE,2026-04,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3344.11,-3874.151435
+DE,2026-04,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-10947.825
+DE,2026-04,6600,Professional Fees,opex,Professional Fees,GA,-20120.73,-23309.865705
+DE,2026-04,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-48.87,-56.615895
+UK,2026-04,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,254293.87999999995,296888.1049
+UK,2026-04,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,4350.59,5079.313825
+UK,2026-04,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-24006.46,-28027.542049999996
+UK,2026-04,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23321.23,-27227.536024999998
+UK,2026-04,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3941.92,-4602.1916
+UK,2026-04,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-5107.25,-5962.714375
+UK,2026-04,6000,Salaries & Wages,opex,Payroll,GA,-12257.34,-14310.444449999999
+UK,2026-04,6000,Salaries & Wages,opex,Payroll,MKT,-18740.44,-21879.463699999997
+UK,2026-04,6000,Salaries & Wages,opex,Payroll,RND,-93727.24,-109426.5527
+UK,2026-04,6000,Salaries & Wages,opex,Payroll,SAL,-66696.17,-77867.778475
+UK,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3218.33,-3757.400275
+UK,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1691.51,-1974.837925
+UK,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-2586.18,-3019.3651499999996
+UK,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-12934.36,-15100.865300000001
+UK,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-9204.07,-10745.751725
+UK,2026-04,6100,Contractors,opex,Contractors,GA,-2462.32,-2874.7586
+UK,2026-04,6100,Contractors,opex,Contractors,RND,-6012.6,-7019.710499999999
+UK,2026-04,6200,Software & Subscriptions,opex,Software,CS,-1249.98,-1459.35165
+UK,2026-04,6200,Software & Subscriptions,opex,Software,GA,-494.89,-577.784075
+UK,2026-04,6200,Software & Subscriptions,opex,Software,MKT,-630.05,-735.5833749999999
+UK,2026-04,6200,Software & Subscriptions,opex,Software,RND,-2827.82,-3301.47985
+UK,2026-04,6200,Software & Subscriptions,opex,Software,SAL,-2259.82,-2638.3398500000003
+UK,2026-04,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-20874.82,-24371.35235
+UK,2026-04,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4384.73,-5119.172274999999
+UK,2026-04,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-835.86,-975.86655
+UK,2026-04,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-332.29,-387.948575
+UK,2026-04,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6779.860000000001,-7915.4865500000005
+UK,2026-04,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-14710.5
+UK,2026-04,6600,Professional Fees,opex,Professional Fees,GA,-21245.22,-24803.794350000004
+UK,2026-04,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-343.63,-401.188025
+US,2026-04,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1304402.4100000004,1304402.4100000004
+US,2026-04,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,86166.83,86166.83
+US,2026-04,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-113328.79000000001,-113328.79000000001
+US,2026-04,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-102245.58,-102245.58
+US,2026-04,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-20739.22,-20739.22
+US,2026-04,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-29655.71,-29655.71
+US,2026-04,6000,Salaries & Wages,opex,Payroll,GA,-93161.71,-93161.71
+US,2026-04,6000,Salaries & Wages,opex,Payroll,MKT,-88213.17,-88213.17
+US,2026-04,6000,Salaries & Wages,opex,Payroll,RND,-401240.55,-401240.55
+US,2026-04,6000,Salaries & Wages,opex,Payroll,SAL,-259305.57,-259305.57
+US,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-10224.56,-10224.56
+US,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9316.17,-9316.17
+US,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8821.32,-8821.32
+US,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-40124.06,-40124.06
+US,2026-04,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-25930.56,-25930.56
+US,2026-04,6100,Contractors,opex,Contractors,GA,-5534.76,-5534.76
+US,2026-04,6100,Contractors,opex,Contractors,RND,-23150.67,-23150.67
+US,2026-04,6200,Software & Subscriptions,opex,Software,CS,-3692.43,-3692.43
+US,2026-04,6200,Software & Subscriptions,opex,Software,GA,-2673.95,-2673.95
+US,2026-04,6200,Software & Subscriptions,opex,Software,MKT,-2901.64,-2901.64
+US,2026-04,6200,Software & Subscriptions,opex,Software,RND,-8807.51,-8807.51
+US,2026-04,6200,Software & Subscriptions,opex,Software,SAL,-7471.11,-7471.11
+US,2026-04,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-127436.4,-127436.4
+US,2026-04,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-27075.82,-27075.82
+US,2026-04,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-4145.52,-4145.52
+US,2026-04,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1876.61,-1876.61
+US,2026-04,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-25912.67,-25912.67
+US,2026-04,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-04,6600,Professional Fees,opex,Professional Fees,GA,-63537.15,-63537.15
+US,2026-04,6700,Recruiting,opex,Recruiting,CS,-4174.96,-4174.96
+US,2026-04,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,32812.48,32812.48
+DE,2026-05,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,141153.48,164359.112112
+DE,2026-05,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,10498.300000000001,12224.220520000003
+DE,2026-05,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-12907.58,-15029.586152000002
+DE,2026-05,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18811.94,-21904.622936
+DE,2026-05,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2213.65,-2577.5740600000004
+DE,2026-05,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2606.37,-3034.8572280000003
+DE,2026-05,6000,Salaries & Wages,opex,Payroll,GA,-12462.28,-14511.078832000003
+DE,2026-05,6000,Salaries & Wages,opex,Payroll,MKT,-6240.09,-7265.960796000001
+DE,2026-05,6000,Salaries & Wages,opex,Payroll,RND,-109375.02,-127356.27328800001
+DE,2026-05,6000,Salaries & Wages,opex,Payroll,SAL,-34125.78,-39736.058232
+DE,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3762.39,-4380.926916
+DE,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2492.46,-2902.220424
+DE,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1248.02,-1453.194488
+DE,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-21875.0,-25471.250000000004
+DE,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6825.16,-7947.2163040000005
+DE,2026-05,6100,Contractors,opex,Contractors,GA,-1954.03,-2275.272532
+DE,2026-05,6100,Contractors,opex,Contractors,RND,-6401.14,-7453.487416000001
+DE,2026-05,6200,Software & Subscriptions,opex,Software,CS,-1136.41,-1323.2358040000001
+DE,2026-05,6200,Software & Subscriptions,opex,Software,GA,-544.15,-633.60826
+DE,2026-05,6200,Software & Subscriptions,opex,Software,MKT,-274.83,-320.012052
+DE,2026-05,6200,Software & Subscriptions,opex,Software,RND,-4175.31,-4861.730964000001
+DE,2026-05,6200,Software & Subscriptions,opex,Software,SAL,-1330.83,-1549.6184520000002
+DE,2026-05,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-8240.51,-9595.249844000002
+DE,2026-05,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2420.04,-2817.894576
+DE,2026-05,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-924.51,-1076.499444
+DE,2026-05,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-334.97,-390.03906800000004
+DE,2026-05,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3611.89,-4205.684716000001
+DE,2026-05,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-11003.580000000002
+DE,2026-05,6600,Professional Fees,opex,Professional Fees,GA,-5516.799999999999,-6423.761920000001
+DE,2026-05,6700,Recruiting,opex,Recruiting,RND,-2875.68,-3348.441792
+DE,2026-05,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,279.11,324.99568400000004
+UK,2026-05,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,260388.13999999996,306372.6855240001
+UK,2026-05,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,14108.37,16599.908142
+UK,2026-05,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-23684.34,-27866.994444000004
+UK,2026-05,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23367.64,-27494.365224
+UK,2026-05,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3867.9,-4550.971140000001
+UK,2026-05,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-5037.35,-5926.946010000001
+UK,2026-05,6000,Salaries & Wages,opex,Payroll,GA,-12424.99,-14619.243234000001
+UK,2026-05,6000,Salaries & Wages,opex,Payroll,MKT,-25080.44,-29509.645704000002
+UK,2026-05,6000,Salaries & Wages,opex,Payroll,RND,-92684.88,-109053.029808
+UK,2026-05,6000,Salaries & Wages,opex,Payroll,SAL,-68152.69,-80188.455054
+UK,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3224.73,-3794.2173180000004
+UK,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1714.65,-2017.4571900000003
+UK,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-3461.1,-4072.33026
+UK,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-12790.51,-15049.314066
+UK,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-9405.07,-11066.005362
+UK,2026-05,6100,Contractors,opex,Contractors,GA,-2008.75,-2363.4952500000004
+UK,2026-05,6100,Contractors,opex,Contractors,RND,-4013.32,-4722.072312
+UK,2026-05,6200,Software & Subscriptions,opex,Software,CS,-1226.17,-1442.7116220000003
+UK,2026-05,6200,Software & Subscriptions,opex,Software,GA,-491.51,-578.3106660000001
+UK,2026-05,6200,Software & Subscriptions,opex,Software,MKT,-943.84,-1110.522144
+UK,2026-05,6200,Software & Subscriptions,opex,Software,RND,-2836.92,-3337.9200720000003
+UK,2026-05,6200,Software & Subscriptions,opex,Software,SAL,-2305.7,-2712.88662
+UK,2026-05,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-20392.559999999998,-23993.886096000002
+UK,2026-05,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4334.47,-5099.9374020000005
+UK,2026-05,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1276.87,-1502.365242
+UK,2026-05,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-309.36,-363.99297600000006
+UK,2026-05,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6716.62,-7902.775092
+UK,2026-05,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-14825.16
+UK,2026-05,6600,Professional Fees,opex,Professional Fees,GA,-4899.14,-5764.328124000001
+UK,2026-05,6700,Recruiting,opex,Recruiting,MKT,-3706.25,-4360.77375
+UK,2026-05,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,190.1,223.67166
+US,2026-05,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1316321.0300000003,1316321.0300000003
+US,2026-05,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,51485.36,51485.36
+US,2026-05,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-116908.34,-116908.34
+US,2026-05,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-101338.36,-101338.36
+US,2026-05,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-19896.04,-19896.04
+US,2026-05,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-27758.78,-27758.78
+US,2026-05,6000,Salaries & Wages,opex,Payroll,GA,-92739.65,-92739.65
+US,2026-05,6000,Salaries & Wages,opex,Payroll,MKT,-89520.33,-89520.33
+US,2026-05,6000,Salaries & Wages,opex,Payroll,RND,-409142.75,-409142.75
+US,2026-05,6000,Salaries & Wages,opex,Payroll,SAL,-263720.27,-263720.27
+US,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-10133.84,-10133.84
+US,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9273.97,-9273.97
+US,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8952.03,-8952.03
+US,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-40914.28,-40914.28
+US,2026-05,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-26372.03,-26372.03
+US,2026-05,6100,Contractors,opex,Contractors,GA,-5096.49,-5096.49
+US,2026-05,6100,Contractors,opex,Contractors,RND,-23010.03,-23010.03
+US,2026-05,6200,Software & Subscriptions,opex,Software,CS,-4187.42,-4187.42
+US,2026-05,6200,Software & Subscriptions,opex,Software,GA,-2633.91,-2633.91
+US,2026-05,6200,Software & Subscriptions,opex,Software,MKT,-2852.71,-2852.71
+US,2026-05,6200,Software & Subscriptions,opex,Software,RND,-9421.470000000001,-9421.470000000001
+US,2026-05,6200,Software & Subscriptions,opex,Software,SAL,-7781.2,-7781.2
+US,2026-05,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-134962.8,-134962.8
+US,2026-05,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-27414.120000000003,-27414.120000000003
+US,2026-05,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3599.04,-3599.04
+US,2026-05,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-2128.09,-2128.09
+US,2026-05,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-23456.88,-23456.88
+US,2026-05,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-05,6600,Professional Fees,opex,Professional Fees,GA,-16048.109999999999,-16048.109999999999
+US,2026-05,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,31918.71,31918.71
+DE,2026-06,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,139401.66,162068.369916
+DE,2026-06,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,7532.42,8757.191492000002
+DE,2026-06,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-11975.91,-13923.192966000002
+DE,2026-06,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18774.26,-21826.954676
+DE,2026-06,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2077.6,-2415.4177600000003
+DE,2026-06,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2556.2,-2971.83812
+DE,2026-06,6000,Salaries & Wages,opex,Payroll,GA,-12666.41,-14725.968266000002
+DE,2026-06,6000,Salaries & Wages,opex,Payroll,MKT,-6151.72,-7151.989672000001
+DE,2026-06,6000,Salaries & Wages,opex,Payroll,RND,-107802.76,-125331.488776
+DE,2026-06,6000,Salaries & Wages,opex,Payroll,SAL,-33809.94,-39307.436244000004
+DE,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3754.85,-4365.38861
+DE,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2533.28,-2945.1913280000003
+DE,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1230.34,-1430.393284
+DE,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-21560.55,-25066.295430000002
+DE,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6761.99,-7861.489574
+DE,2026-06,6100,Contractors,opex,Contractors,GA,-2681.02,-3116.953852
+DE,2026-06,6100,Contractors,opex,Contractors,RND,-5930.16,-6894.404016
+DE,2026-06,6200,Software & Subscriptions,opex,Software,CS,-1060.94,-1233.4488440000002
+DE,2026-06,6200,Software & Subscriptions,opex,Software,GA,-485.2,-564.09352
+DE,2026-06,6200,Software & Subscriptions,opex,Software,MKT,-256.52,-298.230152
+DE,2026-06,6200,Software & Subscriptions,opex,Software,RND,-3919.93,-4557.310618
+DE,2026-06,6200,Software & Subscriptions,opex,Software,SAL,-1218.41,-1416.523466
+DE,2026-06,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-7454.56,-8666.671456
+DE,2026-06,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-7759.959999999999,-9021.729496
+DE,2026-06,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1094.93,-1272.9656180000002
+DE,2026-06,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-425.95,-495.20947
+DE,2026-06,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3019.38,-3510.3311880000006
+DE,2026-06,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-10986.57
+DE,2026-06,6600,Professional Fees,opex,Professional Fees,GA,-4698.06,-5461.964556000001
+DE,2026-06,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,2284.44,2655.889944
+UK,2026-06,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,272910.93,319551.407937
+UK,2026-06,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,11502.58,13468.370922
+UK,2026-06,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-24286.71,-28437.308739
+UK,2026-06,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23432.17,-27436.727853
+UK,2026-06,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-4066.12,-4761.019908
+UK,2026-06,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-5571.85,-6524.079165000001
+UK,2026-06,6000,Salaries & Wages,opex,Payroll,GA,-12803.52,-14991.641568000001
+UK,2026-06,6000,Salaries & Wages,opex,Payroll,MKT,-25186.85,-29491.282665
+UK,2026-06,6000,Salaries & Wages,opex,Payroll,RND,-93258.84,-109196.775756
+UK,2026-06,6000,Salaries & Wages,opex,Payroll,SAL,-67666.29,-79230.458961
+UK,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3233.64,-3786.269076
+UK,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1766.89,-2068.851501
+UK,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-3475.78,-4069.7908020000004
+UK,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-12869.72,-15069.155148
+UK,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-9337.95,-10933.805655000002
+UK,2026-06,6100,Contractors,opex,Contractors,GA,-2577.33,-3017.795697
+UK,2026-06,6100,Contractors,opex,Contractors,RND,-5634.37,-6597.2838329999995
+UK,2026-06,6200,Software & Subscriptions,opex,Software,CS,-1134.03,-1327.8357270000001
+UK,2026-06,6200,Software & Subscriptions,opex,Software,GA,-494.17,-578.623653
+UK,2026-06,6200,Software & Subscriptions,opex,Software,MKT,-952.79,-1115.621811
+UK,2026-06,6200,Software & Subscriptions,opex,Software,RND,-3064.21,-3587.8834890000003
+UK,2026-06,6200,Software & Subscriptions,opex,Software,SAL,-2453.78,-2873.1310020000005
+UK,2026-06,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-18568.12,-21741.411708
+UK,2026-06,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-17326.13,-20287.165617000002
+UK,2026-06,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-991.99,-1161.521091
+UK,2026-06,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-389.5,-456.06555000000003
+UK,2026-06,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-7061.93,-8268.813837
+UK,2026-06,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-14753.34
+UK,2026-06,6600,Professional Fees,opex,Professional Fees,GA,-6916.96,-8099.068464
+UK,2026-06,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-432.71,-506.660139
+US,2026-06,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1335350.9400000002,1335350.9400000002
+US,2026-06,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,43087.99,43087.99
+US,2026-06,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-123222.53,-123222.53
+US,2026-06,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-101404.0,-101404.0
+US,2026-06,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-20241.22,-20241.22
+US,2026-06,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-28586.57,-28586.57
+US,2026-06,6000,Salaries & Wages,opex,Payroll,GA,-94293.48,-94293.48
+US,2026-06,6000,Salaries & Wages,opex,Payroll,MKT,-89555.72,-89555.72
+US,2026-06,6000,Salaries & Wages,opex,Payroll,RND,-414646.27,-414646.27
+US,2026-06,6000,Salaries & Wages,opex,Payroll,SAL,-268503.73,-268503.73
+US,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-10140.4,-10140.4
+US,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9429.35,-9429.35
+US,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-8955.57,-8955.57
+US,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-41464.63,-41464.63
+US,2026-06,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-26850.37,-26850.37
+US,2026-06,6100,Contractors,opex,Contractors,GA,-6013.29,-6013.29
+US,2026-06,6100,Contractors,opex,Contractors,RND,-23146.019999999997,-23146.019999999997
+US,2026-06,6200,Software & Subscriptions,opex,Software,CS,-4029.32,-4029.32
+US,2026-06,6200,Software & Subscriptions,opex,Software,GA,-2685.08,-2685.08
+US,2026-06,6200,Software & Subscriptions,opex,Software,MKT,-2939.44,-2939.44
+US,2026-06,6200,Software & Subscriptions,opex,Software,RND,-9754.36,-9754.36
+US,2026-06,6200,Software & Subscriptions,opex,Software,SAL,-8249.130000000001,-8249.130000000001
+US,2026-06,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-125491.70999999999,-125491.70999999999
+US,2026-06,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-183039.92,-183039.92
+US,2026-06,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-4147.31,-4147.31
+US,2026-06,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-2201.63,-2201.63
+US,2026-06,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-24126.47,-24126.47
+US,2026-06,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-06,6600,Professional Fees,opex,Professional Fees,GA,-17613.75,-17613.75
+US,2026-06,6700,Recruiting,opex,Recruiting,RND,-3449.23,-3449.23
+US,2026-06,6700,Recruiting,opex,Recruiting,SAL,-4039.18,-4039.18
+US,2026-06,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,30379.69,30379.69
+DE,2026-07,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,142423.02,165296.157012
+DE,2026-07,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,8098.650000000001,9399.29319
+DE,2026-07,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-11915.02,-13828.572212000001
+DE,2026-07,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18590.19,-21575.774514
+DE,2026-07,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2154.94,-2501.023364
+DE,2026-07,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2672.05,-3101.1812300000006
+DE,2026-07,6000,Salaries & Wages,opex,Payroll,GA,-12586.51,-14607.903506
+DE,2026-07,6000,Salaries & Wages,opex,Payroll,MKT,-6217.34,-7215.844804
+DE,2026-07,6000,Salaries & Wages,opex,Payroll,RND,-110595.81,-128357.497086
+DE,2026-07,6000,Salaries & Wages,opex,Payroll,SAL,-33843.33,-39278.56879800001
+DE,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3718.04,-4315.1572240000005
+DE,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2517.3,-2921.5783800000004
+DE,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1243.47,-1443.171282
+DE,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-22119.16,-25671.497096000003
+DE,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6768.67,-7855.718402
+DE,2026-07,6100,Contractors,opex,Contractors,GA,-2564.96,-2976.892576
+DE,2026-07,6100,Contractors,opex,Contractors,RND,-5934.54,-6887.627124000001
+DE,2026-07,6200,Software & Subscriptions,opex,Software,CS,-1084.26,-1258.392156
+DE,2026-07,6200,Software & Subscriptions,opex,Software,GA,-541.32,-628.2559920000001
+DE,2026-07,6200,Software & Subscriptions,opex,Software,MKT,-282.73,-328.13643800000006
+DE,2026-07,6200,Software & Subscriptions,opex,Software,RND,-3814.03,-4426.563218
+DE,2026-07,6200,Software & Subscriptions,opex,Software,SAL,-1318.3,-1530.01898
+DE,2026-07,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-7401.23,-8589.867538
+DE,2026-07,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2039.71,-2367.2874260000003
+DE,2026-07,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1129.88,-1311.3387280000002
+DE,2026-07,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-366.15,-424.95369
+DE,2026-07,6400,Travel & Entertainment,opex,Travel & Entertainment,UNALLOCATED,-3856.23,-4475.540538
+DE,2026-07,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-10967.67
+DE,2026-07,6600,Professional Fees,opex,Professional Fees,GA,-3756.69,-4360.014414
+DE,2026-07,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,993.84,1153.450704
+UK,2026-07,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,267616.61,313138.1953609999
+UK,2026-07,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,13593.99,15906.327698999998
+UK,2026-07,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-25213.87,-29502.749287
+UK,2026-07,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23405.4,-27386.65854
+UK,2026-07,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-3715.02,-4346.944901999999
+UK,2026-07,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-5259.62,-6154.281362
+UK,2026-07,6000,Salaries & Wages,opex,Payroll,GA,-12747.21,-14915.510420999997
+UK,2026-07,6000,Salaries & Wages,opex,Payroll,MKT,-24749.78,-28959.717577999996
+UK,2026-07,6000,Salaries & Wages,opex,Payroll,RND,-94201.35,-110224.999635
+UK,2026-07,6000,Salaries & Wages,opex,Payroll,SAL,-66053.69,-77289.42266899999
+UK,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3229.95,-3779.3644949999994
+UK,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1759.12,-2058.3463119999997
+UK,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-3415.47,-3996.4414469999997
+UK,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-12999.79,-15211.054279
+UK,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-9115.41,-10665.941240999999
+UK,2026-07,6100,Contractors,opex,Contractors,GA,-1847.51,-2161.7714509999996
+UK,2026-07,6100,Contractors,opex,Contractors,RND,-6594.43,-7716.142542999999
+UK,2026-07,6200,Software & Subscriptions,opex,Software,CS,-1100.76,-1287.999276
+UK,2026-07,6200,Software & Subscriptions,opex,Software,GA,-473.17,-553.656217
+UK,2026-07,6200,Software & Subscriptions,opex,Software,MKT,-991.73,-1160.4232729999999
+UK,2026-07,6200,Software & Subscriptions,opex,Software,RND,-2696.55,-3155.233155
+UK,2026-07,6200,Software & Subscriptions,opex,Software,SAL,-2361.42,-2763.097542
+UK,2026-07,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-20860.16,-24408.473216
+UK,2026-07,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-5239.32,-6130.528332
+UK,2026-07,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1248.03,-1460.3199029999998
+UK,2026-07,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-431.49,-504.88644899999997
+UK,2026-07,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-7019.62,-8213.657361999998
+UK,2026-07,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-14743.259999999998
+UK,2026-07,6600,Professional Fees,opex,Professional Fees,GA,-5680.13,-6646.320113
+UK,2026-07,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,2208.73,2584.434973
+US,2026-07,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1381534.5300000003,1381534.5300000003
+US,2026-07,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,59979.26,59979.26
+US,2026-07,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-111237.91,-111237.91
+US,2026-07,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-101408.91,-101408.91
+US,2026-07,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-19787.09,-19787.09
+US,2026-07,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-31098.27,-31098.27
+US,2026-07,6000,Salaries & Wages,opex,Payroll,GA,-95092.68,-95092.68
+US,2026-07,6000,Salaries & Wages,opex,Payroll,MKT,-97916.24,-97916.24
+US,2026-07,6000,Salaries & Wages,opex,Payroll,RND,-419930.72,-419930.72
+US,2026-07,6000,Salaries & Wages,opex,Payroll,SAL,-271988.31,-271988.31
+US,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-10140.89,-10140.89
+US,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9509.27,-9509.27
+US,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-9791.62,-9791.62
+US,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-41993.07,-41993.07
+US,2026-07,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-27198.83,-27198.83
+US,2026-07,6100,Contractors,opex,Contractors,GA,-5909.110000000001,-5909.110000000001
+US,2026-07,6100,Contractors,opex,Contractors,RND,-27111.98,-27111.98
+US,2026-07,6200,Software & Subscriptions,opex,Software,CS,-4084.79,-4084.79
+US,2026-07,6200,Software & Subscriptions,opex,Software,GA,-2671.66,-2671.66
+US,2026-07,6200,Software & Subscriptions,opex,Software,MKT,-3135.93,-3135.93
+US,2026-07,6200,Software & Subscriptions,opex,Software,RND,-9467.04,-9467.04
+US,2026-07,6200,Software & Subscriptions,opex,Software,SAL,-7713.34,-7713.34
+US,2026-07,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-129545.4,-129545.4
+US,2026-07,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-31206.87,-31206.87
+US,2026-07,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-4496.42,-4496.42
+US,2026-07,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-1564.98,-1564.98
+US,2026-07,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-24999.54,-24999.54
+US,2026-07,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-07,6600,Professional Fees,opex,Professional Fees,GA,-14369.2,-14369.2
+US,2026-07,6700,Recruiting,opex,Recruiting,MKT,-3422.27,-3422.27
+US,2026-07,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,27814.35,27814.35
+DE,2026-08,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,145397.21,167991.936434
+DE,2026-08,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,10386.27,12000.296358
+DE,2026-08,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-15201.07,-17563.316278
+DE,2026-08,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18819.98,-21744.604892
+DE,2026-08,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2062.97,-2383.5555379999996
+DE,2026-08,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2593.55,-2996.5876700000003
+DE,2026-08,6000,Salaries & Wages,opex,Payroll,GA,-12474.77,-14413.349258
+DE,2026-08,6000,Salaries & Wages,opex,Payroll,MKT,-6251.55,-7223.04087
+DE,2026-08,6000,Salaries & Wages,opex,Payroll,RND,-108785.4,-125690.65116
+DE,2026-08,6000,Salaries & Wages,opex,Payroll,SAL,-33885.1,-39150.84454
+DE,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3764.0,-4348.9256
+DE,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2494.95,-2882.6652299999996
+DE,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1250.31,-1444.608174
+DE,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-21757.08,-25138.130232000003
+DE,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6777.02,-7830.168908000001
+DE,2026-08,6100,Contractors,opex,Contractors,GA,-1603.03,-1852.140862
+DE,2026-08,6100,Contractors,opex,Contractors,RND,-6868.360000000001,-7935.703144
+DE,2026-08,6200,Software & Subscriptions,opex,Software,CS,-1042.22,-1204.180988
+DE,2026-08,6200,Software & Subscriptions,opex,Software,GA,-526.5,-608.3181
+DE,2026-08,6200,Software & Subscriptions,opex,Software,MKT,-247.25,-285.67265
+DE,2026-08,6200,Software & Subscriptions,opex,Software,RND,-3872.19,-4473.928326
+DE,2026-08,6200,Software & Subscriptions,opex,Software,SAL,-1368.4,-1581.04936
+DE,2026-08,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-7586.25,-8765.15325
+DE,2026-08,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2518.3,-2909.6438200000002
+DE,2026-08,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1094.37,-1264.435098
+DE,2026-08,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-356.58,-411.992532
+DE,2026-08,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3915.81,-4524.326874
+DE,2026-08,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-10918.529999999999
+DE,2026-08,6600,Professional Fees,opex,Professional Fees,GA,-4978.63,-5752.309102
+DE,2026-08,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,2268.35,2620.8515899999998
+UK,2026-08,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,278680.29999999993,320900.3654499999
+UK,2026-08,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,8789.16,10120.71774
+UK,2026-08,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-29922.25,-34455.470875
+UK,2026-08,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23179.11,-26690.745165
+UK,2026-08,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-4565.57,-5257.253855
+UK,2026-08,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-5363.42,-6175.9781299999995
+UK,2026-08,6000,Salaries & Wages,opex,Payroll,GA,-12496.15,-14389.316724999999
+UK,2026-08,6000,Salaries & Wages,opex,Payroll,MKT,-25006.01,-28794.420514999998
+UK,2026-08,6000,Salaries & Wages,opex,Payroll,RND,-101940.71,-117384.72756500001
+UK,2026-08,6000,Salaries & Wages,opex,Payroll,SAL,-73633.47,-84788.940705
+UK,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3198.72,-3683.32608
+UK,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1724.47,-1985.727205
+UK,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-3450.83,-3973.630745
+UK,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-10161.42,-11700.87513
+UK,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,UNALLOCATED,-14067.82,-16199.094729999999
+UK,2026-08,6100,Contractors,opex,Contractors,GA,-2514.28,-2895.19342
+UK,2026-08,6100,Contractors,opex,Contractors,RND,-2476.44,-2851.62066
+UK,2026-08,6100,Contractors,opex,Contractors,UNALLOCATED,-3026.76,-3485.31414
+UK,2026-08,6200,Software & Subscriptions,opex,Software,CS,-1145.33,-1318.847495
+UK,2026-08,6200,Software & Subscriptions,opex,Software,GA,-467.11,-537.877165
+UK,2026-08,6200,Software & Subscriptions,opex,Software,MKT,-871.46,-1003.48619
+UK,2026-08,6200,Software & Subscriptions,opex,Software,SAL,-2828.27,-3256.752905
+UK,2026-08,6200,Software & Subscriptions,opex,Software,UNALLOCATED,-3230.4,-3719.8056
+UK,2026-08,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-22909.78,-26380.61167
+UK,2026-08,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4613.44,-5312.37616
+UK,2026-08,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1200.92,-1382.85938
+UK,2026-08,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-379.89,-437.443335
+UK,2026-08,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-6134.63,-7064.0264449999995
+UK,2026-08,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-14508.9
+UK,2026-08,6600,Professional Fees,opex,Professional Fees,GA,-6606.98,-7607.93747
+UK,2026-08,6700,Recruiting,opex,Recruiting,RND,-3217.91,-3705.4233649999996
+UK,2026-08,6700,Recruiting,opex,Recruiting,SAL,-2330.84,-2683.9622600000002
+UK,2026-08,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-226.65,-260.987475
+US,2026-08,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1344614.5299999998,1344614.5299999998
+US,2026-08,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,87431.48000000001,87431.48000000001
+US,2026-08,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-136037.57,-136037.57
+US,2026-08,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-102152.44,-102152.44
+US,2026-08,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-19342.27,-19342.27
+US,2026-08,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-29811.36,-29811.36
+US,2026-08,6000,Salaries & Wages,opex,Payroll,GA,-93963.21,-93963.21
+US,2026-08,6000,Salaries & Wages,opex,Payroll,MKT,-99139.18,-99139.18
+US,2026-08,6000,Salaries & Wages,opex,Payroll,RND,-416440.51,-416440.51
+US,2026-08,6000,Salaries & Wages,opex,Payroll,SAL,-279681.39,-279681.39
+US,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-10215.24,-10215.24
+US,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9396.32,-9396.32
+US,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-9913.92,-9913.92
+US,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-41644.05,-41644.05
+US,2026-08,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-27968.14,-27968.14
+US,2026-08,6100,Contractors,opex,Contractors,GA,-5556.530000000001,-5556.530000000001
+US,2026-08,6100,Contractors,opex,Contractors,RND,-26240.63,-26240.63
+US,2026-08,6200,Software & Subscriptions,opex,Software,CS,-3969.8,-3969.8
+US,2026-08,6200,Software & Subscriptions,opex,Software,GA,-2700.38,-2700.38
+US,2026-08,6200,Software & Subscriptions,opex,Software,MKT,-3205.8,-3205.8
+US,2026-08,6200,Software & Subscriptions,opex,Software,RND,-10271.310000000001,-10271.310000000001
+US,2026-08,6200,Software & Subscriptions,opex,Software,SAL,-8492.65,-8492.65
+US,2026-08,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-140329.96,-140329.96
+US,2026-08,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-30548.69,-30548.69
+US,2026-08,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-3896.14,-3896.14
+US,2026-08,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-2117.54,-2117.54
+US,2026-08,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-23663.75,-23663.75
+US,2026-08,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-08,6600,Professional Fees,opex,Professional Fees,GA,-16665.510000000002,-16665.510000000002
+US,2026-08,6700,Recruiting,opex,Recruiting,SAL,-4312.2,-4312.2
+US,2026-08,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,28455.53,28455.53
+DE,2026-09,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,144079.46,166757.567004
+DE,2026-09,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,1838.87,2128.308138
+DE,2026-09,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-16137.46,-18677.496204
+DE,2026-09,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18683.23,-21623.970402
+DE,2026-09,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2254.34,-2609.173116
+DE,2026-09,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2623.09,-3035.964366
+DE,2026-09,6000,Salaries & Wages,opex,Payroll,GA,-12588.1,-14569.46694
+DE,2026-09,6000,Salaries & Wages,opex,Payroll,MKT,-6165.05,-7135.42887
+DE,2026-09,6000,Salaries & Wages,opex,Payroll,RND,-108756.59,-125874.877266
+DE,2026-09,6000,Salaries & Wages,opex,Payroll,SAL,-33700.62,-39005.097588000004
+DE,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3736.65,-4324.79871
+DE,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2517.62,-2913.893388
+DE,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1233.01,-1427.085774
+DE,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-21751.32,-25174.977768
+DE,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6740.12,-7801.014888
+DE,2026-09,6100,Contractors,opex,Contractors,GA,-2091.86,-2421.1187640000003
+DE,2026-09,6100,Contractors,opex,Contractors,RND,-7129.23,-8251.370802
+DE,2026-09,6200,Software & Subscriptions,opex,Software,CS,-1003.84,-1161.844416
+DE,2026-09,6200,Software & Subscriptions,opex,Software,GA,-500.74,-579.556476
+DE,2026-09,6200,Software & Subscriptions,opex,Software,MKT,-258.65,-299.36150999999995
+DE,2026-09,6200,Software & Subscriptions,opex,Software,RND,-3951.21,-4573.130454
+DE,2026-09,6200,Software & Subscriptions,opex,Software,SAL,-1249.08,-1445.685192
+DE,2026-09,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-7647.82,-8851.586868
+DE,2026-09,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-5915.05,-6846.07887
+DE,2026-09,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1335.17,-1545.325758
+DE,2026-09,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-325.74,-377.011476
+DE,2026-09,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-4155.56,-4809.645144
+DE,2026-09,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-10937.43
+DE,2026-09,6600,Professional Fees,opex,Professional Fees,GA,-4700.4,-5440.24296
+DE,2026-09,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-1637.35,-1895.0688899999998
+UK,2026-09,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,278980.43,327941.495465
+UK,2026-09,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,13726.83,16135.888665
+UK,2026-09,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-28289.949999999997,-33254.836225
+UK,2026-09,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23683.73,-27840.224615
+UK,2026-09,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-4548.24,-5346.45612
+UK,2026-09,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-5735.21,-6741.739355
+UK,2026-09,6000,Salaries & Wages,opex,Payroll,GA,-12298.24,-14456.581119999999
+UK,2026-09,6000,Salaries & Wages,opex,Payroll,MKT,-25466.06,-29935.35353
+UK,2026-09,6000,Salaries & Wages,opex,Payroll,RND,-101714.99,-119565.970745
+UK,2026-09,6000,Salaries & Wages,opex,Payroll,SAL,-73902.18,-86872.01258999998
+UK,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3268.36,-3841.9571800000003
+UK,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1697.16,-1995.01158
+UK,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-3514.32,-4131.08316
+UK,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-14036.67,-16500.105585
+UK,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-10198.5,-11988.33675
+UK,2026-09,6100,Contractors,opex,Contractors,GA,-1663.32,-1955.23266
+UK,2026-09,6100,Contractors,opex,Contractors,RND,-3451.34,-4057.05017
+UK,2026-09,6100,Contractors,opex,Contractors,UNALLOCATED,-2823.83,-3319.4121649999997
+UK,2026-09,6200,Software & Subscriptions,opex,Software,CS,-1242.62,-1460.6998099999998
+UK,2026-09,6200,Software & Subscriptions,opex,Software,GA,-442.79,-520.499645
+UK,2026-09,6200,Software & Subscriptions,opex,Software,MKT,-878.35,-1032.500425
+UK,2026-09,6200,Software & Subscriptions,opex,Software,RND,-3470.71,-4079.819605
+UK,2026-09,6200,Software & Subscriptions,opex,Software,SAL,-2544.48,-2991.03624
+UK,2026-09,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-24434.620000000003,-28722.89581
+UK,2026-09,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-12383.55,-14556.863024999999
+UK,2026-09,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1137.91,-1337.613205
+UK,2026-09,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-333.42,-391.93521000000004
+UK,2026-09,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-8513.77,-10007.936635
+UK,2026-09,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-14811.3
+UK,2026-09,6600,Professional Fees,opex,Professional Fees,GA,-4810.05,-5654.213775
+UK,2026-09,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-889.01,-1045.0312549999999
+US,2026-09,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1380578.9,1380578.9
+US,2026-09,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,62150.530000000006,62150.530000000006
+US,2026-09,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-159102.31,-159102.31
+US,2026-09,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-101399.29,-101399.29
+US,2026-09,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-21444.239999999998,-21444.239999999998
+US,2026-09,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-30184.0,-30184.0
+US,2026-09,6000,Salaries & Wages,opex,Payroll,GA,-93786.05,-93786.05
+US,2026-09,6000,Salaries & Wages,opex,Payroll,MKT,-100109.31,-100109.31
+US,2026-09,6000,Salaries & Wages,opex,Payroll,RND,-427163.03,-427163.03
+US,2026-09,6000,Salaries & Wages,opex,Payroll,SAL,-283219.53,-283219.53
+US,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-10139.93,-10139.93
+US,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9378.61,-9378.61
+US,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-10010.93,-10010.93
+US,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-42716.3,-42716.3
+US,2026-09,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-28321.95,-28321.95
+US,2026-09,6100,Contractors,opex,Contractors,GA,-6984.43,-6984.43
+US,2026-09,6100,Contractors,opex,Contractors,RND,-28558.489999999998,-28558.489999999998
+US,2026-09,6200,Software & Subscriptions,opex,Software,CS,-4252.72,-4252.72
+US,2026-09,6200,Software & Subscriptions,opex,Software,GA,-2787.3,-2787.3
+US,2026-09,6200,Software & Subscriptions,opex,Software,MKT,-3239.57,-3239.57
+US,2026-09,6200,Software & Subscriptions,opex,Software,RND,-10485.36,-10485.36
+US,2026-09,6200,Software & Subscriptions,opex,Software,SAL,-8010.139999999999,-8010.139999999999
+US,2026-09,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-125111.11,-125111.11
+US,2026-09,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-68455.07,-68455.07
+US,2026-09,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-4261.4,-4261.4
+US,2026-09,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-2003.23,-2003.23
+US,2026-09,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-30160.15,-30160.15
+US,2026-09,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-09,6600,Professional Fees,opex,Professional Fees,GA,-15152.07,-15152.07
+US,2026-09,6700,Recruiting,opex,Recruiting,RND,-4309.25,-4309.25
+US,2026-09,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,25527.47,25527.47
+DE,2026-10,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,145413.02999999997,167181.36059099998
+DE,2026-10,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,7323.110000000001,8419.379567
+DE,2026-10,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-14918.380000000001,-17151.661486
+DE,2026-10,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-18884.51,-21711.521146999996
+DE,2026-10,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-2205.43,-2535.5828709999996
+DE,2026-10,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-2601.62,-2991.0825139999997
+DE,2026-10,6000,Salaries & Wages,opex,Payroll,GA,-12356.81,-14206.624456999998
+DE,2026-10,6000,Salaries & Wages,opex,Payroll,MKT,-6236.82,-7170.471954
+DE,2026-10,6000,Salaries & Wages,opex,Payroll,RND,-110165.38,-126657.137386
+DE,2026-10,6000,Salaries & Wages,opex,Payroll,SAL,-33611.86,-38643.555442
+DE,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3776.9,-4342.30193
+DE,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-2471.36,-2841.322592
+DE,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-1247.36,-1434.0897919999998
+DE,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-22033.08,-25331.432076
+DE,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-6722.37,-7728.708788999999
+DE,2026-10,6100,Contractors,opex,Contractors,GA,-1730.16,-1989.164952
+DE,2026-10,6100,Contractors,opex,Contractors,RND,-7428.8,-8540.89136
+DE,2026-10,6200,Software & Subscriptions,opex,Software,CS,-1088.08,-1250.9655759999998
+DE,2026-10,6200,Software & Subscriptions,opex,Software,GA,-532.23,-611.904831
+DE,2026-10,6200,Software & Subscriptions,opex,Software,MKT,-268.22,-308.37253400000003
+DE,2026-10,6200,Software & Subscriptions,opex,Software,RND,-3875.63,-4455.811811
+DE,2026-10,6200,Software & Subscriptions,opex,Software,SAL,-1280.68,-1472.397796
+DE,2026-10,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-5868.77,-6747.324869
+DE,2026-10,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-2620.98,-3013.340706
+DE,2026-10,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-900.97,-1035.845209
+DE,2026-10,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-343.37,-394.772489
+DE,2026-10,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-3854.39,-4431.392183
+DE,2026-10,6500,Rent & Facilities,opex,Facilities,GA,-9450.0,-10864.665
+DE,2026-10,6600,Professional Fees,opex,Professional Fees,GA,-3891.66,-4474.241502
+DE,2026-10,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,1609.6,1850.5571199999997
+UK,2026-10,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,281902.9,330587.53083000006
+UK,2026-10,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,13428.29,15747.355683000002
+UK,2026-10,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-28673.42,-33625.319634
+UK,2026-10,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-23376.0,-27413.035200000002
+UK,2026-10,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-4146.88,-4863.046176000001
+UK,2026-10,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-5480.83,-6427.3693410000005
+UK,2026-10,6000,Salaries & Wages,opex,Payroll,GA,-12396.17,-14536.988559000001
+UK,2026-10,6000,Salaries & Wages,opex,Payroll,MKT,-24760.61,-29036.767347
+UK,2026-10,6000,Salaries & Wages,opex,Payroll,SAL,-75180.32,-88163.96126400001
+UK,2026-10,6000,Salaries & Wages,opex,Payroll,UNALLOCATED,-101029.37,-118477.14219900001
+UK,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-3225.89,-3783.0012030000003
+UK,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-1710.67,-2006.1027090000002
+UK,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-3416.96,-4007.0689920000004
+UK,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-10374.88,-12166.621776
+UK,2026-10,6100,Contractors,opex,Contractors,GA,-2627.58,-3081.363066
+UK,2026-10,6100,Contractors,opex,Contractors,RND,-5477.68,-6423.675336
+UK,2026-10,6200,Software & Subscriptions,opex,Software,CS,-1222.94,-1434.1417380000003
+UK,2026-10,6200,Software & Subscriptions,opex,Software,GA,-441.65,-517.922955
+UK,2026-10,6200,Software & Subscriptions,opex,Software,MKT,-1002.88,-1176.077376
+UK,2026-10,6200,Software & Subscriptions,opex,Software,RND,-3033.6,-3557.50272
+UK,2026-10,6200,Software & Subscriptions,opex,Software,SAL,-2741.49,-3214.945323
+UK,2026-10,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-22810.29,-26749.627083
+UK,2026-10,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-4886.83,-5730.785541
+UK,2026-10,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-1191.22,-1396.943694
+UK,2026-10,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-419.68,-492.15873600000003
+UK,2026-10,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-8584.58,-10067.136966000002
+UK,2026-10,6500,Rent & Facilities,opex,Facilities,GA,-12600.0,-14776.02
+UK,2026-10,6600,Professional Fees,opex,Professional Fees,GA,-6517.360000000001,-7642.908072000001
+UK,2026-10,7100,FX Gain/Loss,other,Other Income/Expense,UNALLOCATED,-310.23,-363.80672100000004
+US,2026-10,4000,Subscription Revenue,revenue,Revenue,UNALLOCATED,1436990.1299999997,1436990.1299999997
+US,2026-10,4100,Professional Services Revenue,revenue,Revenue,UNALLOCATED,84488.42000000001,84488.42000000001
+US,2026-10,5000,Hosting & Infrastructure,cogs,Cost of Revenue,UNALLOCATED,-158330.51,-158330.51
+US,2026-10,5100,Customer Support Payroll,cogs,Cost of Revenue,CS,-111231.62,-111231.62
+US,2026-10,5200,Third-party Software (COGS),cogs,Cost of Revenue,UNALLOCATED,-21088.6,-21088.6
+US,2026-10,5300,Payment Processing Fees,cogs,Cost of Revenue,UNALLOCATED,-32937.39,-32937.39
+US,2026-10,6000,Salaries & Wages,opex,Payroll,GA,-93538.16,-93538.16
+US,2026-10,6000,Salaries & Wages,opex,Payroll,MKT,-100622.46,-100622.46
+US,2026-10,6000,Salaries & Wages,opex,Payroll,RND,-427455.88,-427455.88
+US,2026-10,6000,Salaries & Wages,opex,Payroll,SAL,-280354.05,-280354.05
+US,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,CS,-11123.16,-11123.16
+US,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,GA,-9353.82,-9353.82
+US,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,MKT,-10062.25,-10062.25
+US,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,RND,-42745.59,-42745.59
+US,2026-10,6010,Payroll Taxes & Benefits,opex,Payroll,SAL,-28035.41,-28035.41
+US,2026-10,6100,Contractors,opex,Contractors,GA,-5681.8099999999995,-5681.8099999999995
+US,2026-10,6100,Contractors,opex,Contractors,RND,-25627.07,-25627.07
+US,2026-10,6200,Software & Subscriptions,opex,Software,CS,-4261.62,-4261.62
+US,2026-10,6200,Software & Subscriptions,opex,Software,GA,-2752.43,-2752.43
+US,2026-10,6200,Software & Subscriptions,opex,Software,MKT,-3055.77,-3055.77
+US,2026-10,6200,Software & Subscriptions,opex,Software,RND,-10270.529999999999,-10270.529999999999
+US,2026-10,6200,Software & Subscriptions,opex,Software,SAL,-8473.05,-8473.05
+US,2026-10,6300,Advertising & Paid Media,opex,Marketing Programs,MKT,-135466.83,-135466.83
+US,2026-10,6310,Events & Sponsorships,opex,Marketing Programs,MKT,-22973.16,-22973.16
+US,2026-10,6400,Travel & Entertainment,opex,Travel & Entertainment,CS,-4681.57,-4681.57
+US,2026-10,6400,Travel & Entertainment,opex,Travel & Entertainment,GA,-2045.41,-2045.41
+US,2026-10,6400,Travel & Entertainment,opex,Travel & Entertainment,SAL,-24541.47,-24541.47
+US,2026-10,6500,Rent & Facilities,opex,Facilities,GA,-42000.0,-42000.0
+US,2026-10,6600,Professional Fees,opex,Professional Fees,GA,-14843.599999999999,-14843.599999999999
+US,2026-10,6700,Recruiting,opex,Recruiting,CS,-3963.73,-3963.73
+US,2026-10,7000,Interest Income,other,Other Income/Expense,UNALLOCATED,24172.3,24172.3

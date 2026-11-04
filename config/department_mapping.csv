@@ -1,0 +1,22 @@
+source,local_department,department
+US,Sales,SAL
+US,Marketing,MKT
+US,R&D,RND
+US,Customer Success,CS
+US,G&A,GA
+UK,Sales,SAL
+UK,Marketing,MKT
+UK,Research and Development,RND
+UK,Customer Success,CS
+UK,General & Admin,GA
+DE,100,SAL
+DE,200,MKT
+DE,300,RND
+DE,400,CS
+DE,500,GA
+UK,R&D,RND
+BUDGET,Sales,SAL
+BUDGET,Marketing,MKT
+BUDGET,R&D,RND
+BUDGET,Customer Success,CS
+BUDGET,G&A,GA

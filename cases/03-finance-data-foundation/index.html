@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finance data foundation: one trusted model for ledger, budget and actuals across entities · Guilherme Teófilo</title>
+<meta name="description" content="Finance data for finance teams without a data team: month-end reporting automation, budget vs actual dashboards and finance data models.">
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+          --line:#e1e0d9; --accent:#2a78d6; --code:#f3f2ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+            --line:#2c2c2a; --accent:#3987e5; --code:#232322; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { border-bottom:1px solid var(--line); background:var(--surface); }
+  .bar { max-width:980px; margin:0 auto; padding:12px 16px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .brand { font-weight:700; color:var(--ink); text-decoration:none; margin-right:auto; }
+  .bar a.nav { color:var(--ink2); text-decoration:none; font-size:15px; }
+  .bar a.nav:hover { color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:30px; line-height:1.25; margin:8px 0 16px; }
+  h2 { font-size:22px; margin:36px 0 12px; padding-top:8px; border-top:1px solid var(--line); }
+  a { color:var(--accent); }
+  img { max-width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
+  blockquote { margin:16px 0; padding:10px 16px; border-left:4px solid var(--accent); background:var(--surface); color:var(--ink2); }
+  blockquote p { margin:4px 0; }
+  .table-wrap { overflow-x:auto; margin:16px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; background:var(--surface); }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--code); }
+  td img { border:none; }
+  code { background:var(--code); padding:1px 5px; border-radius:4px; font-size:14px; }
+  pre { background:var(--code); padding:12px 14px; border-radius:8px; overflow-x:auto; }
+  pre code { padding:0; background:none; }
+  pre.mermaid { background:var(--surface); border:1px solid var(--line); text-align:center; }
+  footer { max-width:980px; margin:0 auto; padding:16px 16px 40px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="../../">Guilherme Teófilo · Finance data</a>
+  <a class="nav" href="../../#case-studies">Case studies</a>
+  <a class="nav" href="../../output/2026-10/dashboard.html">Live dashboard</a>
+  <a class="nav" href="https://github.com/guilhermelt-22/finance-data-portfolio">Code on GitHub</a>
+</div></header>
+<main>
+<h1 id="finance-data-foundation-one-trusted-model-for-ledger-budget-and-actuals-across-entities">Finance data foundation: one trusted model for ledger, budget and actuals across entities</h1>
+<blockquote>
+<p><strong>Demo on fictitious data</strong> (<a href="../../data/">dataset notes</a>). This is the model underneath
+<a href="../01-month-end-reporting-automation/">case 01</a> and <a href="../02-budget-vs-actual-dashboard/">case 02</a>.</p>
+</blockquote>
+<h2 id="the-problem">The problem</h2>
+<p>A growing group ends up with one chart of accounts per entity, one currency per entity, department tags
+spelled three different ways, intercompany recharges that inflate both revenue and cost, and a budget
+built with labels nobody in accounting uses. Every report rebuilds the same joins in a different
+spreadsheet, so two reports rarely agree.</p>
+<h2 id="the-solution">The solution</h2>
+<p>A single model, in plain SQL, that every report reads from.</p>
+<pre class="mermaid">flowchart TB
+    subgraph Sources
+      GL[Ledger exports<br/>QuickBooks, Xero, DATEV]
+      BUD[Budget workbook]
+      FX[FX rates]
+    end
+    subgraph Config["Client-editable mappings (CSV)"]
+      AM[account_mapping]
+      DM[department_mapping]
+      BM[budget_line_mapping]
+    end
+    GL --> STD[gl: standard line table]
+    STD --> GM[gl_mapped]
+    AM --> GM
+    DM --> GM
+    GM --> PL[pl_lines: USD at average rate]
+    PL --> PM[pl_monthly: intercompany eliminated]
+    GM --> CB[cash_balance: USD at closing rate]
+    BUD --> BMON[budget_monthly: budget rates and actual rates]
+    BM --> BMON
+    FX --> PL
+    FX --> CB
+    FX --> BMON
+    PM --> BVA[bva: actual vs budget, FX effect]
+    BMON --> BVA
+</pre>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Object</th>
+<th>What it guarantees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard</td>
+<td><code>gl</code></td>
+<td>Every source becomes the same columns, one row per debit/credit line, with file and line number kept for traceability</td>
+</tr>
+<tr>
+<td>Mapped</td>
+<td><code>gl_mapped</code></td>
+<td>Group account, account type, statement line and group department on every line; anything unmapped is visible, never dropped silently</td>
+</tr>
+<tr>
+<td>Currency</td>
+<td><code>pl_lines</code>, <code>cash_balance</code></td>
+<td>P&amp;L at the monthly average rate, balances at the month-end rate</td>
+</tr>
+<tr>
+<td>Consolidated</td>
+<td><code>pl_monthly</code></td>
+<td>Intercompany revenue and expense eliminated; profit-signed amounts</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td><code>budget_monthly</code></td>
+<td>Budget mapped to the same accounts and departments, at budget rates <em>and</em> actual rates</td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td><code>bva</code></td>
+<td>Actual, budget, variance and FX effect at entity × month × account × department</td>
+</tr>
+</tbody>
+</table></div>
+<p>The model lives in one file, <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/findata/sql/model.sql"><code>findata/sql/model.sql</code></a>. It runs on DuckDB
+locally, and the same SQL patterns port to BigQuery, Snowflake or Postgres when a client has a warehouse.</p>
+<h2 id="the-result">The result</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Charts of accounts</td>
+<td>3 local charts, mapped in each report</td>
+<td>1 group chart; mapping in a CSV the finance team edits</td>
+</tr>
+<tr>
+<td>Currencies</td>
+<td>converted ad hoc, rates differ between reports</td>
+<td>one rule: P&amp;L at average, cash at closing, budget at budget and actual rates</td>
+</tr>
+<tr>
+<td>Intercompany</td>
+<td>inflates revenue and cost</td>
+<td>eliminated in one view, with a mismatch check</td>
+</tr>
+<tr>
+<td>Trust</td>
+<td>"why don't these two reports agree?"</td>
+<td>11 automated tests, including: budget-vs-actual reconciles to its inputs to the cent, no intercompany left in the consolidated P&amp;L, every seeded data issue is detected</td>
+</tr>
+<tr>
+<td>Adding an entity</td>
+<td>a new spreadsheet</td>
+<td>a reader (if it is a new system) plus mapping rows</td>
+</tr>
+</tbody>
+</table></div>
+<pre><code class="language-bash">pytest   # 11 passed
+</code></pre>
+<p>Tests: <a href="https://github.com/guilhermelt-22/finance-data-portfolio/tree/main/tests"><code>tests/</code></a></p>
+</main>
+<footer>All companies, people and figures on this site are fictitious demo data. Work with me: Upwork and Fiverr profiles coming soon.</footer>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "neutral" });
+</script>
+</body>
+</html>

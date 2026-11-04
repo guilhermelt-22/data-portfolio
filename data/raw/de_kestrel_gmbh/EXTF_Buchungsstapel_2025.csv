@@ -1,0 +1,1038 @@
+EXTF;700;21;Buchungsstapel;13;20261102093000000;;RE;;;1001;20001;20250101;4;20250101;20251231;Buchungsstapel 2025;;1;0;0;EUR
+Umsatz (ohne Soll/Haben-Kz);Soll/Haben-Kennzeichen;WKZ Umsatz;Konto;Gegenkonto (ohne BU-Schlüssel);Belegdatum;Belegfeld 1;Buchungstext;KOST1 - Kostenstelle
+1000000,00;S;EUR;1200;0800;0101;OB-00001;Eröffnungsbilanz;
+12299,26;S;EUR;1400;8400;0101;INV-00007;Ausgangsrechnung Granite Clinics GmbH;
+3994,86;S;EUR;1400;8400;0101;INV-00009;Ausgangsrechnung Silver Labs GmbH;
+12465,74;S;EUR;1400;8400;0101;INV-00010;Ausgangsrechnung Granite Analytics GmbH;
+3207,36;S;EUR;1400;8400;0201;INV-00001;Ausgangsrechnung Bright Learning GmbH;
+6492,29;S;EUR;1400;8400;0201;INV-00004;Ausgangsrechnung Silver Logistics GmbH;
+7166,23;S;EUR;1400;8400;0201;INV-00012;Ausgangsrechnung Blue Clinics GmbH;
+1445,62;S;EUR;3110;1600;0201;BILL-00001;Eingangsrechnung Paperlane Docs;
+4782,55;S;EUR;1400;8400;0301;INV-00002;Ausgangsrechnung Cedar Clinics GmbH;
+3498,89;S;EUR;1400;8400;0301;INV-00003;Ausgangsrechnung Meridian Health GmbH;
+12889,65;S;EUR;1400;8400;0301;INV-00005;Ausgangsrechnung Falcon Energy GmbH;
+13751,80;S;EUR;1400;8400;0301;INV-00006;Ausgangsrechnung Beacon Labs GmbH;
+4016,87;S;EUR;1400;8400;0301;INV-00008;Ausgangsrechnung Quarry Outdoors GmbH;
+17544,39;S;EUR;1400;8400;0301;INV-00011;Ausgangsrechnung Willow Outdoors GmbH;
+5131,51;S;EUR;3100;1600;0301;BILL-00002;Eingangsrechnung Nimbus Cloud Services;
+3292,01;S;EUR;4670;1600;0301;BILL-00005;Eingangsrechnung Metro Rides;100
+2234,83;S;EUR;4610;1600;0301;BILL-00016;Eingangsrechnung SaaSConnect Expo;200
+2811,90;S;EUR;4950;1600;0301;BILL-00019;Eingangsrechnung Whitlock & Rowe LLP;500
+2281,96;S;EUR;4780;1600;0601;BILL-00009;Eingangsrechnung Ledgerline Bookkeeping;300
+4950,00;S;EUR;4210;1600;0601;BILL-00017;Eingangsrechnung Harborview Properties;500
+748,83;S;EUR;4670;1600;0701;BILL-00011;Eingangsrechnung Metro Rides;400
+2789,06;S;EUR;4780;1600;0801;BILL-00008;Eingangsrechnung Ledgerline Bookkeeping;300
+2300,65;S;EUR;4950;1600;0801;BILL-00020;Eingangsrechnung Whitlock & Rowe LLP;500
+388,56;S;EUR;4670;1600;0901;BILL-00013;Eingangsrechnung Skyway Travel;500
+3340,76;S;EUR;4600;1600;0901;BILL-00014;Eingangsrechnung SocialSpark Ads;200
+716,92;S;EUR;1400;8401;1001;INV-00015;Ausgangsrechnung Summit Clinics GmbH;
+1445,62;S;EUR;1600;1200;1001;BP-00001;Zahlung Lieferant Paperlane Docs;
+5131,51;S;EUR;1600;1200;1001;BP-00002;Zahlung Lieferant Nimbus Cloud Services;
+1010,20;S;EUR;4806;1600;1001;BILL-00004;Eingangsrechnung Stackwise;100
+3032,44;S;EUR;4806;1600;1001;BILL-00007;Eingangsrechnung Stackwise;300
+2733,35;S;EUR;4600;1600;1001;BILL-00015;Eingangsrechnung SocialSpark Ads;200
+4198,51;S;EUR;3100;1600;1301;BILL-00003;Eingangsrechnung Nimbus Cloud Services;
+2281,96;S;EUR;1600;1200;1301;BP-00009;Zahlung Lieferant Ledgerline Bookkeeping;
+517,96;S;EUR;4806;1600;1301;BILL-00012;Eingangsrechnung Paperlane Docs;500
+4050,00;S;EUR;4210;1600;1301;BILL-00018;Eingangsrechnung Harborview Properties;500
+2300,65;S;EUR;1600;1200;1301;BP-00020;Zahlung Lieferant Whitlock & Rowe LLP;
+254,87;S;EUR;4806;1600;1401;BILL-00006;Eingangsrechnung Stackwise;200
+793,56;S;EUR;4806;1600;1401;BILL-00010;Eingangsrechnung Stackwise;400
+388,56;S;EUR;1600;1200;1401;BP-00013;Zahlung Lieferant Skyway Travel;
+2234,83;S;EUR;1600;1200;1401;BP-00016;Zahlung Lieferant SaaSConnect Expo;
+4950,00;S;EUR;1600;1200;1401;BP-00017;Zahlung Lieferant Harborview Properties;
+2811,90;S;EUR;1600;1200;1401;BP-00019;Zahlung Lieferant Whitlock & Rowe LLP;
+1115,07;S;EUR;4780;1600;1401;BILL-00021;Eingangsrechnung Ledgerline Bookkeeping;500
+748,83;S;EUR;1600;1200;1501;BP-00011;Zahlung Lieferant Metro Rides;
+2535,72;S;EUR;1400;8401;1601;INV-00013;Ausgangsrechnung Tidal Media GmbH;
+3292,01;S;EUR;1600;1200;1601;BP-00005;Zahlung Lieferant Metro Rides;
+2789,06;S;EUR;1600;1200;1601;BP-00008;Zahlung Lieferant Ledgerline Bookkeeping;
+3340,76;S;EUR;1600;1200;1601;BP-00014;Zahlung Lieferant SocialSpark Ads;
+4198,51;S;EUR;1600;1200;1701;BP-00003;Zahlung Lieferant Nimbus Cloud Services;
+1010,20;S;EUR;1600;1200;1701;BP-00004;Zahlung Lieferant Stackwise;
+3032,44;S;EUR;1600;1200;1701;BP-00007;Zahlung Lieferant Stackwise;
+517,96;S;EUR;1600;1200;1701;BP-00012;Zahlung Lieferant Paperlane Docs;
+2733,35;S;EUR;1600;1200;1701;BP-00015;Zahlung Lieferant SocialSpark Ads;
+4050,00;S;EUR;1600;1200;1701;BP-00018;Zahlung Lieferant Harborview Properties;
+254,87;S;EUR;1600;1200;2001;BP-00006;Zahlung Lieferant Stackwise;
+1115,07;S;EUR;1600;1200;2001;BP-00021;Zahlung Lieferant Ledgerline Bookkeeping;
+2361,80;S;EUR;1400;8401;2401;INV-00014;Ausgangsrechnung North Media GmbH;
+793,56;S;EUR;1600;1200;2401;BP-00010;Zahlung Lieferant Stackwise;
+25888,74;S;EUR;4120;1200;3101;PR-00001;Gehälter Payroll;100
+6082,52;S;EUR;4120;1200;3101;PR-00001;Gehälter Payroll;200
+85098,32;S;EUR;4120;1200;3101;PR-00001;Gehälter Payroll;300
+13354,79;S;EUR;4125;1200;3101;PR-00001;Gehälter Payroll;400
+11959,56;S;EUR;4120;1200;3101;PR-00001;Gehälter Payroll;500
+5177,75;S;EUR;4130;1700;3101;JNL-00001;Sozialabgaben Rückstellung;100
+1216,50;S;EUR;4130;1700;3101;JNL-00001;Sozialabgaben Rückstellung;200
+17019,66;S;EUR;4130;1700;3101;JNL-00001;Sozialabgaben Rückstellung;300
+2670,96;S;EUR;4130;1700;3101;JNL-00001;Sozialabgaben Rückstellung;400
+2391,91;S;EUR;4130;1700;3101;JNL-00001;Sozialabgaben Rückstellung;500
+1825,79;S;EUR;4970;1200;3101;EXP-00001;Gebühren Zahlungsdienstleister PayStream;
+333,93;S;EUR;2150;1200;3101;JNL-00002;Kursdifferenzen;
+107223,88;S;EUR;1590;8402;3101;IC-00001;Konzernumlage F&E Kestrel Inc.;
+511,89;S;EUR;1400;8400;0302;INV-00016;Ausgangsrechnung Willow Outdoors GmbH;
+10573,36;S;EUR;1400;8400;0302;INV-00018;Ausgangsrechnung Beacon Labs GmbH;
+2120,54;S;EUR;1400;8400;0302;INV-00019;Ausgangsrechnung Cedar Robotics GmbH;
+8708,69;S;EUR;1400;8400;0302;INV-00020;Ausgangsrechnung Granite Analytics GmbH;
+5507,96;S;EUR;1400;8400;0302;INV-00021;Ausgangsrechnung Cedar Studios GmbH;
+4548,11;S;EUR;1400;8400;0302;INV-00022;Ausgangsrechnung Meridian Media GmbH;
+5077,60;S;EUR;1400;8400;0302;INV-00023;Ausgangsrechnung Bright Foods GmbH;
+13062,92;S;EUR;1400;8400;0302;INV-00027;Ausgangsrechnung Summit Freight GmbH;
+5098,12;S;EUR;3100;1600;0302;BILL-00023;Eingangsrechnung Nimbus Cloud Services;
+3025,70;S;EUR;4670;1600;0302;BILL-00026;Eingangsrechnung Skyway Travel;100
+4950,00;S;EUR;4210;1600;0302;BILL-00038;Eingangsrechnung Harborview Properties;500
+2555,39;S;EUR;1400;8400;0402;INV-00017;Ausgangsrechnung Meridian Health GmbH;
+1593,63;S;EUR;1400;8400;0402;INV-00025;Ausgangsrechnung Maple Outdoors GmbH;
+33705,62;S;EUR;1400;8400;0402;INV-00026;Ausgangsrechnung Silver Logistics GmbH;
+3260,19;S;EUR;4780;1600;0402;BILL-00029;Eingangsrechnung Devforge Contractors;300
+2890,37;S;EUR;4600;1600;0402;BILL-00036;Eingangsrechnung AdReach Search;200
+4016,87;S;EUR;1200;1400;0502;PMT-00008;Zahlungseingang Quarry Outdoors GmbH;
+14557,93;S;EUR;1400;8400;0502;INV-00024;Ausgangsrechnung North Media GmbH;
+4171,19;S;EUR;3100;1600;0502;BILL-00024;Eingangsrechnung Nimbus Cloud Services;
+12299,26;S;EUR;1200;1400;0602;PMT-00007;Zahlungseingang Granite Clinics GmbH;
+1019,36;S;EUR;4806;1600;0602;BILL-00025;Eingangsrechnung Notely;100
+2435,83;S;EUR;4780;1600;0602;BILL-00042;Eingangsrechnung Devforge Contractors;500
+13751,80;S;EUR;1200;1400;0702;PMT-00006;Zahlungseingang Beacon Labs GmbH;
+7166,23;S;EUR;1200;1400;0702;PMT-00012;Zahlungseingang Blue Clinics GmbH;
+241,08;S;EUR;4806;1600;0702;BILL-00027;Eingangsrechnung Paperlane Docs;200
+2667,43;S;EUR;4780;1600;0702;BILL-00030;Eingangsrechnung Devforge Contractors;300
+781,84;S;EUR;4806;1600;0702;BILL-00031;Eingangsrechnung Notely;400
+493,16;S;EUR;4806;1600;0702;BILL-00033;Eingangsrechnung Notely;500
+2613,33;S;EUR;4610;1600;0702;BILL-00037;Eingangsrechnung SaaSConnect Expo;200
+4050,00;S;EUR;4210;1600;0702;BILL-00039;Eingangsrechnung Harborview Properties;500
+2835,25;S;EUR;4950;1600;0702;BILL-00040;Eingangsrechnung Whitlock & Rowe LLP;500
+2319,75;S;EUR;4950;1600;0702;BILL-00041;Eingangsrechnung Whitlock & Rowe LLP;500
+1520,37;S;EUR;3110;1600;1002;BILL-00022;Eingangsrechnung Paperlane Docs;
+3369,65;S;EUR;4806;1600;1002;BILL-00028;Eingangsrechnung Notely;300
+3532,68;S;EUR;4600;1600;1002;BILL-00035;Eingangsrechnung AdReach Search;200
+4950,00;S;EUR;1600;1200;1102;BP-00038;Zahlung Lieferant Harborview Properties;
+17544,39;S;EUR;1200;1400;1202;PMT-00011;Zahlungseingang Willow Outdoors GmbH;
+3260,19;S;EUR;1600;1200;1202;BP-00029;Zahlung Lieferant Devforge Contractors;
+2613,33;S;EUR;1600;1200;1202;BP-00037;Zahlung Lieferant SaaSConnect Expo;
+2835,25;S;EUR;1600;1200;1202;BP-00040;Zahlung Lieferant Whitlock & Rowe LLP;
+770,17;S;EUR;1400;8401;1302;INV-00030;Ausgangsrechnung Summit Media GmbH;
+5098,12;S;EUR;1600;1200;1302;BP-00023;Zahlung Lieferant Nimbus Cloud Services;
+3025,70;S;EUR;1600;1200;1302;BP-00026;Zahlung Lieferant Skyway Travel;
+785,94;S;EUR;4670;1600;1302;BILL-00032;Eingangsrechnung Skyway Travel;400
+4782,55;S;EUR;1200;1400;1402;PMT-00002;Zahlungseingang Cedar Clinics GmbH;
+6492,29;S;EUR;1200;1400;1402;PMT-00004;Zahlungseingang Silver Logistics GmbH;
+12889,65;S;EUR;1200;1400;1402;PMT-00005;Zahlungseingang Falcon Energy GmbH;
+28476,78;S;EUR;1700;1200;1402;TAX-00001;Zahlung Sozialabgaben Tax authority;
+1520,37;S;EUR;1600;1200;1402;BP-00022;Zahlung Lieferant Paperlane Docs;
+241,08;S;EUR;1600;1200;1402;BP-00027;Zahlung Lieferant Paperlane Docs;
+781,84;S;EUR;1600;1200;1402;BP-00031;Zahlung Lieferant Notely;
+357,70;S;EUR;4670;1600;1402;BILL-00034;Eingangsrechnung Metro Rides;500
+2890,37;S;EUR;1600;1200;1402;BP-00036;Zahlung Lieferant AdReach Search;
+107223,88;S;EUR;1200;1590;1402;ICS-00001;Ausgleich Konzernverrechnung Kestrel Inc.;
+4171,19;S;EUR;1600;1200;1702;BP-00024;Zahlung Lieferant Nimbus Cloud Services;
+2319,75;S;EUR;1600;1200;1702;BP-00041;Zahlung Lieferant Whitlock & Rowe LLP;
+716,92;S;EUR;1200;1400;1802;PMT-00015;Zahlungseingang Summit Clinics GmbH;
+315,06;S;EUR;1400;8401;1802;INV-00029;Ausgangsrechnung Silver Robotics GmbH;
+1019,36;S;EUR;1600;1200;1802;BP-00025;Zahlung Lieferant Notely;
+493,16;S;EUR;1600;1200;1802;BP-00033;Zahlung Lieferant Notely;
+2435,83;S;EUR;1600;1200;1802;BP-00042;Zahlung Lieferant Devforge Contractors;
+3994,86;S;EUR;1200;1400;1902;PMT-00009;Zahlungseingang Silver Labs GmbH;
+785,94;S;EUR;1600;1200;1902;BP-00032;Zahlung Lieferant Skyway Travel;
+4050,00;S;EUR;1600;1200;1902;BP-00039;Zahlung Lieferant Harborview Properties;
+3207,36;S;EUR;1200;1400;2002;PMT-00001;Zahlungseingang Bright Learning GmbH;
+3888,89;S;EUR;1400;8401;2002;INV-00028;Ausgangsrechnung Tidal Media GmbH;
+2667,43;S;EUR;1600;1200;2002;BP-00030;Zahlung Lieferant Devforge Contractors;
+3532,68;S;EUR;1600;1200;2002;BP-00035;Zahlung Lieferant AdReach Search;
+3498,89;S;EUR;1200;1400;2102;PMT-00003;Zahlungseingang Meridian Health GmbH;
+2535,72;S;EUR;1200;1400;2102;PMT-00013;Zahlungseingang Tidal Media GmbH;
+2361,80;S;EUR;1200;1400;2102;PMT-00014;Zahlungseingang North Media GmbH;
+3369,65;S;EUR;1600;1200;2102;BP-00028;Zahlung Lieferant Notely;
+357,70;S;EUR;1600;1200;2102;BP-00034;Zahlung Lieferant Metro Rides;
+12465,74;S;EUR;1200;1400;2602;PMT-00010;Zahlungseingang Granite Analytics GmbH;
+25933,40;S;EUR;4120;1200;2802;PR-00002;Gehälter Payroll;100
+6094,05;S;EUR;4120;1200;2802;PR-00002;Gehälter Payroll;200
+83328,51;S;EUR;4120;1200;2802;PR-00002;Gehälter Payroll;300
+13576,26;S;EUR;4125;1200;2802;PR-00002;Gehälter Payroll;400
+11992,18;S;EUR;4120;1200;2802;PR-00002;Gehälter Payroll;500
+5186,68;S;EUR;4130;1700;2802;JNL-00003;Sozialabgaben Rückstellung;100
+1218,81;S;EUR;4130;1700;2802;JNL-00003;Sozialabgaben Rückstellung;200
+16665,70;S;EUR;4130;1700;2802;JNL-00003;Sozialabgaben Rückstellung;300
+2715,25;S;EUR;4130;1700;2802;JNL-00003;Sozialabgaben Rückstellung;400
+2398,44;S;EUR;4130;1700;2802;JNL-00003;Sozialabgaben Rückstellung;500
+1849,63;S;EUR;4970;1200;2802;EXP-00002;Gebühren Zahlungsdienstleister PayStream;
+43,89;S;EUR;2150;1200;2802;JNL-00004;Kursdifferenzen;
+104993,93;S;EUR;1590;8402;2802;IC-00002;Konzernumlage F&E Kestrel Inc.;
+33705,62;S;EUR;1200;1400;0303;PMT-00026;Zahlungseingang Silver Logistics GmbH;
+2191,88;S;EUR;1400;8400;0303;INV-00035;Ausgangsrechnung Tidal Media GmbH;
+6183,41;S;EUR;1400;8400;0303;INV-00037;Ausgangsrechnung Cedar Clinics GmbH;
+24359,31;S;EUR;1400;8400;0303;INV-00039;Ausgangsrechnung Beacon Labs GmbH;
+13755,96;S;EUR;1400;8400;0303;INV-00040;Ausgangsrechnung Falcon Energy GmbH;
+5482,16;S;EUR;1400;8400;0303;INV-00042;Ausgangsrechnung Orchid Learning GmbH;
+1164,89;S;EUR;4806;1600;0303;BILL-00046;Eingangsrechnung Paperlane Docs;100
+503,76;S;EUR;4806;1600;0303;BILL-00053;Eingangsrechnung Paperlane Docs;500
+4950,00;S;EUR;4210;1600;0303;BILL-00059;Eingangsrechnung Harborview Properties;500
+4050,00;S;EUR;4210;1600;0303;BILL-00060;Eingangsrechnung Harborview Properties;500
+10165,16;S;EUR;4950;1600;0303;BILL-00061;Eingangsrechnung Whitlock & Rowe LLP;500
+8316,95;S;EUR;4950;1600;0303;BILL-00062;Eingangsrechnung Whitlock & Rowe LLP;500
+4548,11;S;EUR;1200;1400;0403;PMT-00022;Zahlungseingang Meridian Media GmbH;
+12704,38;S;EUR;1400;8400;0403;INV-00032;Ausgangsrechnung Blue Clinics GmbH;
+4482,05;S;EUR;1400;8400;0403;INV-00034;Ausgangsrechnung Silver Logistics GmbH;
+4682,23;S;EUR;1400;8400;0403;INV-00036;Ausgangsrechnung Silver Robotics GmbH;
+5184,93;S;EUR;1400;8400;0403;INV-00038;Ausgangsrechnung Tidal Outdoors GmbH;
+3448,95;S;EUR;1400;8400;0403;INV-00041;Ausgangsrechnung Silver Labs GmbH;
+3483,33;S;EUR;4670;1600;0403;BILL-00047;Eingangsrechnung Skyway Travel;100
+2660,72;S;EUR;4610;1600;0403;BILL-00058;Eingangsrechnung SaaSConnect Expo;200
+3777,89;S;EUR;1400;8400;0503;INV-00031;Ausgangsrechnung Cedar Studios GmbH;
+19341,34;S;EUR;1400;8400;0503;INV-00033;Ausgangsrechnung Maple Outdoors GmbH;
+4605,90;S;EUR;4780;1600;0503;BILL-00050;Eingangsrechnung Ledgerline Bookkeeping;300
+3024,03;S;EUR;4806;1600;0603;BILL-00049;Eingangsrechnung Notely;300
+10573,36;S;EUR;1200;1400;0703;PMT-00018;Zahlungseingang Beacon Labs GmbH;
+5507,96;S;EUR;1200;1400;0703;PMT-00021;Zahlungseingang Cedar Studios GmbH;
+1572,40;S;EUR;3110;1600;0703;BILL-00043;Eingangsrechnung Paperlane Docs;
+4392,24;S;EUR;3100;1600;0703;BILL-00045;Eingangsrechnung Nimbus Cloud Services;
+1164,89;S;EUR;1600;1200;0703;BP-00046;Zahlung Lieferant Paperlane Docs;
+386,67;S;EUR;4670;1600;0703;BILL-00054;Eingangsrechnung Metro Rides;500
+3333,97;S;EUR;4600;1600;0703;BILL-00055;Eingangsrechnung AdReach Search;200
+10165,16;S;EUR;1600;1200;0703;BP-00061;Zahlung Lieferant Whitlock & Rowe LLP;
+8316,95;S;EUR;1600;1200;0703;BP-00062;Zahlung Lieferant Whitlock & Rowe LLP;
+511,89;S;EUR;1200;1400;1003;PMT-00016;Zahlungseingang Willow Outdoors GmbH;
+3483,33;S;EUR;1600;1200;1003;BP-00047;Zahlung Lieferant Skyway Travel;
+247,07;S;EUR;4806;1600;1003;BILL-00048;Eingangsrechnung Paperlane Docs;200
+872,79;S;EUR;4806;1600;1003;BILL-00051;Eingangsrechnung Stackwise;400
+2660,72;S;EUR;1600;1200;1003;BP-00058;Zahlung Lieferant SaaSConnect Expo;
+503,76;S;EUR;1600;1200;1103;BP-00053;Zahlung Lieferant Paperlane Docs;
+4950,00;S;EUR;1600;1200;1103;BP-00059;Zahlung Lieferant Harborview Properties;
+4050,00;S;EUR;1600;1200;1103;BP-00060;Zahlung Lieferant Harborview Properties;
+4605,90;S;EUR;1600;1200;1203;BP-00050;Zahlung Lieferant Ledgerline Bookkeeping;
+3251,99;S;EUR;4610;1600;1203;BILL-00057;Eingangsrechnung SaaSConnect Expo;200
+2178,76;S;EUR;4780;1600;1203;BILL-00063;Eingangsrechnung Devforge Contractors;500
+5077,60;S;EUR;1200;1400;1303;PMT-00023;Zahlungseingang Bright Foods GmbH;
+13062,92;S;EUR;1200;1400;1303;PMT-00027;Zahlungseingang Summit Freight GmbH;
+2727,79;S;EUR;4600;1600;1303;BILL-00056;Eingangsrechnung AdReach Search;200
+14557,93;S;EUR;1200;1400;1403;PMT-00024;Zahlungseingang North Media GmbH;
+904,08;S;EUR;1400;8401;1403;INV-00044;Ausgangsrechnung Summit Freight GmbH;
+28184,88;S;EUR;1700;1200;1403;TAX-00002;Zahlung Sozialabgaben Tax authority;
+5368,29;S;EUR;3100;1600;1403;BILL-00044;Eingangsrechnung Nimbus Cloud Services;
+3024,03;S;EUR;1600;1200;1403;BP-00049;Zahlung Lieferant Notely;
+872,79;S;EUR;1600;1200;1403;BP-00051;Zahlung Lieferant Stackwise;
+934,79;S;EUR;4670;1600;1403;BILL-00052;Eingangsrechnung Metro Rides;400
+3333,97;S;EUR;1600;1200;1403;BP-00055;Zahlung Lieferant AdReach Search;
+104993,93;S;EUR;1200;1590;1403;ICS-00002;Ausgleich Konzernverrechnung Kestrel Inc.;
+386,67;S;EUR;1600;1200;1703;BP-00054;Zahlung Lieferant Metro Rides;
+3251,99;S;EUR;1600;1200;1703;BP-00057;Zahlung Lieferant SaaSConnect Expo;
+2555,39;S;EUR;1200;1400;1803;PMT-00017;Zahlungseingang Meridian Health GmbH;
+8708,69;S;EUR;1200;1400;1803;PMT-00020;Zahlungseingang Granite Analytics GmbH;
+1572,40;S;EUR;1600;1200;1803;BP-00043;Zahlung Lieferant Paperlane Docs;
+4392,24;S;EUR;1600;1200;1803;BP-00045;Zahlung Lieferant Nimbus Cloud Services;
+1407,04;S;EUR;1400;8401;1903;INV-00043;Ausgangsrechnung Summit Media GmbH;
+247,07;S;EUR;1600;1200;1903;BP-00048;Zahlung Lieferant Paperlane Docs;
+2120,54;S;EUR;1200;1400;2003;PMT-00019;Zahlungseingang Cedar Robotics GmbH;
+1593,63;S;EUR;1200;1400;2103;PMT-00025;Zahlungseingang Maple Outdoors GmbH;
+3888,89;S;EUR;1200;1400;2103;PMT-00028;Zahlungseingang Tidal Media GmbH;
+1426,99;S;EUR;1400;8401;2103;INV-00045;Ausgangsrechnung Copper Foods GmbH;
+5368,29;S;EUR;1600;1200;2103;BP-00044;Zahlung Lieferant Nimbus Cloud Services;
+934,79;S;EUR;1600;1200;2103;BP-00052;Zahlung Lieferant Metro Rides;
+2178,76;S;EUR;1600;1200;2103;BP-00063;Zahlung Lieferant Devforge Contractors;
+2727,79;S;EUR;1600;1200;2403;BP-00056;Zahlung Lieferant AdReach Search;
+770,17;S;EUR;1200;1400;2503;PMT-00030;Zahlungseingang Summit Media GmbH;
+315,06;S;EUR;1200;1400;2603;PMT-00029;Zahlungseingang Silver Robotics GmbH;
+26286,63;S;EUR;4120;1200;3103;PR-00003;Gehälter Payroll;100
+5929,51;S;EUR;4120;1200;3103;PR-00003;Gehälter Payroll;200
+83622,09;S;EUR;4120;1200;3103;PR-00003;Gehälter Payroll;300
+13560,45;S;EUR;4125;1200;3103;PR-00003;Gehälter Payroll;400
+11730,62;S;EUR;4120;1200;3103;PR-00003;Gehälter Payroll;500
+5257,33;S;EUR;4130;1700;3103;JNL-00005;Sozialabgaben Rückstellung;100
+1185,90;S;EUR;4130;1700;3103;JNL-00005;Sozialabgaben Rückstellung;200
+16724,42;S;EUR;4130;1700;3103;JNL-00005;Sozialabgaben Rückstellung;300
+2712,09;S;EUR;4130;1700;3103;JNL-00005;Sozialabgaben Rückstellung;400
+2346,12;S;EUR;4130;1700;3103;JNL-00005;Sozialabgaben Rückstellung;500
+1812,51;S;EUR;4970;1200;3103;EXP-00003;Gebühren Zahlungsdienstleister PayStream;
+746,41;S;EUR;1200;2150;3103;JNL-00006;Kursdifferenzen;
+105363,84;S;EUR;1590;8402;3103;IC-00003;Konzernumlage F&E Kestrel Inc.;
+4641,16;S;EUR;1400;8400;0104;INV-00052;Ausgangsrechnung Beacon Labs GmbH;
+24841,38;S;EUR;1400;8400;0104;INV-00056;Ausgangsrechnung Blue Clinics GmbH;
+9570,34;S;EUR;1400;8400;0204;INV-00049;Ausgangsrechnung North Media GmbH;
+16621,70;S;EUR;1400;8400;0204;INV-00050;Ausgangsrechnung Copper Foods GmbH;
+14381,03;S;EUR;1400;8400;0204;INV-00051;Ausgangsrechnung Summit Clinics GmbH;
+1713,63;S;EUR;1400;8400;0204;INV-00053;Ausgangsrechnung Bright Learning GmbH;
+4338,17;S;EUR;1400;8400;0204;INV-00057;Ausgangsrechnung Summit Media GmbH;
+3027,40;S;EUR;4806;1600;0204;BILL-00070;Eingangsrechnung Notely;300
+1933,45;S;EUR;4780;1600;0204;BILL-00084;Eingangsrechnung Devforge Contractors;500
+12704,38;S;EUR;1200;1400;0304;PMT-00032;Zahlungseingang Blue Clinics GmbH;
+1938,08;S;EUR;1400;8400;0304;INV-00046;Ausgangsrechnung Orchid Learning GmbH;
+9597,96;S;EUR;1400;8400;0304;INV-00054;Ausgangsrechnung Granite Learning GmbH;
+19341,34;S;EUR;1200;1400;0404;PMT-00033;Zahlungseingang Maple Outdoors GmbH;
+6183,41;S;EUR;1200;1400;0404;PMT-00037;Zahlungseingang Cedar Clinics GmbH;
+4092,74;S;EUR;1400;8400;0404;INV-00047;Ausgangsrechnung Summit Freight GmbH;
+7485,94;S;EUR;1400;8400;0404;INV-00048;Ausgangsrechnung Ember Energy GmbH;
+9049,55;S;EUR;1400;8400;0404;INV-00055;Ausgangsrechnung North Robotics GmbH;
+2992,39;S;EUR;4780;1600;0404;BILL-00071;Eingangsrechnung Devforge Contractors;300
+772,19;S;EUR;4806;1600;0404;BILL-00073;Eingangsrechnung Paperlane Docs;400
+474,12;S;EUR;4806;1600;0404;BILL-00075;Eingangsrechnung Stackwise;500
+10252,33;S;EUR;4950;1600;0404;BILL-00083;Eingangsrechnung Brightline Audit;500
+2191,88;S;EUR;1200;1400;0704;PMT-00035;Zahlungseingang Tidal Media GmbH;
+2448,32;S;EUR;4780;1600;0704;BILL-00072;Eingangsrechnung Devforge Contractors;300
+5482,16;S;EUR;1200;1400;0804;PMT-00042;Zahlungseingang Orchid Learning GmbH;
+1068,47;S;EUR;4806;1600;0804;BILL-00067;Eingangsrechnung Stackwise;100
+2345,91;S;EUR;4610;1600;0804;BILL-00079;Eingangsrechnung SaaSConnect Expo;200
+4050,00;S;EUR;4210;1600;0804;BILL-00081;Eingangsrechnung Harborview Properties;500
+1933,45;S;EUR;1600;1200;0804;BP-00084;Zahlung Lieferant Devforge Contractors;
+4283,77;S;EUR;3100;1600;0904;BILL-00066;Eingangsrechnung Nimbus Cloud Services;
+3258,84;S;EUR;4670;1600;0904;BILL-00068;Eingangsrechnung Skyway Travel;100
+259,07;S;EUR;4806;1600;1004;BILL-00069;Eingangsrechnung Stackwise;200
+3027,40;S;EUR;1600;1200;1004;BP-00070;Zahlung Lieferant Notely;
+5184,93;S;EUR;1200;1400;1104;PMT-00038;Zahlungseingang Tidal Outdoors GmbH;
+3448,95;S;EUR;1200;1400;1104;PMT-00041;Zahlungseingang Silver Labs GmbH;
+772,19;S;EUR;1600;1200;1104;BP-00073;Zahlung Lieferant Paperlane Docs;
+776,44;S;EUR;4670;1600;1104;BILL-00074;Eingangsrechnung Metro Rides;400
+3519,26;S;EUR;4600;1600;1104;BILL-00077;Eingangsrechnung SocialSpark Ads;200
+2879,39;S;EUR;4600;1600;1104;BILL-00078;Eingangsrechnung SocialSpark Ads;200
+4950,00;S;EUR;4210;1600;1104;BILL-00080;Eingangsrechnung Harborview Properties;500
+12530,63;S;EUR;4950;1600;1104;BILL-00082;Eingangsrechnung Brightline Audit;500
+1612,80;S;EUR;3110;1600;1404;BILL-00064;Eingangsrechnung Paperlane Docs;
+5235,72;S;EUR;3100;1600;1404;BILL-00065;Eingangsrechnung Nimbus Cloud Services;
+474,12;S;EUR;1600;1200;1404;BP-00075;Zahlung Lieferant Stackwise;
+426,46;S;EUR;4670;1600;1404;BILL-00076;Eingangsrechnung Skyway Travel;500
+1407,04;S;EUR;1200;1400;1504;PMT-00043;Zahlungseingang Summit Media GmbH;
+1427,93;S;EUR;1400;8401;1504;INV-00058;Ausgangsrechnung Meridian Health GmbH;
+28225,86;S;EUR;1700;1200;1504;TAX-00003;Zahlung Sozialabgaben Tax authority;
+2448,32;S;EUR;1600;1200;1504;BP-00072;Zahlung Lieferant Devforge Contractors;
+10252,33;S;EUR;1600;1200;1504;BP-00083;Zahlung Lieferant Brightline Audit;
+105363,84;S;EUR;1200;1590;1504;ICS-00003;Ausgleich Konzernverrechnung Kestrel Inc.;
+2255,74;S;EUR;1400;8401;1604;INV-00060;Ausgangsrechnung Silver Logistics GmbH;
+4283,77;S;EUR;1600;1200;1604;BP-00066;Zahlung Lieferant Nimbus Cloud Services;
+1068,47;S;EUR;1600;1200;1604;BP-00067;Zahlung Lieferant Stackwise;
+259,07;S;EUR;1600;1200;1604;BP-00069;Zahlung Lieferant Stackwise;
+4050,00;S;EUR;1600;1200;1604;BP-00081;Zahlung Lieferant Harborview Properties;
+904,08;S;EUR;1200;1400;1704;PMT-00044;Zahlungseingang Summit Freight GmbH;
+3258,84;S;EUR;1600;1200;1704;BP-00068;Zahlung Lieferant Skyway Travel;
+2992,39;S;EUR;1600;1200;1704;BP-00071;Zahlung Lieferant Devforge Contractors;
+2345,91;S;EUR;1600;1200;1704;BP-00079;Zahlung Lieferant SaaSConnect Expo;
+4682,23;S;EUR;1200;1400;1804;PMT-00036;Zahlungseingang Silver Robotics GmbH;
+1426,99;S;EUR;1200;1400;1804;PMT-00045;Zahlungseingang Copper Foods GmbH;
+5235,72;S;EUR;1600;1200;1804;BP-00065;Zahlung Lieferant Nimbus Cloud Services;
+776,44;S;EUR;1600;1200;1804;BP-00074;Zahlung Lieferant Metro Rides;
+4950,00;S;EUR;1600;1200;1804;BP-00080;Zahlung Lieferant Harborview Properties;
+1612,80;S;EUR;1600;1200;2104;BP-00064;Zahlung Lieferant Paperlane Docs;
+3777,89;S;EUR;1200;1400;2204;PMT-00031;Zahlungseingang Cedar Studios GmbH;
+2879,39;S;EUR;1600;1200;2204;BP-00078;Zahlung Lieferant SocialSpark Ads;
+3519,26;S;EUR;1600;1200;2304;BP-00077;Zahlung Lieferant SocialSpark Ads;
+4482,05;S;EUR;1200;1400;2404;PMT-00034;Zahlungseingang Silver Logistics GmbH;
+24359,31;S;EUR;1200;1400;2404;PMT-00039;Zahlungseingang Beacon Labs GmbH;
+400,73;S;EUR;1400;8401;2404;INV-00059;Ausgangsrechnung Silver Labs GmbH;
+426,46;S;EUR;1600;1200;2404;BP-00076;Zahlung Lieferant Skyway Travel;
+12530,63;S;EUR;1600;1200;2404;BP-00082;Zahlung Lieferant Brightline Audit;
+13755,96;S;EUR;1200;1400;2504;PMT-00040;Zahlungseingang Falcon Energy GmbH;
+25613,83;S;EUR;4120;1200;3004;PR-00004;Gehälter Payroll;100
+6078,69;S;EUR;4120;1200;3004;PR-00004;Gehälter Payroll;200
+84020,37;S;EUR;4120;1200;3004;PR-00004;Gehälter Payroll;300
+13414,90;S;EUR;4125;1200;3004;PR-00004;Gehälter Payroll;400
+12075,63;S;EUR;4120;1200;3004;PR-00004;Gehälter Payroll;500
+5122,77;S;EUR;4130;1700;3004;JNL-00007;Sozialabgaben Rückstellung;100
+1215,74;S;EUR;4130;1700;3004;JNL-00007;Sozialabgaben Rückstellung;200
+16804,07;S;EUR;4130;1700;3004;JNL-00007;Sozialabgaben Rückstellung;300
+2682,98;S;EUR;4130;1700;3004;JNL-00007;Sozialabgaben Rückstellung;400
+2415,13;S;EUR;4130;1700;3004;JNL-00007;Sozialabgaben Rückstellung;500
+2007,87;S;EUR;4970;1200;3004;EXP-00004;Gebühren Zahlungsdienstleister PayStream;
+2092,79;S;EUR;1200;2150;3004;JNL-00008;Kursdifferenzen;
+105865,66;S;EUR;1590;8402;3004;IC-00004;Konzernumlage F&E Kestrel Inc.;
+19082,67;S;EUR;1400;8400;0105;INV-00070;Ausgangsrechnung Summit Media GmbH;
+14143,18;S;EUR;1400;8400;0105;INV-00072;Ausgangsrechnung Falcon Energy GmbH;
+4641,16;S;EUR;1200;1400;0205;PMT-00052;Zahlungseingang Beacon Labs GmbH;
+9049,55;S;EUR;1200;1400;0205;PMT-00055;Zahlungseingang North Robotics GmbH;
+1427,93;S;EUR;1200;1400;0205;PMT-00058;Zahlungseingang Meridian Health GmbH;
+14482,88;S;EUR;1400;8400;0205;INV-00064;Ausgangsrechnung North Media GmbH;
+7465,62;S;EUR;1400;8400;0205;INV-00065;Ausgangsrechnung Beacon Labs GmbH;
+8861,79;S;EUR;1400;8400;0205;INV-00066;Ausgangsrechnung Ember Energy GmbH;
+8346,38;S;EUR;1400;8400;0205;INV-00068;Ausgangsrechnung Copper Foods GmbH;
+5102,93;S;EUR;1400;8400;0205;INV-00069;Ausgangsrechnung Silver Logistics GmbH;
+5084,65;S;EUR;1400;8400;0205;INV-00071;Ausgangsrechnung Quarry Outdoors GmbH;
+5372,95;S;EUR;3100;1600;0205;BILL-00086;Eingangsrechnung Nimbus Cloud Services;
+4396,05;S;EUR;3100;1600;0205;BILL-00087;Eingangsrechnung Nimbus Cloud Services;
+1053,55;S;EUR;4806;1600;0205;BILL-00088;Eingangsrechnung Stackwise;100
+2478,64;S;EUR;4610;1600;0205;BILL-00101;Eingangsrechnung B2B Growth Summit;200
+3002,24;S;EUR;4950;1600;0205;BILL-00104;Eingangsrechnung Brightline Audit;500
+2456,38;S;EUR;4950;1600;0205;BILL-00105;Eingangsrechnung Brightline Audit;500
+24841,38;S;EUR;1200;1400;0505;PMT-00056;Zahlungseingang Blue Clinics GmbH;
+11412,36;S;EUR;1400;8400;0505;INV-00061;Ausgangsrechnung Granite Clinics GmbH;
+1491,77;S;EUR;1400;8400;0505;INV-00062;Ausgangsrechnung Silver Labs GmbH;
+5422,93;S;EUR;1400;8400;0505;INV-00063;Ausgangsrechnung North Robotics GmbH;
+10969,82;S;EUR;1400;8400;0505;INV-00067;Ausgangsrechnung Granite Analytics GmbH;
+263,14;S;EUR;4806;1600;0505;BILL-00090;Eingangsrechnung Stackwise;200
+3221,31;S;EUR;4955;1600;0605;BILL-00092;Eingangsrechnung TalentBridge Search;300
+3407,48;S;EUR;4780;1600;0605;BILL-00093;Eingangsrechnung Devforge Contractors;300
+876,89;S;EUR;4806;1600;0605;BILL-00095;Eingangsrechnung Paperlane Docs;400
+14381,03;S;EUR;1200;1400;0705;PMT-00051;Zahlungseingang Summit Clinics GmbH;
+1643,89;S;EUR;3110;1600;0705;BILL-00085;Eingangsrechnung Paperlane Docs;
+1053,55;S;EUR;1600;1200;0705;BP-00088;Zahlung Lieferant Stackwise;
+2807,28;S;EUR;4670;1600;0705;BILL-00089;Eingangsrechnung Skyway Travel;100
+1938,08;S;EUR;1200;1400;0805;PMT-00046;Zahlungseingang Orchid Learning GmbH;
+16621,70;S;EUR;1200;1400;0805;PMT-00050;Zahlungseingang Copper Foods GmbH;
+419,66;S;EUR;4670;1600;0805;BILL-00098;Eingangsrechnung Skyway Travel;500
+4050,00;S;EUR;4210;1600;0805;BILL-00103;Eingangsrechnung Harborview Properties;500
+7485,94;S;EUR;1200;1400;0905;PMT-00048;Zahlungseingang Ember Energy GmbH;
+9570,34;S;EUR;1200;1400;0905;PMT-00049;Zahlungseingang North Media GmbH;
+4338,17;S;EUR;1200;1400;0905;PMT-00057;Zahlungseingang Summit Media GmbH;
+2255,74;S;EUR;1200;1400;0905;PMT-00060;Zahlungseingang Silver Logistics GmbH;
+2569,23;S;EUR;1400;8401;0905;INV-00073;Ausgangsrechnung Cedar Robotics GmbH;
+5372,95;S;EUR;1600;1200;0905;BP-00086;Zahlung Lieferant Nimbus Cloud Services;
+4396,05;S;EUR;1600;1200;0905;BP-00087;Zahlung Lieferant Nimbus Cloud Services;
+2787,94;S;EUR;4780;1600;0905;BILL-00094;Eingangsrechnung Devforge Contractors;300
+828,93;S;EUR;4670;1600;0905;BILL-00096;Eingangsrechnung Metro Rides;400
+3502,08;S;EUR;4600;1600;0905;BILL-00099;Eingangsrechnung AdReach Search;200
+4950,00;S;EUR;4210;1600;0905;BILL-00102;Eingangsrechnung Harborview Properties;500
+3002,24;S;EUR;1600;1200;0905;BP-00104;Zahlung Lieferant Brightline Audit;
+2456,38;S;EUR;1600;1200;0905;BP-00105;Zahlung Lieferant Brightline Audit;
+1627,51;S;EUR;4780;1600;0905;BILL-00106;Eingangsrechnung Devforge Contractors;500
+876,89;S;EUR;1600;1200;1205;BP-00095;Zahlung Lieferant Paperlane Docs;
+2865,34;S;EUR;4600;1600;1205;BILL-00100;Eingangsrechnung AdReach Search;200
+2478,64;S;EUR;1600;1200;1205;BP-00101;Zahlung Lieferant B2B Growth Summit;
+537,42;S;EUR;4806;1600;1305;BILL-00097;Eingangsrechnung Notely;500
+1643,89;S;EUR;1600;1200;1405;BP-00085;Zahlung Lieferant Paperlane Docs;
+3285,94;S;EUR;4806;1600;1405;BILL-00091;Eingangsrechnung Stackwise;300
+28240,69;S;EUR;1700;1200;1505;TAX-00004;Zahlung Sozialabgaben Tax authority;
+263,14;S;EUR;1600;1200;1505;BP-00090;Zahlung Lieferant Stackwise;
+3221,31;S;EUR;1600;1200;1505;BP-00092;Zahlung Lieferant TalentBridge Search;
+2787,94;S;EUR;1600;1200;1505;BP-00094;Zahlung Lieferant Devforge Contractors;
+4950,00;S;EUR;1600;1200;1505;BP-00102;Zahlung Lieferant Harborview Properties;
+105865,66;S;EUR;1200;1590;1505;ICS-00004;Ausgleich Konzernverrechnung Kestrel Inc.;
+3407,48;S;EUR;1600;1200;1605;BP-00093;Zahlung Lieferant Devforge Contractors;
+4050,00;S;EUR;1600;1200;1605;BP-00103;Zahlung Lieferant Harborview Properties;
+2807,28;S;EUR;1600;1200;1905;BP-00089;Zahlung Lieferant Skyway Travel;
+828,93;S;EUR;1600;1200;1905;BP-00096;Zahlung Lieferant Metro Rides;
+537,42;S;EUR;1600;1200;1905;BP-00097;Zahlung Lieferant Notely;
+419,66;S;EUR;1600;1200;1905;BP-00098;Zahlung Lieferant Skyway Travel;
+3156,14;S;EUR;1400;8401;2005;INV-00074;Ausgangsrechnung Cedar Studios GmbH;
+624,71;S;EUR;1400;8401;2005;INV-00075;Ausgangsrechnung Blue Clinics GmbH;
+3502,08;S;EUR;1600;1200;2105;BP-00099;Zahlung Lieferant AdReach Search;
+1627,51;S;EUR;1600;1200;2105;BP-00106;Zahlung Lieferant Devforge Contractors;
+4092,74;S;EUR;1200;1400;2305;PMT-00047;Zahlungseingang Summit Freight GmbH;
+9597,96;S;EUR;1200;1400;2305;PMT-00054;Zahlungseingang Granite Learning GmbH;
+3285,94;S;EUR;1600;1200;2305;BP-00091;Zahlung Lieferant Stackwise;
+2865,34;S;EUR;1600;1200;2305;BP-00100;Zahlung Lieferant AdReach Search;
+400,73;S;EUR;1200;1400;2605;PMT-00059;Zahlungseingang Silver Labs GmbH;
+1713,63;S;EUR;1200;1400;2705;PMT-00053;Zahlungseingang Bright Learning GmbH;
+25800,86;S;EUR;4120;1200;3005;PR-00005;Gehälter Payroll;100
+5986,07;S;EUR;4120;1200;3005;PR-00005;Gehälter Payroll;200
+89988,98;S;EUR;4120;1200;3005;PR-00005;Gehälter Payroll;300
+13822,04;S;EUR;4125;1200;3005;PR-00005;Gehälter Payroll;400
+12036,90;S;EUR;4120;1200;3005;PR-00005;Gehälter Payroll;500
+5160,17;S;EUR;4130;1700;3005;JNL-00009;Sozialabgaben Rückstellung;100
+1197,21;S;EUR;4130;1700;3005;JNL-00009;Sozialabgaben Rückstellung;200
+17997,80;S;EUR;4130;1700;3005;JNL-00009;Sozialabgaben Rückstellung;300
+2764,41;S;EUR;4130;1700;3005;JNL-00009;Sozialabgaben Rückstellung;400
+2407,38;S;EUR;4130;1700;3005;JNL-00009;Sozialabgaben Rückstellung;500
+1985,57;S;EUR;4970;1200;3005;EXP-00005;Gebühren Zahlungsdienstleister PayStream;
+60,13;S;EUR;2150;1200;3005;JNL-00010;Kursdifferenzen;
+113386,11;S;EUR;1590;8402;3005;IC-00005;Konzernumlage F&E Kestrel Inc.;
+4687,46;S;EUR;1400;8400;0206;INV-00080;Ausgangsrechnung Silver Robotics GmbH;
+12843,17;S;EUR;1400;8400;0206;INV-00081;Ausgangsrechnung Summit Clinics GmbH;
+10395,35;S;EUR;1400;8400;0206;INV-00086;Ausgangsrechnung Willow Outdoors GmbH;
+1880,72;S;EUR;1400;8400;0206;INV-00087;Ausgangsrechnung Granite Analytics GmbH;
+7622,63;S;EUR;1400;8400;0306;INV-00079;Ausgangsrechnung North Media GmbH;
+5151,37;S;EUR;3100;1600;0306;BILL-00108;Eingangsrechnung Nimbus Cloud Services;
+742,96;S;EUR;4806;1600;0306;BILL-00116;Eingangsrechnung Paperlane Docs;400
+356,86;S;EUR;4670;1600;0306;BILL-00119;Eingangsrechnung Skyway Travel;500
+4103,40;S;EUR;4610;1600;0306;BILL-00122;Eingangsrechnung SaaSConnect Expo;200
+4050,00;S;EUR;4210;1600;0306;BILL-00125;Eingangsrechnung Harborview Properties;500
+12470,09;S;EUR;1400;8400;0406;INV-00078;Ausgangsrechnung Copper Foods GmbH;
+5860,38;S;EUR;1400;8400;0406;INV-00083;Ausgangsrechnung Blue Clinics GmbH;
+14300,72;S;EUR;1400;8400;0406;INV-00085;Ausgangsrechnung Summit Media GmbH;
+3156,14;S;EUR;1200;1400;0506;PMT-00074;Zahlungseingang Cedar Studios GmbH;
+11033,47;S;EUR;1400;8400;0506;INV-00076;Ausgangsrechnung Silver Labs GmbH;
+8738,28;S;EUR;1400;8400;0506;INV-00077;Ausgangsrechnung Granite Clinics GmbH;
+11578,70;S;EUR;1400;8400;0506;INV-00082;Ausgangsrechnung Beacon Labs GmbH;
+7330,52;S;EUR;1400;8400;0506;INV-00084;Ausgangsrechnung Meridian Media GmbH;
+243,08;S;EUR;4806;1600;0506;BILL-00112;Eingangsrechnung Paperlane Docs;200
+5151,37;S;EUR;1600;1200;0606;BP-00108;Zahlung Lieferant Nimbus Cloud Services;
+3236,82;S;EUR;4670;1600;0606;BILL-00111;Eingangsrechnung Metro Rides;100
+3028,96;S;EUR;4806;1600;0606;BILL-00113;Eingangsrechnung Paperlane Docs;300
+535,38;S;EUR;4806;1600;0606;BILL-00118;Eingangsrechnung Stackwise;500
+3126,36;S;EUR;4600;1600;0606;BILL-00120;Eingangsrechnung SocialSpark Ads;200
+4950,00;S;EUR;4210;1600;0606;BILL-00124;Eingangsrechnung Harborview Properties;500
+1492,32;S;EUR;3110;1600;0906;BILL-00107;Eingangsrechnung Paperlane Docs;
+1080,22;S;EUR;4806;1600;1006;BILL-00110;Eingangsrechnung Paperlane Docs;100
+243,08;S;EUR;1600;1200;1006;BP-00112;Zahlung Lieferant Paperlane Docs;
+2731,95;S;EUR;4780;1600;1006;BILL-00115;Eingangsrechnung Devforge Contractors;300
+14482,88;S;EUR;1200;1400;1106;PMT-00064;Zahlungseingang North Media GmbH;
+3339,05;S;EUR;4780;1600;1106;BILL-00114;Eingangsrechnung Devforge Contractors;300
+2557,93;S;EUR;4600;1600;1106;BILL-00121;Eingangsrechnung SocialSpark Ads;200
+2287,07;S;EUR;4950;1600;1106;BILL-00127;Eingangsrechnung Brightline Audit;500
+1491,77;S;EUR;1200;1400;1206;PMT-00062;Zahlungseingang Silver Labs GmbH;
+5933,54;S;EUR;1400;8401;1206;INV-00090;Ausgangsrechnung Ember Energy GmbH;
+3357,33;S;EUR;4610;1600;1206;BILL-00123;Eingangsrechnung SaaSConnect Expo;200
+2009,70;S;EUR;4780;1600;1206;BILL-00128;Eingangsrechnung Ledgerline Bookkeeping;500
+5422,93;S;EUR;1200;1400;1306;PMT-00063;Zahlungseingang North Robotics GmbH;
+10969,82;S;EUR;1200;1400;1306;PMT-00067;Zahlungseingang Granite Analytics GmbH;
+5084,65;S;EUR;1200;1400;1306;PMT-00071;Zahlungseingang Quarry Outdoors GmbH;
+29526,97;S;EUR;1700;1200;1306;TAX-00005;Zahlung Sozialabgaben Tax authority;
+1492,32;S;EUR;1600;1200;1306;BP-00107;Zahlung Lieferant Paperlane Docs;
+4214,76;S;EUR;3100;1600;1306;BILL-00109;Eingangsrechnung Nimbus Cloud Services;
+3236,82;S;EUR;1600;1200;1306;BP-00111;Zahlung Lieferant Metro Rides;
+3028,96;S;EUR;1600;1200;1306;BP-00113;Zahlung Lieferant Paperlane Docs;
+742,96;S;EUR;1600;1200;1306;BP-00116;Zahlung Lieferant Paperlane Docs;
+762,91;S;EUR;4670;1600;1306;BILL-00117;Eingangsrechnung Skyway Travel;400
+356,86;S;EUR;1600;1200;1306;BP-00119;Zahlung Lieferant Skyway Travel;
+3126,36;S;EUR;1600;1200;1306;BP-00120;Zahlung Lieferant SocialSpark Ads;
+4103,40;S;EUR;1600;1200;1306;BP-00122;Zahlung Lieferant SaaSConnect Expo;
+4050,00;S;EUR;1600;1200;1306;BP-00125;Zahlung Lieferant Harborview Properties;
+2795,31;S;EUR;4950;1600;1306;BILL-00126;Eingangsrechnung Brightline Audit;500
+113386,11;S;EUR;1200;1590;1306;ICS-00005;Ausgleich Konzernverrechnung Kestrel Inc.;
+8346,38;S;EUR;1200;1400;1606;PMT-00068;Zahlungseingang Copper Foods GmbH;
+19082,67;S;EUR;1200;1400;1606;PMT-00070;Zahlungseingang Summit Media GmbH;
+535,38;S;EUR;1600;1200;1606;BP-00118;Zahlung Lieferant Stackwise;
+2287,07;S;EUR;1600;1200;1606;BP-00127;Zahlung Lieferant Brightline Audit;
+11412,36;S;EUR;1200;1400;1706;PMT-00061;Zahlungseingang Granite Clinics GmbH;
+4950,00;S;EUR;1600;1200;1706;BP-00124;Zahlung Lieferant Harborview Properties;
+8861,79;S;EUR;1200;1400;1806;PMT-00066;Zahlungseingang Ember Energy GmbH;
+3339,05;S;EUR;1600;1200;1806;BP-00114;Zahlung Lieferant Devforge Contractors;
+14143,18;S;EUR;1200;1400;1906;PMT-00072;Zahlungseingang Falcon Energy GmbH;
+5102,93;S;EUR;1200;1400;2006;PMT-00069;Zahlungseingang Silver Logistics GmbH;
+2569,23;S;EUR;1200;1400;2006;PMT-00073;Zahlungseingang Cedar Robotics GmbH;
+701,03;S;EUR;1400;8401;2006;INV-00089;Ausgangsrechnung Tidal Media GmbH;
+4214,76;S;EUR;1600;1200;2006;BP-00109;Zahlung Lieferant Nimbus Cloud Services;
+1080,22;S;EUR;1600;1200;2006;BP-00110;Zahlung Lieferant Paperlane Docs;
+2731,95;S;EUR;1600;1200;2006;BP-00115;Zahlung Lieferant Devforge Contractors;
+2557,93;S;EUR;1600;1200;2006;BP-00121;Zahlung Lieferant SocialSpark Ads;
+2795,31;S;EUR;1600;1200;2006;BP-00126;Zahlung Lieferant Brightline Audit;
+2009,70;S;EUR;1600;1200;2006;BP-00128;Zahlung Lieferant Ledgerline Bookkeeping;
+401,84;S;EUR;1400;8401;2306;INV-00088;Ausgangsrechnung Blue Clinics GmbH;
+762,91;S;EUR;1600;1200;2306;BP-00117;Zahlung Lieferant Skyway Travel;
+7465,62;S;EUR;1200;1400;2406;PMT-00065;Zahlungseingang Beacon Labs GmbH;
+3357,33;S;EUR;1600;1200;2406;BP-00123;Zahlung Lieferant SaaSConnect Expo;
+624,71;S;EUR;1200;1400;2706;PMT-00075;Zahlungseingang Blue Clinics GmbH;
+25721,29;S;EUR;4120;1200;3006;PR-00006;Gehälter Payroll;100
+5950,56;S;EUR;4120;1200;3006;PR-00006;Gehälter Payroll;200
+90630,51;S;EUR;4120;1200;3006;PR-00006;Gehälter Payroll;300
+13377,50;S;EUR;4125;1200;3006;PR-00006;Gehälter Payroll;400
+12180,68;S;EUR;4120;1200;3006;PR-00006;Gehälter Payroll;500
+5144,26;S;EUR;4130;1700;3006;JNL-00011;Sozialabgaben Rückstellung;100
+1190,11;S;EUR;4130;1700;3006;JNL-00011;Sozialabgaben Rückstellung;200
+18126,10;S;EUR;4130;1700;3006;JNL-00011;Sozialabgaben Rückstellung;300
+2675,50;S;EUR;4130;1700;3006;JNL-00011;Sozialabgaben Rückstellung;400
+2436,14;S;EUR;4130;1700;3006;JNL-00011;Sozialabgaben Rückstellung;500
+1907,77;S;EUR;4970;1200;3006;EXP-00006;Gebühren Zahlungsdienstleister PayStream;
+959,58;S;EUR;2150;1200;3006;JNL-00012;Kursdifferenzen;
+114194,45;S;EUR;1590;8402;3006;IC-00006;Konzernumlage F&E Kestrel Inc.;
+12840,01;S;EUR;1400;8400;0207;INV-00093;Ausgangsrechnung Silver Labs GmbH;
+8240,48;S;EUR;1400;8400;0207;INV-00094;Ausgangsrechnung Meridian Health GmbH;
+3980,51;S;EUR;1400;8400;0207;INV-00096;Ausgangsrechnung Orchid Learning GmbH;
+588,50;S;EUR;1400;8400;0207;INV-00097;Ausgangsrechnung Tidal Media GmbH;
+6468,58;S;EUR;1400;8400;0207;INV-00099;Ausgangsrechnung Quarry Outdoors GmbH;
+1064,75;S;EUR;4806;1600;0207;BILL-00132;Eingangsrechnung Notely;100
+19643,12;S;EUR;1400;8400;0307;INV-00092;Ausgangsrechnung Granite Analytics GmbH;
+10238,84;S;EUR;1400;8400;0307;INV-00101;Ausgangsrechnung Maple Outdoors GmbH;
+3313,43;S;EUR;4806;1600;0307;BILL-00135;Eingangsrechnung Paperlane Docs;300
+925,10;S;EUR;4670;1600;0307;BILL-00139;Eingangsrechnung Metro Rides;400
+2125,56;S;EUR;4610;1600;0307;BILL-00144;Eingangsrechnung B2B Growth Summit;200
+2413,18;S;EUR;4950;1600;0307;BILL-00148;Eingangsrechnung Whitlock & Rowe LLP;500
+4687,46;S;EUR;1200;1400;0407;PMT-00080;Zahlungseingang Silver Robotics GmbH;
+5933,54;S;EUR;1200;1400;0407;PMT-00090;Zahlungseingang Ember Energy GmbH;
+9615,94;S;EUR;1400;8400;0407;INV-00091;Ausgangsrechnung Cedar Studios GmbH;
+6666,40;S;EUR;1400;8400;0407;INV-00095;Ausgangsrechnung Granite Learning GmbH;
+7816,35;S;EUR;1400;8400;0407;INV-00098;Ausgangsrechnung Summit Media GmbH;
+9102,62;S;EUR;1400;8400;0407;INV-00100;Ausgangsrechnung North Media GmbH;
+17184,02;S;EUR;1400;8400;0407;INV-00102;Ausgangsrechnung Beacon Labs GmbH;
+1647,03;S;EUR;3110;1600;0407;BILL-00129;Eingangsrechnung Paperlane Docs;
+4950,00;S;EUR;4210;1600;0407;BILL-00145;Eingangsrechnung Harborview Properties;500
+531,05;S;EUR;4806;1600;0707;BILL-00140;Eingangsrechnung Paperlane Docs;500
+12470,09;S;EUR;1200;1400;0807;PMT-00078;Zahlungseingang Copper Foods GmbH;
+2125,56;S;EUR;1600;1200;0807;BP-00144;Zahlung Lieferant B2B Growth Summit;
+11578,70;S;EUR;1200;1400;0907;PMT-00082;Zahlungseingang Beacon Labs GmbH;
+10395,35;S;EUR;1200;1400;0907;PMT-00086;Zahlungseingang Willow Outdoors GmbH;
+1064,75;S;EUR;1600;1200;0907;BP-00132;Zahlung Lieferant Notely;
+2868,11;S;EUR;4600;1600;0907;BILL-00143;Eingangsrechnung AdReach Search;200
+2413,18;S;EUR;1600;1200;0907;BP-00148;Zahlung Lieferant Whitlock & Rowe LLP;
+1880,72;S;EUR;1200;1400;1107;PMT-00087;Zahlungseingang Granite Analytics GmbH;
+401,84;S;EUR;1200;1400;1107;PMT-00088;Zahlungseingang Blue Clinics GmbH;
+1647,03;S;EUR;1600;1200;1107;BP-00129;Zahlung Lieferant Paperlane Docs;
+5366,87;S;EUR;3100;1600;1107;BILL-00130;Eingangsrechnung Nimbus Cloud Services;
+4391,08;S;EUR;3100;1600;1107;BILL-00131;Eingangsrechnung Nimbus Cloud Services;
+2022,78;S;EUR;4670;1600;1107;BILL-00133;Eingangsrechnung Metro Rides;100
+279,10;S;EUR;4806;1600;1107;BILL-00134;Eingangsrechnung Stackwise;200
+3313,43;S;EUR;1600;1200;1107;BP-00135;Zahlung Lieferant Paperlane Docs;
+3343,46;S;EUR;4780;1600;1107;BILL-00136;Eingangsrechnung Devforge Contractors;300
+2735,56;S;EUR;4780;1600;1107;BILL-00137;Eingangsrechnung Devforge Contractors;300
+384,31;S;EUR;4670;1600;1107;BILL-00141;Eingangsrechnung Metro Rides;500
+3505,47;S;EUR;4600;1600;1107;BILL-00142;Eingangsrechnung AdReach Search;200
+2949,45;S;EUR;4950;1600;1107;BILL-00147;Eingangsrechnung Whitlock & Rowe LLP;500
+1508,46;S;EUR;4780;1600;1107;BILL-00149;Eingangsrechnung Ledgerline Bookkeeping;500
+730,55;S;EUR;4806;1600;1407;BILL-00138;Eingangsrechnung Paperlane Docs;400
+925,10;S;EUR;1600;1200;1407;BP-00139;Zahlung Lieferant Metro Rides;
+4950,00;S;EUR;1600;1200;1407;BP-00145;Zahlung Lieferant Harborview Properties;
+4050,00;S;EUR;4210;1600;1407;BILL-00146;Eingangsrechnung Harborview Properties;500
+29572,11;S;EUR;1700;1200;1507;TAX-00006;Zahlung Sozialabgaben Tax authority;
+531,05;S;EUR;1600;1200;1507;BP-00140;Zahlung Lieferant Paperlane Docs;
+114194,45;S;EUR;1200;1590;1507;ICS-00006;Ausgleich Konzernverrechnung Kestrel Inc.;
+12843,17;S;EUR;1200;1400;1607;PMT-00081;Zahlungseingang Summit Clinics GmbH;
+701,03;S;EUR;1200;1400;1607;PMT-00089;Zahlungseingang Tidal Media GmbH;
+2868,11;S;EUR;1600;1200;1607;BP-00143;Zahlung Lieferant AdReach Search;
+4391,08;S;EUR;1600;1200;1707;BP-00131;Zahlung Lieferant Nimbus Cloud Services;
+279,10;S;EUR;1600;1200;1707;BP-00134;Zahlung Lieferant Stackwise;
+11033,47;S;EUR;1200;1400;1807;PMT-00076;Zahlungseingang Silver Labs GmbH;
+5366,87;S;EUR;1600;1200;1807;BP-00130;Zahlung Lieferant Nimbus Cloud Services;
+2022,78;S;EUR;1600;1200;1807;BP-00133;Zahlung Lieferant Metro Rides;
+3343,46;S;EUR;1600;1200;1807;BP-00136;Zahlung Lieferant Devforge Contractors;
+3505,47;S;EUR;1600;1200;1807;BP-00142;Zahlung Lieferant AdReach Search;
+384,31;S;EUR;1600;1200;2107;BP-00141;Zahlung Lieferant Metro Rides;
+5860,38;S;EUR;1200;1400;2207;PMT-00083;Zahlungseingang Blue Clinics GmbH;
+7330,52;S;EUR;1200;1400;2207;PMT-00084;Zahlungseingang Meridian Media GmbH;
+603,27;S;EUR;1400;8401;2207;INV-00103;Ausgangsrechnung Blue Clinics GmbH;
+3646,36;S;EUR;1400;8401;2207;INV-00105;Ausgangsrechnung Bright Learning GmbH;
+2735,56;S;EUR;1600;1200;2307;BP-00137;Zahlung Lieferant Devforge Contractors;
+2949,45;S;EUR;1600;1200;2307;BP-00147;Zahlung Lieferant Whitlock & Rowe LLP;
+7622,63;S;EUR;1200;1400;2407;PMT-00079;Zahlungseingang North Media GmbH;
+1231,76;S;EUR;1400;8401;2407;INV-00104;Ausgangsrechnung Summit Media GmbH;
+8738,28;S;EUR;1200;1400;2507;PMT-00077;Zahlungseingang Granite Clinics GmbH;
+14300,72;S;EUR;1200;1400;2507;PMT-00085;Zahlungseingang Summit Media GmbH;
+730,55;S;EUR;1600;1200;2507;BP-00138;Zahlung Lieferant Paperlane Docs;
+4050,00;S;EUR;1600;1200;2507;BP-00146;Zahlung Lieferant Harborview Properties;
+1508,46;S;EUR;1600;1200;2507;BP-00149;Zahlung Lieferant Ledgerline Bookkeeping;
+25593,94;S;EUR;4120;1200;3107;PR-00007;Gehälter Payroll;100
+6000,68;S;EUR;4120;1200;3107;PR-00007;Gehälter Payroll;200
+91223,51;S;EUR;4120;1200;3107;PR-00007;Gehälter Payroll;300
+13513,92;S;EUR;4125;1200;3107;PR-00007;Gehälter Payroll;400
+11969,24;S;EUR;4120;1200;3107;PR-00007;Gehälter Payroll;500
+5118,79;S;EUR;4130;1700;3107;JNL-00013;Sozialabgaben Rückstellung;100
+1200,14;S;EUR;4130;1700;3107;JNL-00013;Sozialabgaben Rückstellung;200
+18244,70;S;EUR;4130;1700;3107;JNL-00013;Sozialabgaben Rückstellung;300
+2702,78;S;EUR;4130;1700;3107;JNL-00013;Sozialabgaben Rückstellung;400
+2393,85;S;EUR;4130;1700;3107;JNL-00013;Sozialabgaben Rückstellung;500
+1927,96;S;EUR;4970;1200;3107;EXP-00007;Gebühren Zahlungsdienstleister PayStream;
+222,77;S;EUR;1200;2150;3107;JNL-00014;Kursdifferenzen;
+114941,62;S;EUR;1590;8402;3107;IC-00007;Konzernumlage F&E Kestrel Inc.;
+17184,02;S;EUR;1200;1400;0108;PMT-00102;Zahlungseingang Beacon Labs GmbH;
+14624,62;S;EUR;1400;8400;0108;INV-00107;Ausgangsrechnung Tidal Media GmbH;
+40419,44;S;EUR;1400;8400;0108;INV-00109;Ausgangsrechnung North Media GmbH;
+5660,08;S;EUR;1400;8400;0108;INV-00110;Ausgangsrechnung North Robotics GmbH;
+3115,69;S;EUR;1400;8400;0108;INV-00115;Ausgangsrechnung Maple Outdoors GmbH;
+2933,72;S;EUR;1400;8400;0108;INV-00116;Ausgangsrechnung Bright Learning GmbH;
+3602,02;S;EUR;1400;8400;0108;INV-00117;Ausgangsrechnung Tidal Outdoors GmbH;
+255,70;S;EUR;4806;1600;0108;BILL-00155;Eingangsrechnung Paperlane Docs;200
+2541,06;S;EUR;4780;1600;0108;BILL-00158;Eingangsrechnung Ledgerline Bookkeeping;300
+812,27;S;EUR;4806;1600;0108;BILL-00159;Eingangsrechnung Notely;400
+3646,38;S;EUR;4600;1600;0108;BILL-00163;Eingangsrechnung SocialSpark Ads;200
+12625,92;S;EUR;1400;8400;0408;INV-00106;Ausgangsrechnung Cedar Studios GmbH;
+3455,49;S;EUR;1400;8400;0408;INV-00108;Ausgangsrechnung Silver Logistics GmbH;
+6832,22;S;EUR;1400;8400;0408;INV-00111;Ausgangsrechnung Granite Clinics GmbH;
+1518,75;S;EUR;1400;8400;0408;INV-00113;Ausgangsrechnung Ember Energy GmbH;
+1617,37;S;EUR;3110;1600;0408;BILL-00150;Eingangsrechnung Paperlane Docs;
+867,86;S;EUR;4670;1600;0408;BILL-00160;Eingangsrechnung Metro Rides;400
+12206,70;S;EUR;1400;8400;0508;INV-00112;Ausgangsrechnung Summit Freight GmbH;
+7733,59;S;EUR;1400;8400;0508;INV-00114;Ausgangsrechnung Meridian Health GmbH;
+3464,44;S;EUR;4806;1600;0508;BILL-00156;Eingangsrechnung Paperlane Docs;300
+2569,33;S;EUR;4610;1600;0508;BILL-00165;Eingangsrechnung B2B Growth Summit;200
+2291,87;S;EUR;4950;1600;0508;BILL-00169;Eingangsrechnung Brightline Audit;500
+9102,62;S;EUR;1200;1400;0608;PMT-00100;Zahlungseingang North Media GmbH;
+4050,00;S;EUR;4210;1600;0708;BILL-00167;Eingangsrechnung Harborview Properties;500
+1901,53;S;EUR;4780;1600;0708;BILL-00170;Eingangsrechnung Devforge Contractors;500
+3646,36;S;EUR;1200;1400;0808;PMT-00105;Zahlungseingang Bright Learning GmbH;
+3105,74;S;EUR;4780;1600;0808;BILL-00157;Eingangsrechnung Ledgerline Bookkeeping;300
+2541,06;S;EUR;1600;1200;0808;BP-00158;Zahlung Lieferant Ledgerline Bookkeeping;
+867,86;S;EUR;1600;1200;0808;BP-00160;Zahlung Lieferant Metro Rides;
+303,22;S;EUR;4670;1600;0808;BILL-00162;Eingangsrechnung Metro Rides;500
+2983,40;S;EUR;4600;1600;0808;BILL-00164;Eingangsrechnung SocialSpark Ads;200
+4950,00;S;EUR;4210;1600;0808;BILL-00166;Eingangsrechnung Harborview Properties;500
+1231,76;S;EUR;1200;1400;1108;PMT-00104;Zahlungseingang Summit Media GmbH;
+982,03;S;EUR;4806;1600;1108;BILL-00153;Eingangsrechnung Paperlane Docs;100
+812,27;S;EUR;1600;1200;1108;BP-00159;Zahlung Lieferant Notely;
+2556,55;S;EUR;1400;8401;1208;INV-00119;Ausgangsrechnung Blue Robotics GmbH;
+1617,37;S;EUR;1600;1200;1208;BP-00150;Zahlung Lieferant Paperlane Docs;
+3646,38;S;EUR;1600;1200;1208;BP-00163;Zahlung Lieferant SocialSpark Ads;
+2801,17;S;EUR;4950;1600;1208;BILL-00168;Eingangsrechnung Brightline Audit;500
+2291,87;S;EUR;1600;1200;1208;BP-00169;Zahlung Lieferant Brightline Audit;
+9615,94;S;EUR;1200;1400;1308;PMT-00091;Zahlungseingang Cedar Studios GmbH;
+2862,78;S;EUR;4670;1600;1308;BILL-00154;Eingangsrechnung Metro Rides;100
+548,80;S;EUR;4806;1600;1308;BILL-00161;Eingangsrechnung Stackwise;500
+7816,35;S;EUR;1200;1400;1408;PMT-00098;Zahlungseingang Summit Media GmbH;
+133,06;S;EUR;1400;8401;1408;INV-00118;Ausgangsrechnung Bright Learning GmbH;
+5060,22;S;EUR;3100;1600;1408;BILL-00151;Eingangsrechnung Nimbus Cloud Services;
+4140,18;S;EUR;3100;1600;1408;BILL-00152;Eingangsrechnung Nimbus Cloud Services;
+255,70;S;EUR;1600;1200;1408;BP-00155;Zahlung Lieferant Paperlane Docs;
+3105,74;S;EUR;1600;1200;1408;BP-00157;Zahlung Lieferant Ledgerline Bookkeeping;
+2569,33;S;EUR;1600;1200;1408;BP-00165;Zahlung Lieferant B2B Growth Summit;
+3980,51;S;EUR;1200;1400;1508;PMT-00096;Zahlungseingang Orchid Learning GmbH;
+588,50;S;EUR;1200;1400;1508;PMT-00097;Zahlungseingang Tidal Media GmbH;
+29660,26;S;EUR;1700;1200;1508;TAX-00007;Zahlung Sozialabgaben Tax authority;
+982,03;S;EUR;1600;1200;1508;BP-00153;Zahlung Lieferant Paperlane Docs;
+3464,44;S;EUR;1600;1200;1508;BP-00156;Zahlung Lieferant Paperlane Docs;
+4950,00;S;EUR;1600;1200;1508;BP-00166;Zahlung Lieferant Harborview Properties;
+1901,53;S;EUR;1600;1200;1508;BP-00170;Zahlung Lieferant Devforge Contractors;
+114941,62;S;EUR;1200;1590;1508;ICS-00007;Ausgleich Konzernverrechnung Kestrel Inc.;
+4050,00;S;EUR;1600;1200;1808;BP-00167;Zahlung Lieferant Harborview Properties;
+4970,02;S;EUR;1400;8401;2008;INV-00120;Ausgangsrechnung Ember Energy GmbH;
+303,22;S;EUR;1600;1200;2008;BP-00162;Zahlung Lieferant Metro Rides;
+19643,12;S;EUR;1200;1400;2108;PMT-00092;Zahlungseingang Granite Analytics GmbH;
+2983,40;S;EUR;1600;1200;2108;BP-00164;Zahlung Lieferant SocialSpark Ads;
+6468,58;S;EUR;1200;1400;2208;PMT-00099;Zahlungseingang Quarry Outdoors GmbH;
+10238,84;S;EUR;1200;1400;2208;PMT-00101;Zahlungseingang Maple Outdoors GmbH;
+5060,22;S;EUR;1600;1200;2208;BP-00151;Zahlung Lieferant Nimbus Cloud Services;
+4140,18;S;EUR;1600;1200;2208;BP-00152;Zahlung Lieferant Nimbus Cloud Services;
+2862,78;S;EUR;1600;1200;2208;BP-00154;Zahlung Lieferant Metro Rides;
+548,80;S;EUR;1600;1200;2208;BP-00161;Zahlung Lieferant Stackwise;
+2801,17;S;EUR;1600;1200;2208;BP-00168;Zahlung Lieferant Brightline Audit;
+12840,01;S;EUR;1200;1400;2608;PMT-00093;Zahlungseingang Silver Labs GmbH;
+8240,48;S;EUR;1200;1400;2608;PMT-00094;Zahlungseingang Meridian Health GmbH;
+6666,40;S;EUR;1200;1400;2608;PMT-00095;Zahlungseingang Granite Learning GmbH;
+603,27;S;EUR;1200;1400;2708;PMT-00103;Zahlungseingang Blue Clinics GmbH;
+25796,72;S;EUR;4120;1200;2908;PR-00008;Gehälter Payroll;100
+6039,23;S;EUR;4120;1200;2908;PR-00008;Gehälter Payroll;200
+91450,46;S;EUR;4120;1200;2908;PR-00008;Gehälter Payroll;300
+13260,39;S;EUR;4125;1200;2908;PR-00008;Gehälter Payroll;400
+11627,16;S;EUR;4120;1200;2908;PR-00008;Gehälter Payroll;500
+5159,34;S;EUR;4130;1700;2908;JNL-00015;Sozialabgaben Rückstellung;100
+1207,85;S;EUR;4130;1700;2908;JNL-00015;Sozialabgaben Rückstellung;200
+18290,09;S;EUR;4130;1700;2908;JNL-00015;Sozialabgaben Rückstellung;300
+2652,08;S;EUR;4130;1700;2908;JNL-00015;Sozialabgaben Rückstellung;400
+2325,43;S;EUR;4130;1700;2908;JNL-00015;Sozialabgaben Rückstellung;500
+2083,33;S;EUR;4970;1200;2908;EXP-00008;Gebühren Zahlungsdienstleister PayStream;
+735,35;S;EUR;1200;2150;2908;JNL-00016;Kursdifferenzen;
+115227,59;S;EUR;1590;8402;2908;IC-00008;Konzernumlage F&E Kestrel Inc.;
+8298,85;S;EUR;1400;8400;0109;INV-00129;Ausgangsrechnung North Media GmbH;
+7218,11;S;EUR;1400;8400;0209;INV-00121;Ausgangsrechnung Beacon Labs GmbH;
+11081,09;S;EUR;1400;8400;0209;INV-00128;Ausgangsrechnung Meridian Media GmbH;
+695,83;S;EUR;4670;1600;0209;BILL-00182;Eingangsrechnung Metro Rides;400
+2506,50;S;EUR;4950;1600;0209;BILL-00192;Eingangsrechnung Whitlock & Rowe LLP;500
+4970,02;S;EUR;1200;1400;0309;PMT-00120;Zahlungseingang Ember Energy GmbH;
+6271,02;S;EUR;1400;8400;0309;INV-00126;Ausgangsrechnung North Robotics GmbH;
+5425,95;S;EUR;3100;1600;0309;BILL-00172;Eingangsrechnung Nimbus Cloud Services;
+1185,29;S;EUR;4806;1600;0309;BILL-00174;Eingangsrechnung Paperlane Docs;100
+2318,86;S;EUR;4780;1600;0309;BILL-00180;Eingangsrechnung Ledgerline Bookkeeping;300
+2237,15;S;EUR;4780;1600;0309;BILL-00193;Eingangsrechnung Ledgerline Bookkeeping;500
+6832,22;S;EUR;1200;1400;0409;PMT-00111;Zahlungseingang Granite Clinics GmbH;
+11528,93;S;EUR;1400;8400;0409;INV-00122;Ausgangsrechnung Orchid Learning GmbH;
+6027,25;S;EUR;1400;8400;0409;INV-00125;Ausgangsrechnung Willow Outdoors GmbH;
+5638,74;S;EUR;1400;8400;0409;INV-00127;Ausgangsrechnung Silver Labs GmbH;
+2834,17;S;EUR;4780;1600;0409;BILL-00179;Eingangsrechnung Ledgerline Bookkeeping;300
+249,74;S;EUR;4670;1600;0409;BILL-00184;Eingangsrechnung Metro Rides;500
+12206,70;S;EUR;1200;1400;0509;PMT-00112;Zahlungseingang Summit Freight GmbH;
+7733,59;S;EUR;1200;1400;0509;PMT-00114;Zahlungseingang Meridian Health GmbH;
+3115,69;S;EUR;1200;1400;0509;PMT-00115;Zahlungseingang Maple Outdoors GmbH;
+2355,23;S;EUR;1400;8400;0509;INV-00123;Ausgangsrechnung Granite Analytics GmbH;
+12826,16;S;EUR;1400;8400;0509;INV-00124;Ausgangsrechnung Silver Robotics GmbH;
+15199,33;S;EUR;1400;8400;0509;INV-00130;Ausgangsrechnung Summit Media GmbH;
+10244,56;S;EUR;1400;8400;0509;INV-00131;Ausgangsrechnung Bright Learning GmbH;
+15823,79;S;EUR;1400;8400;0509;INV-00132;Ausgangsrechnung Summit Clinics GmbH;
+1647,76;S;EUR;3110;1600;0509;BILL-00171;Eingangsrechnung Paperlane Docs;
+567,52;S;EUR;4806;1600;0509;BILL-00183;Eingangsrechnung Stackwise;500
+2845,96;S;EUR;4600;1600;0509;BILL-00186;Eingangsrechnung AdReach Search;200
+4950,00;S;EUR;4210;1600;0509;BILL-00189;Eingangsrechnung Harborview Properties;500
+3636,81;S;EUR;4670;1600;0809;BILL-00176;Eingangsrechnung Skyway Travel;100
+274,33;S;EUR;4806;1600;0809;BILL-00177;Eingangsrechnung Stackwise;200
+2636,06;S;EUR;4610;1600;0809;BILL-00188;Eingangsrechnung B2B Growth Summit;200
+2864,43;S;EUR;4955;1600;0909;BILL-00175;Eingangsrechnung TalentBridge Search;100
+3502,72;S;EUR;4806;1600;0909;BILL-00178;Eingangsrechnung Paperlane Docs;300
+2834,17;S;EUR;1600;1200;0909;BP-00179;Zahlung Lieferant Ledgerline Bookkeeping;
+5660,08;S;EUR;1200;1400;1009;PMT-00110;Zahlungseingang North Robotics GmbH;
+4439,42;S;EUR;3100;1600;1009;BILL-00173;Eingangsrechnung Nimbus Cloud Services;
+740,21;S;EUR;4806;1600;1009;BILL-00181;Eingangsrechnung Notely;400
+4050,00;S;EUR;4210;1600;1009;BILL-00190;Eingangsrechnung Harborview Properties;500
+5425,95;S;EUR;1600;1200;1109;BP-00172;Zahlung Lieferant Nimbus Cloud Services;
+1185,29;S;EUR;1600;1200;1109;BP-00174;Zahlung Lieferant Paperlane Docs;
+2237,15;S;EUR;1600;1200;1109;BP-00193;Zahlung Lieferant Ledgerline Bookkeeping;
+2067,86;S;EUR;1400;8401;1209;INV-00133;Ausgangsrechnung Falcon Energy GmbH;
+482,00;S;EUR;1400;8401;1209;INV-00134;Ausgangsrechnung Silver Robotics GmbH;
+2318,86;S;EUR;1600;1200;1209;BP-00180;Zahlung Lieferant Ledgerline Bookkeeping;
+695,83;S;EUR;1600;1200;1209;BP-00182;Zahlung Lieferant Metro Rides;
+567,52;S;EUR;1600;1200;1209;BP-00183;Zahlung Lieferant Stackwise;
+249,74;S;EUR;1600;1200;1209;BP-00184;Zahlung Lieferant Metro Rides;
+3478,39;S;EUR;4600;1600;1209;BILL-00185;Eingangsrechnung AdReach Search;200
+3221,85;S;EUR;4610;1600;1209;BILL-00187;Eingangsrechnung B2B Growth Summit;200
+3063,50;S;EUR;4950;1600;1209;BILL-00191;Eingangsrechnung Whitlock & Rowe LLP;500
+2506,50;S;EUR;1600;1200;1209;BP-00192;Zahlung Lieferant Whitlock & Rowe LLP;
+29634,79;S;EUR;1700;1200;1509;TAX-00008;Zahlung Sozialabgaben Tax authority;
+115227,59;S;EUR;1200;1590;1509;ICS-00008;Ausgleich Konzernverrechnung Kestrel Inc.;
+4532,46;S;EUR;1400;8401;1609;INV-00135;Ausgangsrechnung Granite Clinics GmbH;
+274,33;S;EUR;1600;1200;1609;BP-00177;Zahlung Lieferant Stackwise;
+3502,72;S;EUR;1600;1200;1609;BP-00178;Zahlung Lieferant Paperlane Docs;
+2845,96;S;EUR;1600;1200;1609;BP-00186;Zahlung Lieferant AdReach Search;
+4950,00;S;EUR;1600;1200;1609;BP-00189;Zahlung Lieferant Harborview Properties;
+3636,81;S;EUR;1600;1200;1809;BP-00176;Zahlung Lieferant Skyway Travel;
+2636,06;S;EUR;1600;1200;1809;BP-00188;Zahlung Lieferant B2B Growth Summit;
+4050,00;S;EUR;1600;1200;1809;BP-00190;Zahlung Lieferant Harborview Properties;
+12625,92;S;EUR;1200;1400;1909;PMT-00106;Zahlungseingang Cedar Studios GmbH;
+14624,62;S;EUR;1200;1400;1909;PMT-00107;Zahlungseingang Tidal Media GmbH;
+3455,49;S;EUR;1200;1400;1909;PMT-00108;Zahlungseingang Silver Logistics GmbH;
+40419,44;S;EUR;1200;1400;1909;PMT-00109;Zahlungseingang North Media GmbH;
+2933,72;S;EUR;1200;1400;1909;PMT-00116;Zahlungseingang Bright Learning GmbH;
+3602,02;S;EUR;1200;1400;1909;PMT-00117;Zahlungseingang Tidal Outdoors GmbH;
+1647,76;S;EUR;1600;1200;1909;BP-00171;Zahlung Lieferant Paperlane Docs;
+4439,42;S;EUR;1600;1200;1909;BP-00173;Zahlung Lieferant Nimbus Cloud Services;
+2864,43;S;EUR;1600;1200;1909;BP-00175;Zahlung Lieferant TalentBridge Search;
+740,21;S;EUR;1600;1200;1909;BP-00181;Zahlung Lieferant Notely;
+3221,85;S;EUR;1600;1200;1909;BP-00187;Zahlung Lieferant B2B Growth Summit;
+3063,50;S;EUR;1600;1200;1909;BP-00191;Zahlung Lieferant Whitlock & Rowe LLP;
+3478,39;S;EUR;1600;1200;2209;BP-00185;Zahlung Lieferant AdReach Search;
+2556,55;S;EUR;1200;1400;2309;PMT-00119;Zahlungseingang Blue Robotics GmbH;
+133,06;S;EUR;1200;1400;2409;PMT-00118;Zahlungseingang Bright Learning GmbH;
+1518,75;S;EUR;1200;1400;2509;PMT-00113;Zahlungseingang Ember Energy GmbH;
+32176,39;S;EUR;4120;1200;3009;PR-00009;Gehälter Payroll;100
+6037,53;S;EUR;4120;1200;3009;PR-00009;Gehälter Payroll;200
+91506,45;S;EUR;4120;1200;3009;PR-00009;Gehälter Payroll;300
+13544,15;S;EUR;4125;1200;3009;PR-00009;Gehälter Payroll;400
+12059,52;S;EUR;4120;1200;3009;PR-00009;Gehälter Payroll;500
+6435,28;S;EUR;4130;1700;3009;JNL-00017;Sozialabgaben Rückstellung;100
+1207,51;S;EUR;4130;1700;3009;JNL-00017;Sozialabgaben Rückstellung;200
+18301,29;S;EUR;4130;1700;3009;JNL-00017;Sozialabgaben Rückstellung;300
+2708,83;S;EUR;4130;1700;3009;JNL-00017;Sozialabgaben Rückstellung;400
+2411,90;S;EUR;4130;1700;3009;JNL-00017;Sozialabgaben Rückstellung;500
+2017,26;S;EUR;4970;1200;3009;EXP-00009;Gebühren Zahlungsdienstleister PayStream;
+498,12;S;EUR;2150;1200;3009;JNL-00018;Kursdifferenzen;
+115298,13;S;EUR;1590;8402;3009;IC-00009;Konzernumlage F&E Kestrel Inc.;
+5482,24;S;EUR;1400;8400;0110;INV-00137;Ausgangsrechnung Cedar Robotics GmbH;
+2928,02;S;EUR;1400;8400;0110;INV-00138;Ausgangsrechnung North Media GmbH;
+15298,37;S;EUR;1400;8400;0210;INV-00136;Ausgangsrechnung Silver Labs GmbH;
+3890,36;S;EUR;1400;8400;0210;INV-00140;Ausgangsrechnung Bright Foods GmbH;
+12098,32;S;EUR;1400;8400;0210;INV-00141;Ausgangsrechnung Meridian Health GmbH;
+8284,91;S;EUR;1400;8400;0210;INV-00143;Ausgangsrechnung Granite Learning GmbH;
+799,44;S;EUR;4806;1600;0210;BILL-00203;Eingangsrechnung Notely;400
+1882,75;S;EUR;4780;1600;0210;BILL-00213;Eingangsrechnung Ledgerline Bookkeeping;500
+24892,37;S;EUR;1400;8400;0310;INV-00139;Ausgangsrechnung Falcon Energy GmbH;
+1156,29;S;EUR;1400;8400;0310;INV-00142;Ausgangsrechnung Cedar Studios GmbH;
+9104,71;S;EUR;1400;8400;0310;INV-00144;Ausgangsrechnung Blue Robotics GmbH;
+9510,92;S;EUR;1400;8400;0310;INV-00145;Ausgangsrechnung Tidal Media GmbH;
+11318,96;S;EUR;1400;8400;0310;INV-00146;Ausgangsrechnung Granite Analytics GmbH;
+13151,24;S;EUR;1400;8400;0310;INV-00147;Ausgangsrechnung Silver Logistics GmbH;
+5543,54;S;EUR;3100;1600;0310;BILL-00195;Eingangsrechnung Nimbus Cloud Services;
+4950,00;S;EUR;4210;1600;0310;BILL-00210;Eingangsrechnung Harborview Properties;500
+1267,61;S;EUR;4806;1600;0710;BILL-00197;Eingangsrechnung Stackwise;100
+799,44;S;EUR;1600;1200;0710;BP-00203;Zahlung Lieferant Notely;
+651,69;S;EUR;4670;1600;0710;BILL-00204;Eingangsrechnung Metro Rides;400
+2511,82;S;EUR;4610;1600;0710;BILL-00209;Eingangsrechnung B2B Growth Summit;200
+10244,56;S;EUR;1200;1400;0810;PMT-00131;Zahlungseingang Bright Learning GmbH;
+258,31;S;EUR;4806;1600;0810;BILL-00199;Eingangsrechnung Notely;200
+1741,07;S;EUR;3110;1600;0910;BILL-00194;Eingangsrechnung Paperlane Docs;
+4535,62;S;EUR;3100;1600;0910;BILL-00196;Eingangsrechnung Nimbus Cloud Services;
+3696,87;S;EUR;4670;1600;0910;BILL-00198;Eingangsrechnung Skyway Travel;100
+3296,51;S;EUR;4780;1600;0910;BILL-00201;Eingangsrechnung Ledgerline Bookkeeping;300
+417,14;S;EUR;4670;1600;0910;BILL-00206;Eingangsrechnung Metro Rides;500
+2556,72;S;EUR;4600;1600;0910;BILL-00208;Eingangsrechnung SocialSpark Ads;200
+11528,93;S;EUR;1200;1400;1010;PMT-00122;Zahlungseingang Orchid Learning GmbH;
+6271,02;S;EUR;1200;1400;1010;PMT-00126;Zahlungseingang North Robotics GmbH;
+15199,33;S;EUR;1200;1400;1010;PMT-00130;Zahlungseingang Summit Media GmbH;
+5543,54;S;EUR;1600;1200;1010;BP-00195;Zahlung Lieferant Nimbus Cloud Services;
+2697,14;S;EUR;4780;1600;1010;BILL-00202;Eingangsrechnung Ledgerline Bookkeeping;300
+457,07;S;EUR;4806;1600;1010;BILL-00205;Eingangsrechnung Paperlane Docs;500
+3124,88;S;EUR;4600;1600;1010;BILL-00207;Eingangsrechnung SocialSpark Ads;200
+4050,00;S;EUR;4210;1600;1010;BILL-00211;Eingangsrechnung Harborview Properties;500
+4844,69;S;EUR;4950;1600;1010;BILL-00212;Eingangsrechnung Whitlock & Rowe LLP;500
+2067,86;S;EUR;1200;1400;1310;PMT-00133;Zahlungseingang Falcon Energy GmbH;
+1267,61;S;EUR;1600;1200;1310;BP-00197;Zahlung Lieferant Stackwise;
+651,69;S;EUR;1600;1200;1310;BP-00204;Zahlung Lieferant Metro Rides;
+4950,00;S;EUR;1600;1200;1310;BP-00210;Zahlung Lieferant Harborview Properties;
+1741,07;S;EUR;1600;1200;1410;BP-00194;Zahlung Lieferant Paperlane Docs;
+258,31;S;EUR;1600;1200;1410;BP-00199;Zahlung Lieferant Notely;
+3430,89;S;EUR;4806;1600;1410;BILL-00200;Eingangsrechnung Paperlane Docs;300
+1882,75;S;EUR;1600;1200;1410;BP-00213;Zahlung Lieferant Ledgerline Bookkeeping;
+31064,81;S;EUR;1700;1200;1510;TAX-00009;Zahlung Sozialabgaben Tax authority;
+2511,82;S;EUR;1600;1200;1510;BP-00209;Zahlung Lieferant B2B Growth Summit;
+115298,13;S;EUR;1200;1590;1510;ICS-00009;Ausgleich Konzernverrechnung Kestrel Inc.;
+2494,98;S;EUR;1400;8401;1610;INV-00148;Ausgangsrechnung Silver Labs GmbH;
+5638,74;S;EUR;1200;1400;1710;PMT-00127;Zahlungseingang Silver Labs GmbH;
+11081,09;S;EUR;1200;1400;1710;PMT-00128;Zahlungseingang Meridian Media GmbH;
+8298,85;S;EUR;1200;1400;1710;PMT-00129;Zahlungseingang North Media GmbH;
+186,99;S;EUR;1400;8401;1710;INV-00150;Ausgangsrechnung Granite Clinics GmbH;
+4535,62;S;EUR;1600;1200;1710;BP-00196;Zahlung Lieferant Nimbus Cloud Services;
+2697,14;S;EUR;1600;1200;1710;BP-00202;Zahlung Lieferant Ledgerline Bookkeeping;
+457,07;S;EUR;1600;1200;1710;BP-00205;Zahlung Lieferant Paperlane Docs;
+417,14;S;EUR;1600;1200;1710;BP-00206;Zahlung Lieferant Metro Rides;
+3124,88;S;EUR;1600;1200;1710;BP-00207;Zahlung Lieferant SocialSpark Ads;
+2556,72;S;EUR;1600;1200;1710;BP-00208;Zahlung Lieferant SocialSpark Ads;
+4050,00;S;EUR;1600;1200;1710;BP-00211;Zahlung Lieferant Harborview Properties;
+7218,11;S;EUR;1200;1400;2010;PMT-00121;Zahlungseingang Beacon Labs GmbH;
+508,92;S;EUR;1400;8401;2010;INV-00149;Ausgangsrechnung Summit Clinics GmbH;
+15823,79;S;EUR;1200;1400;2110;PMT-00132;Zahlungseingang Summit Clinics GmbH;
+3696,87;S;EUR;1600;1200;2110;BP-00198;Zahlung Lieferant Skyway Travel;
+3296,51;S;EUR;1600;1200;2110;BP-00201;Zahlung Lieferant Ledgerline Bookkeeping;
+4844,69;S;EUR;1600;1200;2110;BP-00212;Zahlung Lieferant Whitlock & Rowe LLP;
+482,00;S;EUR;1200;1400;2210;PMT-00134;Zahlungseingang Silver Robotics GmbH;
+12826,16;S;EUR;1200;1400;2310;PMT-00124;Zahlungseingang Silver Robotics GmbH;
+6027,25;S;EUR;1200;1400;2410;PMT-00125;Zahlungseingang Willow Outdoors GmbH;
+3430,89;S;EUR;1600;1200;2410;BP-00200;Zahlung Lieferant Paperlane Docs;
+2355,23;S;EUR;1200;1400;2710;PMT-00123;Zahlungseingang Granite Analytics GmbH;
+4532,46;S;EUR;1200;1400;2710;PMT-00135;Zahlungseingang Granite Clinics GmbH;
+32432,20;S;EUR;4120;1200;3110;PR-00010;Gehälter Payroll;100
+6024,75;S;EUR;4120;1200;3110;PR-00010;Gehälter Payroll;200
+91884,50;S;EUR;4120;1200;3110;PR-00010;Gehälter Payroll;300
+13696,42;S;EUR;4125;1200;3110;PR-00010;Gehälter Payroll;400
+12063,26;S;EUR;4120;1200;3110;PR-00010;Gehälter Payroll;500
+6486,44;S;EUR;4130;1700;3110;JNL-00019;Sozialabgaben Rückstellung;100
+1204,95;S;EUR;4130;1700;3110;JNL-00019;Sozialabgaben Rückstellung;200
+18376,90;S;EUR;4130;1700;3110;JNL-00019;Sozialabgaben Rückstellung;300
+2739,28;S;EUR;4130;1700;3110;JNL-00019;Sozialabgaben Rückstellung;400
+2412,65;S;EUR;4130;1700;3110;JNL-00019;Sozialabgaben Rückstellung;500
+2112,63;S;EUR;4970;1200;3110;EXP-00010;Gebühren Zahlungsdienstleister PayStream;
+2415,25;S;EUR;1200;2150;3110;JNL-00020;Kursdifferenzen;
+115774,47;S;EUR;1590;8402;3110;IC-00010;Konzernumlage F&E Kestrel Inc.;
+12436,77;S;EUR;1400;8400;0311;INV-00152;Ausgangsrechnung Silver Robotics GmbH;
+4905,39;S;EUR;1400;8400;0311;INV-00153;Ausgangsrechnung North Media GmbH;
+7311,11;S;EUR;1400;8400;0311;INV-00155;Ausgangsrechnung Ember Energy GmbH;
+6178,84;S;EUR;1400;8400;0311;INV-00157;Ausgangsrechnung Silver Labs GmbH;
+11353,51;S;EUR;1400;8400;0311;INV-00158;Ausgangsrechnung Copper Foods GmbH;
+18618,53;S;EUR;1400;8400;0311;INV-00161;Ausgangsrechnung Falcon Energy GmbH;
+11202,83;S;EUR;1400;8400;0311;INV-00162;Ausgangsrechnung Cedar Robotics GmbH;
+862,74;S;EUR;4806;1600;0311;BILL-00224;Eingangsrechnung Notely;400
+2492,81;S;EUR;4780;1600;0311;BILL-00235;Eingangsrechnung Ledgerline Bookkeeping;500
+1806,07;S;EUR;3110;1600;0411;BILL-00214;Eingangsrechnung Paperlane Docs;
+4963,53;S;EUR;1400;8400;0511;INV-00151;Ausgangsrechnung Silver Logistics GmbH;
+5126,22;S;EUR;1400;8400;0511;INV-00154;Ausgangsrechnung North Robotics GmbH;
+4278,32;S;EUR;1400;8400;0511;INV-00156;Ausgangsrechnung Granite Clinics GmbH;
+20012,22;S;EUR;1400;8400;0511;INV-00159;Ausgangsrechnung Blue Robotics GmbH;
+12594,92;S;EUR;1400;8400;0511;INV-00160;Ausgangsrechnung Tidal Outdoors GmbH;
+4471,32;S;EUR;3100;1600;0511;BILL-00216;Eingangsrechnung Nimbus Cloud Services;
+2556,83;S;EUR;4780;1600;0511;BILL-00223;Eingangsrechnung Devforge Contractors;300
+15298,37;S;EUR;1200;1400;0611;PMT-00136;Zahlungseingang Silver Labs GmbH;
+508,92;S;EUR;1200;1400;0611;PMT-00149;Zahlungseingang Summit Clinics GmbH;
+3568,80;S;EUR;4806;1600;0611;BILL-00220;Eingangsrechnung Notely;300
+4950,00;S;EUR;4210;1600;0611;BILL-00232;Eingangsrechnung Harborview Properties;500
+1156,29;S;EUR;1200;1400;0711;PMT-00142;Zahlungseingang Cedar Studios GmbH;
+9104,71;S;EUR;1200;1400;0711;PMT-00144;Zahlungseingang Blue Robotics GmbH;
+2494,98;S;EUR;1200;1400;0711;PMT-00148;Zahlungseingang Silver Labs GmbH;
+5464,95;S;EUR;3100;1600;0711;BILL-00215;Eingangsrechnung Nimbus Cloud Services;
+3125,02;S;EUR;4780;1600;0711;BILL-00222;Eingangsrechnung Devforge Contractors;300
+862,74;S;EUR;1600;1200;0711;BP-00224;Zahlung Lieferant Notely;
+802,53;S;EUR;4670;1600;0711;BILL-00225;Eingangsrechnung Metro Rides;400
+501,12;S;EUR;4806;1600;0711;BILL-00226;Eingangsrechnung Paperlane Docs;500
+2796,85;S;EUR;4600;1600;0711;BILL-00229;Eingangsrechnung SocialSpark Ads;200
+4181,47;S;EUR;4610;1600;0711;BILL-00230;Eingangsrechnung B2B Growth Summit;200
+3421,21;S;EUR;4610;1600;0711;BILL-00231;Eingangsrechnung B2B Growth Summit;200
+4050,00;S;EUR;4210;1600;0711;BILL-00233;Eingangsrechnung Harborview Properties;500
+3890,36;S;EUR;1200;1400;1011;PMT-00140;Zahlungseingang Bright Foods GmbH;
+186,99;S;EUR;1200;1400;1011;PMT-00150;Zahlungseingang Granite Clinics GmbH;
+4194,16;S;EUR;4670;1600;1011;BILL-00218;Eingangsrechnung Skyway Travel;100
+8284,91;S;EUR;1200;1400;1111;PMT-00143;Zahlungseingang Granite Learning GmbH;
+2492,81;S;EUR;1600;1200;1111;BP-00235;Zahlung Lieferant Ledgerline Bookkeeping;
+9510,92;S;EUR;1200;1400;1211;PMT-00145;Zahlungseingang Tidal Media GmbH;
+13151,24;S;EUR;1200;1400;1211;PMT-00147;Zahlungseingang Silver Logistics GmbH;
+4138,23;S;EUR;4955;1600;1211;BILL-00221;Eingangsrechnung TalentBridge Search;300
+2556,83;S;EUR;1600;1200;1211;BP-00223;Zahlung Lieferant Devforge Contractors;
+4923,30;S;EUR;4950;1600;1211;BILL-00234;Eingangsrechnung Brightline Audit;500
+233,67;S;EUR;4806;1600;1311;BILL-00219;Eingangsrechnung Notely;200
+3568,80;S;EUR;1600;1200;1311;BP-00220;Zahlung Lieferant Notely;
+501,12;S;EUR;1600;1200;1311;BP-00226;Zahlung Lieferant Paperlane Docs;
+348,15;S;EUR;4670;1600;1311;BILL-00227;Eingangsrechnung Metro Rides;500
+24892,37;S;EUR;1200;1400;1411;PMT-00139;Zahlungseingang Falcon Energy GmbH;
+12098,32;S;EUR;1200;1400;1411;PMT-00141;Zahlungseingang Meridian Health GmbH;
+11318,96;S;EUR;1200;1400;1411;PMT-00146;Zahlungseingang Granite Analytics GmbH;
+1311,01;S;EUR;1400;8401;1411;INV-00165;Ausgangsrechnung Ember Energy GmbH;
+31220,22;S;EUR;1700;1200;1411;TAX-00010;Zahlung Sozialabgaben Tax authority;
+1806,07;S;EUR;1600;1200;1411;BP-00214;Zahlung Lieferant Paperlane Docs;
+4471,32;S;EUR;1600;1200;1411;BP-00216;Zahlung Lieferant Nimbus Cloud Services;
+1207,86;S;EUR;4806;1600;1411;BILL-00217;Eingangsrechnung Stackwise;100
+3125,02;S;EUR;1600;1200;1411;BP-00222;Zahlung Lieferant Devforge Contractors;
+802,53;S;EUR;1600;1200;1411;BP-00225;Zahlung Lieferant Metro Rides;
+3418,37;S;EUR;4600;1600;1411;BILL-00228;Eingangsrechnung SocialSpark Ads;200
+4950,00;S;EUR;1600;1200;1411;BP-00232;Zahlung Lieferant Harborview Properties;
+115774,47;S;EUR;1200;1590;1411;ICS-00010;Ausgleich Konzernverrechnung Kestrel Inc.;
+3421,21;S;EUR;1600;1200;1711;BP-00231;Zahlung Lieferant B2B Growth Summit;
+4050,00;S;EUR;1600;1200;1811;BP-00233;Zahlung Lieferant Harborview Properties;
+2928,02;S;EUR;1200;1400;1911;PMT-00138;Zahlungseingang North Media GmbH;
+2796,85;S;EUR;1600;1200;1911;BP-00229;Zahlung Lieferant SocialSpark Ads;
+5464,95;S;EUR;1600;1200;2011;BP-00215;Zahlung Lieferant Nimbus Cloud Services;
+1159,50;S;EUR;1400;8401;2111;INV-00163;Ausgangsrechnung Meridian Media GmbH;
+3031,50;S;EUR;1400;8401;2111;INV-00164;Ausgangsrechnung Granite Clinics GmbH;
+1207,86;S;EUR;1600;1200;2111;BP-00217;Zahlung Lieferant Stackwise;
+4194,16;S;EUR;1600;1200;2111;BP-00218;Zahlung Lieferant Skyway Travel;
+233,67;S;EUR;1600;1200;2111;BP-00219;Zahlung Lieferant Notely;
+4138,23;S;EUR;1600;1200;2111;BP-00221;Zahlung Lieferant TalentBridge Search;
+348,15;S;EUR;1600;1200;2111;BP-00227;Zahlung Lieferant Metro Rides;
+3418,37;S;EUR;1600;1200;2111;BP-00228;Zahlung Lieferant SocialSpark Ads;
+4181,47;S;EUR;1600;1200;2111;BP-00230;Zahlung Lieferant B2B Growth Summit;
+4923,30;S;EUR;1600;1200;2111;BP-00234;Zahlung Lieferant Brightline Audit;
+5482,24;S;EUR;1200;1400;2711;PMT-00137;Zahlungseingang Cedar Robotics GmbH;
+32869,32;S;EUR;4120;1200;2811;PR-00011;Gehälter Payroll;100
+6052,19;S;EUR;4120;1200;2811;PR-00011;Gehälter Payroll;200
+98081,65;S;EUR;4120;1200;2811;PR-00011;Gehälter Payroll;300
+13519,30;S;EUR;4125;1200;2811;PR-00011;Gehälter Payroll;400
+11887,11;S;EUR;4120;1200;2811;PR-00011;Gehälter Payroll;500
+6573,86;S;EUR;4130;1700;2811;JNL-00021;Sozialabgaben Rückstellung;100
+1210,44;S;EUR;4130;1700;2811;JNL-00021;Sozialabgaben Rückstellung;200
+19616,33;S;EUR;4130;1700;2811;JNL-00021;Sozialabgaben Rückstellung;300
+2703,86;S;EUR;4130;1700;2811;JNL-00021;Sozialabgaben Rückstellung;400
+2377,42;S;EUR;4130;1700;2811;JNL-00021;Sozialabgaben Rückstellung;500
+2069,56;S;EUR;4970;1200;2811;EXP-00011;Gebühren Zahlungsdienstleister PayStream;
+1030,59;S;EUR;2150;1200;2811;JNL-00022;Kursdifferenzen;
+123582,88;S;EUR;1590;8402;2811;IC-00011;Konzernumlage F&E Kestrel Inc.;
+9642,79;S;EUR;1400;8400;0112;INV-00175;Ausgangsrechnung Falcon Energy GmbH;
+15855,09;S;EUR;1400;8400;0212;INV-00174;Ausgangsrechnung Bright Learning GmbH;
+4950,00;S;EUR;4210;1600;0212;BILL-00253;Eingangsrechnung Harborview Properties;500
+4731,16;S;EUR;4950;1600;0212;BILL-00255;Eingangsrechnung Brightline Audit;500
+12436,77;S;EUR;1200;1400;0312;PMT-00152;Zahlungseingang Silver Robotics GmbH;
+6052,92;S;EUR;1400;8400;0312;INV-00168;Ausgangsrechnung Meridian Media GmbH;
+7898,99;S;EUR;1400;8400;0312;INV-00171;Ausgangsrechnung Bright Foods GmbH;
+4990,48;S;EUR;1400;8400;0312;INV-00173;Ausgangsrechnung Granite Clinics GmbH;
+4050,00;S;EUR;4210;1600;0312;BILL-00254;Eingangsrechnung Harborview Properties;500
+6591,07;S;EUR;1400;8400;0412;INV-00166;Ausgangsrechnung Cedar Studios GmbH;
+4740,47;S;EUR;1400;8400;0412;INV-00169;Ausgangsrechnung Tidal Outdoors GmbH;
+12440,25;S;EUR;1400;8400;0412;INV-00170;Ausgangsrechnung Summit Clinics GmbH;
+14441,41;S;EUR;1400;8400;0412;INV-00172;Ausgangsrechnung Beacon Labs GmbH;
+15803,08;S;EUR;1400;8400;0412;INV-00176;Ausgangsrechnung Copper Foods GmbH;
+2002,76;S;EUR;4780;1600;0412;BILL-00256;Eingangsrechnung Ledgerline Bookkeeping;500
+20012,22;S;EUR;1200;1400;0512;PMT-00159;Zahlungseingang Blue Robotics GmbH;
+12594,92;S;EUR;1200;1400;0512;PMT-00160;Zahlungseingang Tidal Outdoors GmbH;
+8708,99;S;EUR;1400;8400;0512;INV-00167;Ausgangsrechnung Summit Media GmbH;
+15070,69;S;EUR;1400;8400;0512;INV-00177;Ausgangsrechnung Granite Learning GmbH;
+1897,18;S;EUR;3110;1600;0512;BILL-00236;Eingangsrechnung Paperlane Docs;
+1383,50;S;EUR;4806;1600;0512;BILL-00239;Eingangsrechnung Notely;100
+2747,93;S;EUR;4780;1600;0512;BILL-00244;Eingangsrechnung Ledgerline Bookkeeping;300
+1050,05;S;EUR;4806;1600;0512;BILL-00245;Eingangsrechnung Paperlane Docs;400
+3891,73;S;EUR;4600;1600;0512;BILL-00250;Eingangsrechnung AdReach Search;200
+3184,14;S;EUR;4600;1600;0512;BILL-00251;Eingangsrechnung AdReach Search;200
+2211,46;S;EUR;4610;1600;0512;BILL-00252;Eingangsrechnung SaaSConnect Expo;200
+5236,44;S;EUR;3100;1600;0812;BILL-00238;Eingangsrechnung Nimbus Cloud Services;
+262,92;S;EUR;4806;1600;0812;BILL-00241;Eingangsrechnung Notely;200
+3358,58;S;EUR;4780;1600;0812;BILL-00243;Eingangsrechnung Ledgerline Bookkeeping;300
+345,61;S;EUR;4670;1600;0812;BILL-00249;Eingangsrechnung Metro Rides;500
+7311,11;S;EUR;1200;1400;0912;PMT-00155;Zahlungseingang Ember Energy GmbH;
+2542,77;S;EUR;4955;1600;0912;BILL-00246;Eingangsrechnung TalentBridge Search;400
+529,40;S;EUR;4806;1600;0912;BILL-00248;Eingangsrechnung Notely;500
+4050,00;S;EUR;1600;1200;0912;BP-00254;Zahlung Lieferant Harborview Properties;
+3891,73;S;EUR;1600;1200;1012;BP-00250;Zahlung Lieferant AdReach Search;
+4731,16;S;EUR;1600;1200;1012;BP-00255;Zahlung Lieferant Brightline Audit;
+6400,10;S;EUR;3100;1600;1112;BILL-00237;Eingangsrechnung Nimbus Cloud Services;
+3537,45;S;EUR;4806;1600;1112;BILL-00242;Eingangsrechnung Paperlane Docs;300
+1298,08;S;EUR;4670;1600;1112;BILL-00247;Eingangsrechnung Metro Rides;400
+3184,14;S;EUR;1600;1200;1112;BP-00251;Zahlung Lieferant AdReach Search;
+4950,00;S;EUR;1600;1200;1112;BP-00253;Zahlung Lieferant Harborview Properties;
+4905,39;S;EUR;1200;1400;1212;PMT-00153;Zahlungseingang North Media GmbH;
+1159,50;S;EUR;1200;1400;1212;PMT-00163;Zahlungseingang Meridian Media GmbH;
+1106,22;S;EUR;1400;8401;1212;INV-00180;Ausgangsrechnung Silver Logistics GmbH;
+5236,44;S;EUR;1600;1200;1212;BP-00238;Zahlung Lieferant Nimbus Cloud Services;
+3803,84;S;EUR;4670;1600;1212;BILL-00240;Eingangsrechnung Metro Rides;100
+3358,58;S;EUR;1600;1200;1212;BP-00243;Zahlung Lieferant Ledgerline Bookkeeping;
+2747,93;S;EUR;1600;1200;1212;BP-00244;Zahlung Lieferant Ledgerline Bookkeeping;
+2002,76;S;EUR;1600;1200;1212;BP-00256;Zahlung Lieferant Ledgerline Bookkeeping;
+32481,91;S;EUR;1700;1200;1512;TAX-00011;Zahlung Sozialabgaben Tax authority;
+1897,18;S;EUR;1600;1200;1512;BP-00236;Zahlung Lieferant Paperlane Docs;
+1383,50;S;EUR;1600;1200;1512;BP-00239;Zahlung Lieferant Notely;
+1050,05;S;EUR;1600;1200;1512;BP-00245;Zahlung Lieferant Paperlane Docs;
+123582,88;S;EUR;1200;1590;1512;ICS-00011;Ausgleich Konzernverrechnung Kestrel Inc.;
+3031,50;S;EUR;1200;1400;1612;PMT-00164;Zahlungseingang Granite Clinics GmbH;
+5126,22;S;EUR;1200;1400;1712;PMT-00154;Zahlungseingang North Robotics GmbH;
+2542,77;S;EUR;1600;1200;1712;BP-00246;Zahlung Lieferant TalentBridge Search;
+2211,46;S;EUR;1600;1200;1712;BP-00252;Zahlung Lieferant SaaSConnect Expo;
+1063,49;S;EUR;1400;8401;1812;INV-00179;Ausgangsrechnung Tidal Media GmbH;
+3803,84;S;EUR;1600;1200;1812;BP-00240;Zahlung Lieferant Metro Rides;
+1298,08;S;EUR;1600;1200;1812;BP-00247;Zahlung Lieferant Metro Rides;
+345,61;S;EUR;1600;1200;1812;BP-00249;Zahlung Lieferant Metro Rides;
+3608,36;S;EUR;1400;8401;1912;INV-00178;Ausgangsrechnung Meridian Health GmbH;
+6400,10;S;EUR;1600;1200;1912;BP-00237;Zahlung Lieferant Nimbus Cloud Services;
+262,92;S;EUR;1600;1200;1912;BP-00241;Zahlung Lieferant Notely;
+529,40;S;EUR;1600;1200;1912;BP-00248;Zahlung Lieferant Notely;
+6178,84;S;EUR;1200;1400;2212;PMT-00157;Zahlungseingang Silver Labs GmbH;
+1311,01;S;EUR;1200;1400;2312;PMT-00165;Zahlungseingang Ember Energy GmbH;
+3537,45;S;EUR;1600;1200;2312;BP-00242;Zahlung Lieferant Paperlane Docs;
+4963,53;S;EUR;1200;1400;2412;PMT-00151;Zahlungseingang Silver Logistics GmbH;
+4278,32;S;EUR;1200;1400;2412;PMT-00156;Zahlungseingang Granite Clinics GmbH;
+18618,53;S;EUR;1200;1400;2512;PMT-00161;Zahlungseingang Falcon Energy GmbH;
+11353,51;S;EUR;1200;1400;2612;PMT-00158;Zahlungseingang Copper Foods GmbH;
+11202,83;S;EUR;1200;1400;2612;PMT-00162;Zahlungseingang Cedar Robotics GmbH;
+32574,39;S;EUR;4120;1200;3112;PR-00012;Gehälter Payroll;100
+5940,70;S;EUR;4120;1200;3112;PR-00012;Gehälter Payroll;200
+97681,00;S;EUR;4120;1200;3112;PR-00012;Gehälter Payroll;300
+17936,97;S;EUR;4125;1200;3112;PR-00012;Gehälter Payroll;400
+12042,51;S;EUR;4120;1200;3112;PR-00012;Gehälter Payroll;500
+6514,88;S;EUR;4130;1700;3112;JNL-00023;Sozialabgaben Rückstellung;100
+1188,14;S;EUR;4130;1700;3112;JNL-00023;Sozialabgaben Rückstellung;200
+19536,20;S;EUR;4130;1700;3112;JNL-00023;Sozialabgaben Rückstellung;300
+3587,39;S;EUR;4130;1700;3112;JNL-00023;Sozialabgaben Rückstellung;400
+2408,50;S;EUR;4130;1700;3112;JNL-00023;Sozialabgaben Rückstellung;500
+2223,41;S;EUR;4970;1200;3112;EXP-00012;Gebühren Zahlungsdienstleister PayStream;
+899,15;S;EUR;2150;1200;3112;JNL-00024;Kursdifferenzen;
+123078,06;S;EUR;1590;8402;3112;IC-00012;Konzernumlage F&E Kestrel Inc.;

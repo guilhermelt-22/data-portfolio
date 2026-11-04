@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Month-end reporting automation: three accounting systems in, one validated management pack out · Guilherme Teófilo</title>
+<meta name="description" content="Finance data for finance teams without a data team: month-end reporting automation, budget vs actual dashboards and finance data models.">
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+          --line:#e1e0d9; --accent:#2a78d6; --code:#f3f2ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+            --line:#2c2c2a; --accent:#3987e5; --code:#232322; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { border-bottom:1px solid var(--line); background:var(--surface); }
+  .bar { max-width:980px; margin:0 auto; padding:12px 16px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .brand { font-weight:700; color:var(--ink); text-decoration:none; margin-right:auto; }
+  .bar a.nav { color:var(--ink2); text-decoration:none; font-size:15px; }
+  .bar a.nav:hover { color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:30px; line-height:1.25; margin:8px 0 16px; }
+  h2 { font-size:22px; margin:36px 0 12px; padding-top:8px; border-top:1px solid var(--line); }
+  a { color:var(--accent); }
+  img { max-width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
+  blockquote { margin:16px 0; padding:10px 16px; border-left:4px solid var(--accent); background:var(--surface); color:var(--ink2); }
+  blockquote p { margin:4px 0; }
+  .table-wrap { overflow-x:auto; margin:16px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; background:var(--surface); }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--code); }
+  td img { border:none; }
+  code { background:var(--code); padding:1px 5px; border-radius:4px; font-size:14px; }
+  pre { background:var(--code); padding:12px 14px; border-radius:8px; overflow-x:auto; }
+  pre code { padding:0; background:none; }
+  pre.mermaid { background:var(--surface); border:1px solid var(--line); text-align:center; }
+  footer { max-width:980px; margin:0 auto; padding:16px 16px 40px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="../../">Guilherme Teófilo · Finance data</a>
+  <a class="nav" href="../../#case-studies">Case studies</a>
+  <a class="nav" href="../../output/2026-10/dashboard.html">Live dashboard</a>
+  <a class="nav" href="https://github.com/guilhermelt-22/finance-data-portfolio">Code on GitHub</a>
+</div></header>
+<main>
+<h1 id="month-end-reporting-automation-three-accounting-systems-in-one-validated-management-pack-out">Month-end reporting automation: three accounting systems in, one validated management pack out</h1>
+<blockquote>
+<p><strong>Demo on fictitious data.</strong> Kestrel Group is a made-up 3-entity SaaS company (<a href="../../data/">dataset notes</a>).
+Runtimes are measured on this dataset; the "before" column describes a typical manual process and is an estimate.</p>
+</blockquote>
+<p><img alt="Management pack summary" src="img/pack-summary.png" /></p>
+<h2 id="the-problem">The problem</h2>
+<p>It is the first week of November and the controller is closing <strong>October</strong>. The inputs are:</p>
+<ul>
+<li>a <strong>QuickBooks</strong> journal export from the US parent (USD),</li>
+<li>a <strong>Xero</strong> general ledger from the UK subsidiary (GBP),</li>
+<li><strong>DATEV</strong> booking batches from the German subsidiary (EUR, Windows-1252, decimal commas, dates without a year),</li>
+<li>the board-approved <strong>budget</strong> workbook, and a table of <strong>FX rates</strong>.</li>
+</ul>
+<p>The usual routine: paste each export into a master workbook, fix date and number formats, map more than 70
+local accounts to the group chart, convert currencies, strip out intercompany recharges, build budget vs actual,
+then write the commentary. Every month, by hand. Errors that keep the trial balance in balance, such as a bill
+exported twice, go straight into the numbers the CFO reads.</p>
+<h2 id="the-solution">The solution</h2>
+<p>One command runs the whole close:</p>
+<pre><code class="language-bash">python -m findata.report --period 2026-10
+</code></pre>
+<pre class="mermaid">flowchart TB
+    A[QuickBooks CSV · Xero CSV · DATEV batches] --> B[Readers, one per system]
+    B --> C{Data checks: 8 rules}
+    C -- blocking / warning --> R[Data checks sheet: file + line]
+    C -- duplicates --> Q[Quarantine]
+    C --> D[(DuckDB model: mapping, FX, intercompany elimination)]
+    E[Budget workbook + FX rates] --> D
+    D --> F[Budget vs actual]
+    F --> G[Rules-based variance commentary]
+    F --> H[Excel management pack]
+    G --> H
+    R --> H
+</pre>
+<ol>
+<li><strong>Read each system as-is.</strong> A small reader per format returns one standard line-level table. DATEV
+   bookings (account + contra account + S/H flag) are expanded into double-entry lines.</li>
+<li><strong>Validate before anything reaches a report.</strong> Each check points to the source file and line:
+   unbalanced journals, duplicate exports, unmapped accounts, unknown or missing departments, missing
+   periods, unmapped budget lines and intercompany mismatches. Results are graded <em>blocking</em>, <em>excluded</em>
+   (quarantined automatically) or <em>warning</em>.</li>
+<li><strong>Model in SQL (DuckDB).</strong> Local accounts map to the group chart through a CSV the client can edit in
+   Excel. P&amp;L converts at the monthly average rate, cash at the month-end rate. Intercompany R&amp;D recharges
+   are eliminated, and the budget is compared both at budget rates and at actual rates, so the FX effect
+   is separated from operational variance.</li>
+<li><strong>Draft the commentary from reconciled numbers.</strong> Each material variance (≥ USD 20k and ≥ 5% of
+   budget) gets a sentence naming its largest driver (entity, account, department) and its FX effect. If
+   untagged costs distort a departmental variance, the sentence warns about it. The analyst adds the <em>why</em>.</li>
+<li><strong>Write the pack.</strong> Summary with KPIs and status, P&amp;L vs budget (month and YTD), P&amp;L by entity, opex by
+   department, 22-month trend, data checks, and method notes.</li>
+</ol>
+<h2 id="the-result">The result</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Before: typical manual close (estimate)</th>
+<th>After: this pipeline (measured on the demo data)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Time from exports to a reviewable pack</td>
+<td>1.5 to 2 working days</td>
+<td><strong>~5 seconds</strong> end to end (under 1 s for read + checks + model)</td>
+</tr>
+<tr>
+<td>Data problems found before the CFO sees numbers</td>
+<td>whatever someone happens to spot</td>
+<td><strong>6 of 6</strong> seeded issues, each with file and line</td>
+</tr>
+<tr>
+<td>USD 87.5k hosting bill exported twice</td>
+<td>inside gross margin (73.5% instead of 77.9%)</td>
+<td><strong>quarantined automatically</strong></td>
+</tr>
+<tr>
+<td>USD 27.7k on two brand-new accounts</td>
+<td>silently missing from the P&amp;L</td>
+<td><strong>blocks sign-off</strong> until mapped</td>
+</tr>
+<tr>
+<td>R&amp;D "USD 149k under budget" that is really mis-tagged cost</td>
+<td>reported as a saving</td>
+<td><strong>flagged in the commentary</strong></td>
+</tr>
+<tr>
+<td>Variance commentary</td>
+<td>written from scratch</td>
+<td><strong>drafted</strong>, ready for business context</td>
+</tr>
+<tr>
+<td>Next month</td>
+<td>same manual routine</td>
+<td>same command; the mapping is a CSV</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pack stays <strong>DRAFT</strong> while blocking issues exist, which is the point: wrong numbers never look final.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>P&amp;L vs budget</th>
+<th>Data checks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="P&amp;L" src="img/pack-pnl.png" /></td>
+<td><img alt="Data checks" src="img/pack-data-checks.png" /></td>
+</tr>
+</tbody>
+</table></div>
+<p>Sample output: <a href="../../output/2026-10/Kestrel_Group_Management_Pack_2026-10.xlsx"><code>Kestrel_Group_Management_Pack_2026-10.xlsx</code></a></p>
+<h2 id="design-choices">Design choices</h2>
+<ul>
+<li><strong>Rules before AI.</strong> Numbers and commentary come from deterministic logic you can audit line by line.
+  A language model may polish the wording but never computes a figure.</li>
+<li><strong>Profit-signed P&amp;L.</strong> Income positive, costs in brackets. Totals add up naturally, and a positive
+  variance always means favourable.</li>
+<li><strong>The client owns the mapping.</strong> Account, department and budget-line mappings are plain CSV files. A new
+  account is one new row, not a code change.</li>
+<li><strong>Exports, not integrations, first.</strong> Any ERP can export a CSV, so the engine starts there. API
+  connectors (QuickBooks, Xero, NetSuite) can replace a reader later without touching the rest.</li>
+</ul>
+<p>Code: <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/findata/ingest.py"><code>findata/ingest.py</code></a> · <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/findata/validate.py"><code>validate.py</code></a> ·
+<a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/findata/sql/model.sql"><code>sql/model.sql</code></a> · <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/findata/commentary.py"><code>commentary.py</code></a> ·
+<a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/findata/report.py"><code>report.py</code></a></p>
+</main>
+<footer>All companies, people and figures on this site are fictitious demo data. Work with me: Upwork and Fiverr profiles coming soon.</footer>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "neutral" });
+</script>
+</body>
+</html>

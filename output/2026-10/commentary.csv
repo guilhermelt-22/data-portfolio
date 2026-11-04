@@ -1,0 +1,8 @@
+scope,statement_line,variance_usd,commentary
+month,Payroll,171361.971533,"Payroll is $171k (10.2%) under budget in Oct-26 (favourable). Largest driver: UK Salaries & Wages / R&D (+$149k). Caution: $118k of actual cost in this line has no valid department, so the departmental split is distorted until the mapping is fixed (see Data checks). [Analyst: add business context]"
+month,Revenue,-114455.78332900033,Revenue is $114k (5.3%) below budget in Oct-26 (unfavourable). Largest driver: US Subscription Revenue (-$90k). [Analyst: add business context]
+month,Cost of Revenue,-21547.698368999998,Cost of Revenue is $22k (5.1%) over budget in Oct-26 (unfavourable). Largest driver: US Hosting & Infrastructure (-$21k). [Analyst: add business context]
+ytd,Payroll,774155.4937929999,Payroll is $774k (5.0%) under budget year to date (favourable). Largest driver: US Salaries & Wages / R&D (+$323k). [Analyst: add business context]
+ytd,Marketing Programs,-174654.36453099997,Marketing Programs is $175k (8.3%) over budget year to date (unfavourable). Largest driver: US Events & Sponsorships / Marketing (-$104k). [Analyst: add business context]
+ytd,Recruiting,48234.702095,Recruiting is $48k (45.7%) under budget year to date (favourable). Largest driver: US Recruiting / R&D (+$17k). [Analyst: add business context]
+ytd,Contractors,27288.92804400002,Contractors is $27k (5.2%) under budget year to date (favourable). Largest driver: UK Contractors / R&D (+$18k). [Analyst: add business context]
