@@ -123,6 +123,7 @@ class Pack:
                        "valign": "vcenter", "text_wrap": True}),
             "head_left": f({"bold": True, "font_color": "white", "bg_color": self.NAVY}),
             "label": f({}),
+            "section": f({"bold": True, "font_color": self.NAVY}),
             "label_sub": f({"bold": True, "top": 1}),
             "label_total": f({"bold": True, "top": 1, "bottom": 6}),
             "num": f({"num_format": k}),
@@ -221,11 +222,11 @@ def write_pack(result: CloseResult, year_start: str = "2026-01") -> Path:
         else:
             ws.write_number(7, c, note, f["kpi_note"])
     ws.set_row(6, 24)
-    ws.set_column(0, 6, 21)
+    ws.set_column(0, 6, 24)
     ws.write(9, 0, "Variance commentary (draft)", f["title"])
     r = 10
     for scope, label in (("month", f"{month}"), ("ytd", "Year to date")):
-        ws.write(r, 0, label, f["label_sub"])
+        ws.write(r, 0, label, f["section"])
         r += 1
         for text in notes.loc[notes["scope"] == scope, "commentary"]:
             ws.merge_range(r, 0, r, 6, f"- {text}", f["wrap"])
@@ -235,8 +236,8 @@ def write_pack(result: CloseResult, year_start: str = "2026-01") -> Path:
 
     # P&L ------------------------------------------------------------------------------------
     ws = pack.wb.add_worksheet("P&L")
-    pack.header(ws, f"P&L vs budget - {month}", subtitle + " | profit-signed: costs in brackets, "
-                "positive variance = favourable")
+    pack.header(ws, f"P&L vs budget - {month}", subtitle)
+    ws.write(2, 0, "Profit-signed: costs in brackets, positive variance = favourable", f["subtitle"])
     cols = [("m_act", f"{period}\nActual", "num"), ("m_bud", "Budget", "num"), ("m_var", "Var", "num"),
             ("m_pct", "Var %", "pct"), ("y_act", "YTD\nActual", "num"), ("y_bud", "YTD\nBudget", "num"),
             ("y_var", "YTD Var", "num"), ("y_pct", "YTD Var %", "pct")]

@@ -72,7 +72,7 @@ TEMPLATE = """<!doctype html>
 <main>
 {body}
 </main>
-<footer>All companies, people and figures on this site are fictitious demo data. Work with me: Upwork and Fiverr profiles coming soon.</footer>
+<footer>All companies, people and figures on this site are fictitious demo data.</footer>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
   const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;

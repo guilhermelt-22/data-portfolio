@@ -35,9 +35,10 @@ Outputs land in [`output/2026-10/`](output/2026-10/).
 **Stack:** Python, SQL (DuckDB), pandas, Plotly, Excel (xlsxwriter), pytest. The engine starts from plain
 CSV/Excel exports, so it works with any ERP or accounting system.
 
-## Work with me
+## Working together
 
-Available for fixed-scope projects and monthly support. Upwork and Fiverr profile links coming soon.
+I take fixed-scope projects and monthly support for finance teams. Each case study shows the kind of
+deliverable you get: working code, documentation and a recorded walkthrough.
 
 ---
 <sub>All companies, people and figures in this repository are fictitious. Before/after timings: "after" is
