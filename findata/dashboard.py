@@ -1,6 +1,6 @@
 """Case B: budget-vs-actual dashboard (single self-contained HTML page) + BI-ready tables.
 
-The same tables written to output/<period>/dashboard_data/ can feed Looker Studio or Power BI;
+The same tables written to output/<period>/dashboard_data/ can feed Looker Studio;
 this page is the zero-install version a CFO can open from an email or a link.
 
 Usage:  python -m findata.dashboard --period 2026-10
@@ -160,7 +160,7 @@ def write_dashboard(result: CloseResult, year_start: str = "2026-01") -> Path:
     issues = result.issues
     blocking = int((issues["severity"] == "blocking").sum())
 
-    # BI-ready tables (Looker Studio / Power BI)
+    # BI-ready tables (e.g. for Looker Studio)
     con.execute("SELECT * FROM bva ORDER BY period, entity, account, department").df().to_csv(
         data_dir / "budget_vs_actual.csv", index=False)
     con.execute("SELECT * FROM pl_monthly ORDER BY period, entity, account, department").df().to_csv(

@@ -77,8 +77,8 @@ questions keep getting fuzzy answers:</p>
 <li><strong>Variance commentary, P&amp;L table and data checks</strong> on the same page, so nobody reads a number without
   knowing whether it is final.</li>
 <li><strong>BI-ready tables</strong> in <a href="https://github.com/guilhermelt-22/finance-data-portfolio/tree/main/output/2026-10/dashboard_data"><code>dashboard_data/</code></a> (<code>budget_vs_actual.csv</code>,
-  <code>pl_monthly_actuals.csv</code>, <code>cash_balance.csv</code>). The same model can feed <strong>Looker Studio</strong> or
-  <strong>Power BI</strong> when the client already uses one.</li>
+  <code>pl_monthly_actuals.csv</code>, <code>cash_balance.csv</code>). The same tables can feed a <strong>Looker Studio</strong>
+  dashboard connected to the client's data.</li>
 </ul>
 <h2 id="the-result">The result</h2>
 <div class="table-wrap"><table>
@@ -129,7 +129,7 @@ questions keep getting fuzzy answers:</p>
 <li><strong>Colourblind-safe palette.</strong> Actual in blue, budget in orange, favourable and unfavourable as a
   blue/red pair rather than green/red. Text labels carry the meaning, so colour is never the only cue.</li>
 <li><strong>The tool is a detail.</strong> The engine computes every number and writes a ready table. Whether the
-  client views it in this page, in Looker Studio or in Power BI changes only the last step.</li>
+  client views it in this page or in Looker Studio changes only the last step.</li>
 </ul>
 <p>Code: <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/findata/dashboard.py"><code>findata/dashboard.py</code></a></p>
 </main>

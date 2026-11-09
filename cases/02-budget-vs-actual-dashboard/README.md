@@ -33,8 +33,8 @@ python -m findata.dashboard --period 2026-10
 - **Variance commentary, P&L table and data checks** on the same page, so nobody reads a number without
   knowing whether it is final.
 - **BI-ready tables** in [`dashboard_data/`](../../output/2026-10/dashboard_data/) (`budget_vs_actual.csv`,
-  `pl_monthly_actuals.csv`, `cash_balance.csv`). The same model can feed **Looker Studio** or
-  **Power BI** when the client already uses one.
+  `pl_monthly_actuals.csv`, `cash_balance.csv`). The same tables can feed a **Looker Studio**
+  dashboard connected to the client's data.
 
 ## The result
 
@@ -59,6 +59,6 @@ What the October page shows at a glance:
 - **Colourblind-safe palette.** Actual in blue, budget in orange, favourable and unfavourable as a
   blue/red pair rather than green/red. Text labels carry the meaning, so colour is never the only cue.
 - **The tool is a detail.** The engine computes every number and writes a ready table. Whether the
-  client views it in this page, in Looker Studio or in Power BI changes only the last step.
+  client views it in this page or in Looker Studio changes only the last step.
 
 Code: [`findata/dashboard.py`](../../findata/dashboard.py)
