@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>Scrapy run summary</title><style>
+body{margin:0;background:#f4f5f7;font:15px/1.5 "Segoe UI",system-ui,sans-serif;color:#141414}
+.page{max-width:1000px;margin:0 auto;padding:24px 20px;background:#fff}
+h1{margin:0;font-size:24px;color:#1F3864} .sub{color:#7F7F7F;margin:4px 0 18px;font-size:13px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:8px}
+.kpi{border:1px solid #e3e3e3;border-radius:8px;padding:10px 12px} .kpi b{display:block;font-size:22px;color:#1F3864}
+.kpi span{font-size:12.5px;color:#555} h2{font-size:15px;color:#1F3864;margin:18px 0 6px}
+table{border-collapse:collapse;width:100%;font-size:13.5px} th,td{text-align:left;padding:6px 8px;border-bottom:1px solid #e6e6e6;vertical-align:top}
+th{background:#1F3864;color:#fff;font-weight:600} td:first-child{white-space:nowrap;color:#333}
+.note{color:#7F7F7F;font-size:12px;margin-top:12px} .nw{white-space:nowrap}
+</style></head><body><div class="page">
+<h1>Scrapy crawl: quotes and their authors</h1>
+<p class="sub">quotes.toscrape.com (scraping practice site) · list pages → author pages, plus the top-ten tag pages ·
+ROBOTSTXT_OBEY, AutoThrottle, 1-second delay, generic user agent</p>
+<div class="kpis"><div class="kpi"><b>100</b><span>unique quotes</span></div><div class="kpi"><b>50</b><span>author pages, joined to every quote</span></div><div class="kpi"><b>76</b><span>requests, robots.txt included</span></div><div class="kpi"><b>93 s</b><span>with AutoThrottle</span></div></div>
+<h2>Pipeline: clean → validate → drop duplicates</h2><table><tr><td>Pages read</td><td>10 list pages, 15 tag pages, 50 author pages</td></tr><tr><td>Quote items yielded</td><td>186</td></tr><tr><td>Dropped as duplicates</td><td>86 (the tag pages repeat quotes from the list)</td></tr><tr><td>Dropped as invalid</td><td>0</td></tr><tr><td>Saved</td><td>100 quotes · 50 authors · 0 quotes without their author</td></tr><tr><td>Author links followed once</td><td>136 repeat requests skipped by Scrapy&#x27;s duplicate filter</td></tr><tr><td>robots.txt</td><td>read first (HTTP 404: nothing disallowed) and obeyed</td></tr><tr><td>Errors</td><td>0</td></tr></table>
+<h2>Sample of the output (quotes.csv joined to authors.csv)</h2>
+<table><tr><th>Quote</th><th>Author</th><th>Born</th><th>Place</th></tr><tr><td>The world as we have created it is a process of our thinking. It cannot be …</td><td>Albert Einstein</td><td class='nw'>1879-03-14</td><td>Ulm, Germany</td></tr><tr><td>It is our choices, Harry, that show what we truly are, far more than our ab…</td><td>J.K. Rowling</td><td class='nw'>1965-07-31</td><td>Yate, South Gloucestershire, England, The United Kingdom</td></tr><tr><td>There are only two ways to live your life. One is as though nothing is a mi…</td><td>Albert Einstein</td><td class='nw'>1879-03-14</td><td>Ulm, Germany</td></tr><tr><td>The person, be it gentleman or lady, who has not pleasure in a good novel, …</td><td>Jane Austen</td><td class='nw'>1775-12-16</td><td>Steventon Rectory, Hampshire, The United Kingdom</td></tr><tr><td>Imperfection is beauty, madness is genius and it&#x27;s better to be absolutely …</td><td>Marilyn Monroe</td><td class='nw'>1926-06-01</td><td>The United States</td></tr><tr><td>Try not to become a man of success. Rather become a man of value.</td><td>Albert Einstein</td><td class='nw'>1879-03-14</td><td>Ulm, Germany</td></tr></table>
+<p class="note">Author biographies are not collected: name, birth date and place are enough to join on.</p>
+</div></body></html>

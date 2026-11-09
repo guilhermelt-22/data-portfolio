@@ -1,0 +1,18 @@
+{
+  "quotes": 100,
+  "authors": 50,
+  "quote_items_yielded": 186,
+  "duplicate_quotes_dropped": 86,
+  "invalid_dropped": 0,
+  "pages_list": 10,
+  "pages_tag": 15,
+  "pages_author": 50,
+  "requests": 76,
+  "responses_200": 75,
+  "robots_requests": 1,
+  "robots_status": "HTTP 404",
+  "dupefilter_filtered": 136,
+  "errors": 0,
+  "seconds": 92.7,
+  "missing_authors": 0
+}
