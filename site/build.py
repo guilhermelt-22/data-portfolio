@@ -28,7 +28,7 @@ TEMPLATE = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
-<meta name="description" content="Finance data for finance teams without a data team: month-end reporting automation, budget vs actual dashboards and finance data models.">
+<meta name="description" content="Data cleaning, ETL, automation, web scraping and dashboards in Python, SQL, Excel and Looker Studio, with every number checked against its source.">
 <style>
   :root {{ color-scheme: light; --page:#f9f9f7; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
           --line:#e1e0d9; --accent:#2a78d6; --code:#f3f2ee; }}
@@ -64,7 +64,7 @@ TEMPLATE = """<!doctype html>
 </head>
 <body>
 <header><div class="bar">
-  <a class="brand" href="{root}">Guilherme Teófilo · Finance data</a>
+  <a class="brand" href="{root}">Guilherme Teófilo · Data analyst</a>
   <a class="nav" href="{root}#case-studies">Case studies</a>
   <a class="nav" href="{root}output/2026-10/dashboard.html">Live dashboard</a>
   <a class="nav" href="{repo}">Code on GitHub</a>
@@ -119,7 +119,7 @@ def render(readme: Path) -> Path:
                   body)
     body = body.replace("<table>", '<div class="table-wrap"><table>').replace("</table>", "</table></div>")
     out = readme.parent / "index.html"
-    page_title = "Finance data portfolio · Guilherme Teófilo" if depth == 0 else f"{title} · Guilherme Teófilo"
+    page_title = "Data analyst portfolio · Guilherme Teófilo" if depth == 0 else f"{title} · Guilherme Teófilo"
     out.write_text(TEMPLATE.format(title=html.escape(page_title), root=root, repo=REPO_URL, body=body),
                    encoding="utf-8")
     return out
