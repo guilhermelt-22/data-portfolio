@@ -1,0 +1,89 @@
+{
+  "robots": "none published (HTTP 404): nothing disallowed",
+  "plain_request": {
+    "scroll_quotes": 0,
+    "js_quotes": 0,
+    "requests": 2,
+    "seconds": 0.4
+  },
+  "playwright_scroll": {
+    "quotes": 100,
+    "scrolls": 11,
+    "log": [
+      [
+        0,
+        10
+      ],
+      [
+        1,
+        20
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        3,
+        40
+      ],
+      [
+        4,
+        50
+      ],
+      [
+        5,
+        60
+      ],
+      [
+        6,
+        70
+      ],
+      [
+        7,
+        80
+      ],
+      [
+        8,
+        90
+      ],
+      [
+        9,
+        100
+      ],
+      [
+        10,
+        100
+      ],
+      [
+        11,
+        100
+      ]
+    ],
+    "requests_to_site": 14,
+    "seconds": 26.2
+  },
+  "playwright_js_pages": {
+    "quotes": 100,
+    "pages": 10,
+    "requests_to_site": 40,
+    "seconds": 12.3
+  },
+  "json_endpoint_check": {
+    "quotes": 100,
+    "requests": 10,
+    "seconds": 10.3
+  },
+  "reconciliation": {
+    "same": true,
+    "sizes": [
+      100,
+      100,
+      100
+    ],
+    "duplicates": [
+      0,
+      0,
+      0
+    ]
+  }
+}
