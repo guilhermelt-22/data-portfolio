@@ -1,0 +1,15 @@
+store,check_name,severity,count,detail
+books,Listing pages loaded,ok,50,50 of 50 pages (100%).
+books,Price parsed,ok,1000,every product has a price
+books,Title and URL present,ok,1000,complete
+books,Prices above zero,ok,0,none at zero or below
+books,Duplicates collapsed,info,0,no product listed twice
+books,Catalog size vs last run,ok,1000,"1,000 products vs 1,000 (+0.0%)"
+books,Extreme price moves (50%+),warning,1,"check before acting, often a parsing error: 'The Crossover' 38.77 -> 387.70"
+electronics,Listing pages loaded,warning,25,25 of 26 pages (96%). First failure: https://webscraper.io/test-sites/e-commerce/ajax/computers/laptops#page=7 (TimeoutException: product grid did not load within 15 s (simulated))
+electronics,Price parsed,ok,141,every product has a price
+electronics,Title and URL present,ok,141,complete
+electronics,Prices above zero,ok,0,none at zero or below
+electronics,Duplicates collapsed,info,0,no product listed twice
+electronics,Catalog size vs last run,warning,141,141 products vs 147 (-4.1%)
+electronics,Extreme price moves (50%+),ok,0,none

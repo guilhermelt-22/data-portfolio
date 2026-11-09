@@ -16,6 +16,10 @@ from openpyxl import load_workbook
 
 def fmt(value, number_format: str) -> str:
     if isinstance(value, (int, float)):
+        if number_format.startswith("+0.0%"):  # signed change (price monitor)
+            return f"{value:+.1%}"
+        if "0.00" in number_format:  # prices with cents (price monitor)
+            return f"{value:,.2f}"
         if "%" in number_format:
             return f"{value:.1%}" if value >= 0 else f"({abs(value):.1%})"
         if number_format.startswith("0.0"):
@@ -86,7 +90,9 @@ def render_sheet(ws) -> str:
             # the pack colours variance columns with conditional formats; mirror that
             if numeric and ws.title in ("P&L", "Opex by department") and c in (4, 5, 8, 9) and r > 4 and value:
                 style.append("color:#2E7D32" if value > 0 else "color:#C62828")
-            style.append(f"text-align:{'right' if numeric else 'left'}")
+            stored = cell.alignment.horizontal if cell.alignment else None
+            align = stored if stored in ("left", "right", "center") else ("right" if numeric else "left")
+            style.append(f"text-align:{align}")
             cells.append(f'<td colspan="{span}" style="{";".join(style)}">{fmt(value, cell.number_format)}</td>')
         tr_style = f' style="height:{height * 1.333:.0f}px"' if height else ""
         rows.append(f"<tr{tr_style}>{''.join(cells)}</tr>")

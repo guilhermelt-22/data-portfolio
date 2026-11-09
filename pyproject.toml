@@ -1,7 +1,7 @@
 [project]
 name = "findata"
 version = "0.1.0"
-description = "Finance data engine demo: month-end reporting automation and budget-vs-actual on fictitious data"
+description = "Data portfolio demos: finance data engine (fictitious data) and a web price and catalog monitor"
 requires-python = ">=3.11"
 dependencies = [
     "duckdb>=1.1",
@@ -10,10 +10,19 @@ dependencies = [
     "openpyxl>=3.1",
     "xlsxwriter>=3.2",
     "plotly>=5.24",
+    "requests>=2.32",
+    "beautifulsoup4>=4.12",
+    "selenium>=4.25",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["findata", "pricewatch"]
+
+[tool.setuptools.package-data]
+findata = ["sql/*.sql"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

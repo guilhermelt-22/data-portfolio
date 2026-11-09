@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Price and catalog monitor: two web stores, one recurring pipeline that reports what changed · Guilherme Teófilo</title>
+<meta name="description" content="Finance data for finance teams without a data team: month-end reporting automation, budget vs actual dashboards and finance data models.">
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+          --line:#e1e0d9; --accent:#2a78d6; --code:#f3f2ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+            --line:#2c2c2a; --accent:#3987e5; --code:#232322; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { border-bottom:1px solid var(--line); background:var(--surface); }
+  .bar { max-width:980px; margin:0 auto; padding:12px 16px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .brand { font-weight:700; color:var(--ink); text-decoration:none; margin-right:auto; }
+  .bar a.nav { color:var(--ink2); text-decoration:none; font-size:15px; }
+  .bar a.nav:hover { color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:30px; line-height:1.25; margin:8px 0 16px; }
+  h2 { font-size:22px; margin:36px 0 12px; padding-top:8px; border-top:1px solid var(--line); }
+  a { color:var(--accent); }
+  img { max-width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
+  blockquote { margin:16px 0; padding:10px 16px; border-left:4px solid var(--accent); background:var(--surface); color:var(--ink2); }
+  blockquote p { margin:4px 0; }
+  .table-wrap { overflow-x:auto; margin:16px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; background:var(--surface); }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--code); }
+  td img { border:none; }
+  code { background:var(--code); padding:1px 5px; border-radius:4px; font-size:14px; }
+  pre { background:var(--code); padding:12px 14px; border-radius:8px; overflow-x:auto; }
+  pre code { padding:0; background:none; }
+  pre.mermaid { background:var(--surface); border:1px solid var(--line); text-align:center; }
+  footer { max-width:980px; margin:0 auto; padding:16px 16px 40px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="../../">Guilherme Teófilo · Finance data</a>
+  <a class="nav" href="../../#case-studies">Case studies</a>
+  <a class="nav" href="../../output/2026-10/dashboard.html">Live dashboard</a>
+  <a class="nav" href="https://github.com/guilhermelt-22/finance-data-portfolio">Code on GitHub</a>
+</div></header>
+<main>
+<h1 id="price-and-catalog-monitor-two-web-stores-one-recurring-pipeline-that-reports-what-changed">Price and catalog monitor: two web stores, one recurring pipeline that reports what changed</h1>
+<blockquote>
+<p><strong>Demo on scraping practice sites.</strong> Both sources are sandboxes built for people to practise web
+scraping, with fictitious products: <a href="https://books.toscrape.com/">Books to Scrape</a> and the
+<a href="https://webscraper.io/test-sites/e-commerce/ajax">Web Scraper e-commerce test shop</a>. They never change,
+so the second run of the demo is simulated (<a href="#how-the-demo-works">how</a>).</p>
+</blockquote>
+<p><img alt="Run summary" src="img/summary.png" /></p>
+<h2 id="the-problem">The problem</h2>
+<p>A retailer wants to know every morning what changed in the catalogs it watches: which prices moved, what
+went out of stock, what is new and what was delisted. It usually starts with a one-off script that scrapes
+once and writes a CSV. Run it every day and the problems show up:</p>
+<ul>
+<li>running it twice appends the same products again;</li>
+<li>a listing page that times out silently drops 20 products, which the next comparison reports as "discontinued";</li>
+<li>a price parsed wrong (a misplaced decimal) goes straight into a repricing decision;</li>
+<li>pages built with JavaScript come back empty, because the products load after the HTML arrives;</li>
+<li>nobody can say whether today's file is complete.</li>
+</ul>
+<h2 id="the-solution">The solution</h2>
+<p>One command per run, from the first request to the report:</p>
+<pre><code class="language-bash">python -m pricewatch.run
+</code></pre>
+<pre class="mermaid">flowchart TB
+    A[Store A: static pages] -->|requests + BeautifulSoup| C[Records + page log]
+    B[Store B: AJAX pages] -->|Selenium, headless Chrome| C
+    C --> H[(Raw HTML archive, per run)]
+    C --> D[(SQLite history: no duplicates)]
+    D --> E{Changes vs last known state}
+    D --> Q{Data quality checks}
+    E --> R[Excel report + CSV]
+    Q --> R
+</pre>
+<ol>
+<li><strong>Collect politely.</strong> The crawler reads <code>robots.txt</code> first: the Web Scraper site disallows some of its
+   test paths, so the crawler never requests them. It sends a generic user agent, pauses 1 second between
+   requests and retries timeouts, <code>429</code> and <code>5xx</code> with a growing wait. A <code>404</code> is not retried.</li>
+<li><strong>Use the right tool for each page.</strong> The bookstore serves plain HTML, so <code>requests</code> and BeautifulSoup
+   are enough. The crawler reads the page count on page 1 and plans every page up front, so a failed page
+   costs 20 products, not the rest of the crawl. The electronics shop paginates with AJAX: the URL never
+   changes, so a plain HTTP request only ever sees page 1. Selenium clicks through the pager the way a
+   visitor would and waits for the product grid to be replaced each time. It does not touch the site's
+   cookie banner: consent is not accepted on anyone's behalf.</li>
+<li><strong>Keep the evidence.</strong> Every listing page is logged as loaded or failed, with the error. The raw HTML
+   is archived per run (gzipped), so a parser fix can be replayed on past runs without asking the site
+   again (<code>--replay</code>). Every record keeps the page it came from.</li>
+<li><strong>Store without duplicates.</strong> SQLite with primary keys (one row per product, one observation per
+   product per run) and upserts. Processing the same run twice leaves the database exactly as processing
+   it once. A product listed twice in one run is kept once and counted.</li>
+<li><strong>Detect what changed</strong> against the last known state of each product: price down or up (prices are
+   stored in integer cents, so floating-point noise never looks like a change), out of stock or back in
+   stock, new, listed again, removed. A missing product counts as <strong>removed</strong> only when every listing
+   page of its category loaded. If a page failed, it is held as <strong>not seen</strong> and reported as such. After
+   3 misses in a row it counts as removed anyway.</li>
+<li><strong>Check quality before anyone acts:</strong> pages loaded, prices parsed, titles and URLs present, prices
+   above zero, duplicates, catalog size against the last run, and price moves of 50% or more, which are
+   more often a parsing error than a real price.</li>
+<li><strong>Report.</strong> An Excel workbook (summary, changes, catalog, data quality, run history) for people, and CSV
+   files (<code>changes</code>, <code>catalog</code>, <code>quality</code>) for the next tool, such as a Looker Studio dashboard or a
+   repricing script.</li>
+</ol>
+<h2 id="the-result">The result</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Before: one-off script</th>
+<th>After: this pipeline (measured on the demo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Collection</td>
+<td>one script per site, run by hand</td>
+<td><strong>1,147 products from 76 pages in 82 seconds</strong>, both stores, with a 1-second pause between requests</td>
+</tr>
+<tr>
+<td>Running it again</td>
+<td>duplicates appended</td>
+<td><strong>same database</strong>; every run kept in the history</td>
+</tr>
+<tr>
+<td>Page that fails to load</td>
+<td>20 products silently missing, "discontinued" tomorrow</td>
+<td><strong>logged with its error</strong>; its 6 products held as <em>not seen</em>, <strong>0 false removals</strong></td>
+</tr>
+<tr>
+<td>JavaScript pages</td>
+<td>empty, or page 1 only</td>
+<td><strong>every AJAX page</strong>, through Selenium</td>
+</tr>
+<tr>
+<td>Price changes</td>
+<td>two CSV files compared by hand</td>
+<td>before, after and % for every product</td>
+</tr>
+<tr>
+<td>Misplaced decimal</td>
+<td>goes into the decision</td>
+<td><strong>flagged for review</strong> before anyone acts</td>
+</tr>
+<tr>
+<td>"Is today's file complete?"</td>
+<td>nobody knows</td>
+<td>"76 of 76 pages loaded", with PASS / WARN / FAIL per store</td>
+</tr>
+<tr>
+<td>Seeded changes in the simulated run</td>
+<td>n/a</td>
+<td><strong>28 of 28 detected</strong>, and nothing else</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Changes</th>
+<th>Data quality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Changes" src="img/changes.png" /></td>
+<td><img alt="Data quality" src="img/quality.png" /></td>
+</tr>
+</tbody>
+</table></div>
+<p>Sample output: <a href="../../output/pricewatch/Price_Monitor_Report.xlsx"><code>Price_Monitor_Report.xlsx</code></a> ·
+<a href="../../output/pricewatch/changes.csv"><code>changes.csv</code></a> · <a href="../../output/pricewatch/catalog.csv"><code>catalog.csv</code></a></p>
+<h2 id="how-the-demo-works">How the demo works</h2>
+<pre><code class="language-bash">python -m pricewatch.demo
+</code></pre>
+<ul>
+<li><strong>Run 1</strong> is a real crawl of both practice stores. It is the baseline: on a first run every product is
+  "new", which says nothing, so no changes are reported.</li>
+<li><strong>Run 2</strong> is a simulated next day. The practice sites never change, so the demo replays the archived
+  pages of run 1 and seeds changes into them: 13 price moves (one of them a misplaced decimal), 3 stock-outs, 3 delisted products, 3 new arrivals and one laptop listing page that times out, hiding 6 products. The seeded list lives in
+  <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/pricewatch/simulate.py"><code>simulate.py</code></a>, and a test checks that the detector finds every seeded
+  change and nothing else.</li>
+</ul>
+<p>To run it on a schedule, point cron (or Windows Task Scheduler) at the single-run command:</p>
+<pre><code class="language-bash">0 7 * * *  cd /path/to/repo &amp;&amp; python -m pricewatch.run
+</code></pre>
+<h2 id="design-choices">Design choices</h2>
+<ul>
+<li><strong>Collection rules come first.</strong> Public pages only, no logins, no CAPTCHA bypass, no personal data,
+  and never a site whose terms forbid collection. <code>robots.txt</code> and a pause between requests are the
+  default, not an option.</li>
+<li><strong>The lightest tool that works.</strong> If a site has a JSON endpoint behind its pages, reading it is faster
+  and gentler than a browser. Selenium is for pages that only exist after JavaScript runs.</li>
+<li><strong>Completeness is data.</strong> The page log is what lets the report say "the catalog is complete" or "these
+  6 products could not be checked today". Without it, a timeout and a delisting look the same.</li>
+<li><strong>One file, no server.</strong> SQLite keeps the whole history in one file. For a client, the same tables can
+  live in Postgres or BigQuery without changing the logic.</li>
+<li><strong>Adding a store</strong> is a configuration entry plus a parser function, tested on saved HTML.</li>
+</ul>
+<p>Code: <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/pricewatch/fetch.py"><code>fetch.py</code></a> · <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/pricewatch/collect.py"><code>collect.py</code></a> ·
+<a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/pricewatch/parse.py"><code>parse.py</code></a> · <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/pricewatch/store.py"><code>store.py</code></a> ·
+<a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/pricewatch/changes.py"><code>changes.py</code></a> · <a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/pricewatch/quality.py"><code>quality.py</code></a> ·
+<a href="https://github.com/guilhermelt-22/finance-data-portfolio/blob/main/pricewatch/report.py"><code>report.py</code></a></p>
+</main>
+<footer>All companies, people and figures on this site are fictitious demo data.</footer>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "neutral" });
+</script>
+</body>
+</html>

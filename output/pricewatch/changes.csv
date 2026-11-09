@@ -1,0 +1,29 @@
+store,category,product,change,old_value,new_value,pct,url,currency
+books,all books,Are We There Yet?,price_down,10.66,8.41,-0.21106941838649157,https://books.toscrape.com/catalogue/are-we-there-yet_122/index.html,GBP
+books,all books,Notes from a Small Island (Notes From a Small Island #1),price_down,40.17,33.23,-0.17276574558127955,https://books.toscrape.com/catalogue/notes-from-a-small-island-notes-from-a-small-island-1_200/index.html,GBP
+books,all books,Shameless,price_down,58.35,49.88,-0.14515852613538988,https://books.toscrape.com/catalogue/shameless_52/index.html,GBP
+books,all books,Deception Point,price_down,40.32,36.77,-0.08804563492063493,https://books.toscrape.com/catalogue/deception-point_426/index.html,GBP
+electronics,phones,Sony Xperia,price_down,118.99,111.54,-0.06261030338683923,https://webscraper.io/test-sites/e-commerce/ajax/product/5,USD
+electronics,laptops,ProBook,price_down,739.99,697.71,-0.057135907241989754,https://webscraper.io/test-sites/e-commerce/ajax/product/34,USD
+books,all books,The Crossover,price_up,38.77,387.70,9.0,https://books.toscrape.com/catalogue/the-crossover_398/index.html,GBP
+electronics,laptops,Aspire E1-510,price_up,306.99,362.84,0.18192775008957945,https://webscraper.io/test-sites/e-commerce/ajax/product/32,USD
+electronics,tablets,Galaxy Note,price_up,399.99,455.97,0.13995349883747094,https://webscraper.io/test-sites/e-commerce/ajax/product/29,USD
+books,all books,Awkward,price_up,38.02,42.99,0.1307206733298264,https://books.toscrape.com/catalogue/awkward_124/index.html,GBP
+books,all books,Proofs of God: Classical Arguments from Tertullian to Barth,price_up,54.21,60.55,0.11695259177273566,https://books.toscrape.com/catalogue/proofs-of-god-classical-arguments-from-tertullian-to-barth_538/index.html,GBP
+books,all books,Hystopia: A Novel,price_up,21.96,23.67,0.0778688524590164,https://books.toscrape.com/catalogue/hystopia-a-novel_523/index.html,GBP
+books,all books,"Naturally Lean: 125 Nourishing Gluten-Free, Plant-Based Recipes--All Under 300 Calories",price_up,11.38,12.19,0.07117750439367311,https://books.toscrape.com/catalogue/naturally-lean-125-nourishing-gluten-free-plant-based-recipes-all-under-300-calories_479/index.html,GBP
+books,all books,The Demonists (Demonist #1),out_of_stock,True,False,,https://books.toscrape.com/catalogue/the-demonists-demonist-1_345/index.html,GBP
+books,all books,"The Sandman, Vol. 1: Preludes and Nocturnes (The Sandman (volumes) #1)",out_of_stock,True,False,,https://books.toscrape.com/catalogue/the-sandman-vol-1-preludes-and-nocturnes-the-sandman-volumes-1_79/index.html,GBP
+books,all books,The Tipping Point: How Little Things Can Make a Big Difference,out_of_stock,True,False,,https://books.toscrape.com/catalogue/the-tipping-point-how-little-things-can-make-a-big-difference_284/index.html,GBP
+books,all books,Private Paris (Private #10) (Paperback),new,,47.61,,https://books.toscrape.com/catalogue/page-3.html#simulated-new-9001,GBP
+books,all books,Remember Me? (Paperback),new,,11.48,,https://books.toscrape.com/catalogue/page-31.html#simulated-new-9002,GBP
+electronics,tablets,MeMo PAD FHD 10 (2026 edition),new,,320.99,,https://webscraper.io/test-sites/e-commerce/ajax/computers/tablets#simulated-new-9001,USD
+books,all books,8 Keys to Mental Health Through Exercise,removed,31.04,,,https://books.toscrape.com/catalogue/8-keys-to-mental-health-through-exercise_114/index.html,GBP
+books,all books,Please Kill Me: The Uncensored Oral History of Punk,removed,31.19,,,https://books.toscrape.com/catalogue/please-kill-me-the-uncensored-oral-history-of-punk_537/index.html,GBP
+electronics,tablets,Galaxy Tab 3,removed,97.99,,,https://webscraper.io/test-sites/e-commerce/ajax/product/18,USD
+electronics,laptops,Acer Spin 5,not_seen,564.98,,,https://webscraper.io/test-sites/e-commerce/ajax/product/47,USD
+electronics,laptops,Aspire E1-572G,not_seen,581.99,,,https://webscraper.io/test-sites/e-commerce/ajax/product/36,USD
+electronics,laptops,Dell Vostro 15 (3568) Red,not_seen,497.17,,,https://webscraper.io/test-sites/e-commerce/ajax/product/92,USD
+electronics,laptops,HP 250 G3,not_seen,520.99,,,https://webscraper.io/test-sites/e-commerce/ajax/product/42,USD
+electronics,laptops,HP 350 G1,not_seen,577.99,,,https://webscraper.io/test-sites/e-commerce/ajax/product/44,USD
+electronics,laptops,Lenovo V510 Black,not_seen,498.23,,,https://webscraper.io/test-sites/e-commerce/ajax/product/93,USD

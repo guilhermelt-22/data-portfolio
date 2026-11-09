@@ -53,8 +53,9 @@ dashboards, and one clean model for ledger, budget and actuals.</p>
 <p>3+ years building FP&amp;A and controllership data at a multinational financial services company and at
 Adapta, a fast-growing AI scale-up. BSc in Computer Science. Fluent English (EF SET C2).</p>
 <h2 id="case-studies">Case studies</h2>
-<p>All three run on the same engine and the same <strong>fictitious</strong> dataset: Kestrel Group, a 3-entity SaaS
-company whose ledgers come from QuickBooks-, Xero- and DATEV-style exports (<a href="data/">dataset notes</a>).</p>
+<p>Cases 01 to 03 run on the same engine and the same <strong>fictitious</strong> dataset: Kestrel Group, a 3-entity SaaS
+company whose ledgers come from QuickBooks-, Xero- and DATEV-style exports (<a href="data/">dataset notes</a>).
+Case 04 collects its data from the web, from two sites built for scraping practice.</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -79,6 +80,11 @@ company whose ledgers come from QuickBooks-, Xero- and DATEV-style exports (<a h
 <td>The SQL model underneath: account and department mapping, FX, intercompany elimination, plan vs actual</td>
 <td><strong>11 automated tests</strong>, including budget vs actual reconciling to its inputs to the cent</td>
 </tr>
+<tr>
+<td><a href="cases/04-price-and-catalog-monitor/"><strong>04 · Price and catalog monitor</strong></a></td>
+<td>Web scraping as a recurring system: static pages (requests + BeautifulSoup) and AJAX pages (Selenium), history without duplicates, change detection and a data quality report per run</td>
+<td><strong>1,147 products</strong> from 76 pages in 82 seconds; <strong>28 of 28</strong> seeded changes detected, and <strong>0 false removals</strong> when a page fails to load</td>
+</tr>
 </tbody>
 </table></div>
 <p><img alt="Budget vs actual dashboard" src="cases/02-budget-vs-actual-dashboard/img/dashboard.png" /></p>
@@ -87,11 +93,13 @@ company whose ledgers come from QuickBooks-, Xero- and DATEV-style exports (<a h
 python data/generate.py                        # build the fictitious dataset
 python -m findata.report --period 2026-10      # case 01: Excel management pack
 python -m findata.dashboard --period 2026-10   # case 02: dashboard + BI tables
-pytest                                         # case 03: 11 tests
+python -m pricewatch.demo                      # case 04: live crawl + simulated next day (~2 min, needs Chrome)
+pytest                                         # 30 tests, all offline
 </code></pre>
-<p>Outputs land in <a href="https://github.com/guilhermelt-22/finance-data-portfolio/tree/main/output/2026-10"><code>output/2026-10/</code></a>.</p>
-<p><strong>Stack:</strong> Python, SQL (DuckDB), pandas, Plotly, Excel (xlsxwriter), pytest. The engine starts from plain
-CSV/Excel exports, so it works with any ERP or accounting system.</p>
+<p>Outputs land in <a href="https://github.com/guilhermelt-22/finance-data-portfolio/tree/main/output/2026-10"><code>output/2026-10/</code></a> and <a href="https://github.com/guilhermelt-22/finance-data-portfolio/tree/main/output/pricewatch"><code>output/pricewatch/</code></a>.</p>
+<p><strong>Stack:</strong> Python, SQL (DuckDB, SQLite), pandas, Plotly, Excel (xlsxwriter), requests, BeautifulSoup,
+Selenium, pytest. The finance engine starts from plain CSV/Excel exports, so it works with any ERP or
+accounting system.</p>
 <h2 id="working-together">Working together</h2>
 <p>I take fixed-scope projects and monthly support for finance teams. Each case study shows the kind of
 deliverable you get: working code, documentation and a recorded walkthrough.</p>

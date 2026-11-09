@@ -8,3 +8,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+# price monitor: local history and raw HTML archive (rebuilt by python -m pricewatch.demo)
+output/pricewatch/*.sqlite
+output/pricewatch/archive/
