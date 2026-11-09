@@ -18,7 +18,7 @@ from pathlib import Path, PurePosixPath
 import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
-REPO_URL = "https://github.com/guilhermelt-22/finance-data-portfolio"
+REPO_URL = "https://github.com/guilhermelt-22/data-portfolio"
 CODE_SUFFIXES = {".py", ".sql", ".toml", ".md"}
 PAGES = [ROOT / "README.md", ROOT / "data" / "README.md", *sorted((ROOT / "cases").glob("*/README.md"))]
 
