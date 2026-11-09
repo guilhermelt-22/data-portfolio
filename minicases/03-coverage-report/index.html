@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crawl coverage report: every discovered URL accounted for, with checkpoint and resume · Guilherme Teófilo</title>
+<meta name="description" content="Data cleaning, ETL, automation, web scraping and dashboards in Python, SQL, Excel and Looker Studio, with every number checked against its source.">
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+          --line:#e1e0d9; --accent:#2a78d6; --code:#f3f2ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+            --line:#2c2c2a; --accent:#3987e5; --code:#232322; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { border-bottom:1px solid var(--line); background:var(--surface); }
+  .bar { max-width:980px; margin:0 auto; padding:12px 16px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .brand { font-weight:700; color:var(--ink); text-decoration:none; margin-right:auto; }
+  .bar a.nav { color:var(--ink2); text-decoration:none; font-size:15px; }
+  .bar a.nav:hover { color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:30px; line-height:1.25; margin:8px 0 16px; }
+  h2 { font-size:22px; margin:36px 0 12px; padding-top:8px; border-top:1px solid var(--line); }
+  a { color:var(--accent); }
+  img { max-width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
+  blockquote { margin:16px 0; padding:10px 16px; border-left:4px solid var(--accent); background:var(--surface); color:var(--ink2); }
+  blockquote p { margin:4px 0; }
+  .table-wrap { overflow-x:auto; margin:16px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; background:var(--surface); }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--code); }
+  td img { border:none; }
+  code { background:var(--code); padding:1px 5px; border-radius:4px; font-size:14px; }
+  pre { background:var(--code); padding:12px 14px; border-radius:8px; overflow-x:auto; }
+  pre code { padding:0; background:none; }
+  pre.mermaid { background:var(--surface); border:1px solid var(--line); text-align:center; }
+  footer { max-width:980px; margin:0 auto; padding:16px 16px 40px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="../../">Guilherme Teófilo · Data analyst</a>
+  <a class="nav" href="../../#case-studies">Case studies</a>
+  <a class="nav" href="../../#mini-cases">Mini-cases</a>
+  <a class="nav" href="../../output/2026-10/dashboard.html">Live dashboard</a>
+  <a class="nav" href="https://github.com/guilhermelt-22/data-portfolio">Code on GitHub</a>
+</div></header>
+<main>
+<h1 id="crawl-coverage-report-every-discovered-url-accounted-for-with-checkpoint-and-resume">Crawl coverage report: every discovered URL accounted for, with checkpoint and resume</h1>
+<blockquote>
+<p><strong>Demo on a scraping practice site.</strong> The source is <a href="https://books.toscrape.com/">Books to Scrape</a>, a
+sandbox built for people to practise web scraping, with 1,000 fictitious books. Two failures are injected
+on purpose, so the report has something real to catch.</p>
+</blockquote>
+<p><img alt="Coverage report" src="img/report.png" /></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Task</strong></td>
+<td>Collect all 1,000 book pages and prove it: every URL the crawler discovers must end as collected, failed with a reason, or excluded by a rule, with no silent omissions. The crawl must survive being stopped halfway without losing or duplicating records.</td>
+</tr>
+<tr>
+<td><strong>Solution</strong></td>
+<td>requests and BeautifulSoup · SQLite checkpoint, one transaction per page · a coverage report that reconciles to zero, with control totals against the site's own count · robots.txt, 1-second pause, generic user agent</td>
+</tr>
+<tr>
+<td><strong>Records</strong></td>
+<td><strong>1,103 URLs, every one accounted for:</strong> 1,049 collected (999 books and 50 listing pages), 2 failed (the 2 injected), 52 excluded · 999 records, 0 duplicates</td>
+</tr>
+<tr>
+<td><strong>Time</strong></td>
+<td><strong>17.5 minutes</strong> for 1,051 requests at 1 per second, across a run killed after 400 books and the run that resumed it</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="how-it-works">How it works</h2>
+<ol>
+<li><strong>Discover.</strong> The crawler reads listing page 1, learns from the pager that there are 50, and plans all of
+   them up front, so a listing page that fails hides 20 books, not the rest of the catalog. Every link on
+   every listing page is normalized and recorded once, with the page that linked to it.</li>
+<li><strong>Classify every URL.</strong> A book page is collected. A listing page is read for its links. A category page
+   or the home page is excluded by a scope rule, and the rule is written next to it. Nothing is dropped
+   without a line in the report.</li>
+<li><strong>Collect politely.</strong> robots.txt first (the site publishes none, so nothing is disallowed), a generic
+   user agent, at least 1 second between requests, retries for timeouts, <code>429</code> and <code>5xx</code>, and no retry
+   for a <code>404</code>.</li>
+<li><strong>Validate each record.</strong> Title, price and UPC must be present and the price above zero. A page that
+   loads but breaks the template is a failure with its reason, not a row with blank fields. A second URL
+   for a book already saved (same UPC) is a failure too, so the dataset keeps one row per book.</li>
+<li><strong>Checkpoint.</strong> One SQLite file holds every URL, its outcome, every record and every run. Each page is
+   finished in a single transaction: its outcome, its record, the request log and the run counters. Kill
+   the process at any moment and every page is either fully done or still pending. The next run picks up
+   the pending ones and never requests a saved page again.</li>
+<li><strong>Report.</strong> An Excel workbook (summary, one row per URL, records) and two CSV files. The summary only says
+   "nothing left unexplained" when discovered = collected + failed + excluded and nothing is pending.</li>
+</ol>
+<h2 id="the-demo-measured">The demo, measured</h2>
+<pre><code class="language-bash">python -m crawlcheck.demo
+</code></pre>
+<p>The demo starts from nothing, with the two failures injected: a broken link (as if listing page 25 linked
+to a book that no longer exists; the site answers <code>404</code>) and a template change on one book page (its price
+block removed before parsing). When 400 books are saved, it kills the process, with no clean shutdown, as a
+crash or a closed laptop would. Then it runs again.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Run</th>
+<th>What happened</th>
+<th>Seconds</th>
+<th>Requests</th>
+<th>Records added</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>killed when 400 books were saved</td>
+<td>451</td>
+<td>450</td>
+<td>400</td>
+</tr>
+<tr>
+<td>2</td>
+<td>resumed from the checkpoint: 502 URLs done, 601 pending</td>
+<td>602</td>
+<td>601</td>
+<td>599</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>1,053</strong></td>
+<td><strong>1,051</strong></td>
+<td><strong>999</strong></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Every URL accounted for</td>
+<td>1,103 discovered = 1,049 collected + 2 failed + 52 excluded, 0 pending</td>
+</tr>
+<tr>
+<td>Books the site says it has</td>
+<td>1,000</td>
+</tr>
+<tr>
+<td>Book URLs discovered</td>
+<td>1,001: the 1,000 plus the injected dead link</td>
+</tr>
+<tr>
+<td>Records saved</td>
+<td>999: every book except the one with the broken template</td>
+</tr>
+<tr>
+<td>Duplicate records (same UPC)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Listing pages loaded</td>
+<td>50 of 50</td>
+</tr>
+<tr>
+<td>Saved pages requested again after the restart</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Links read on listing pages</td>
+<td>4,749, pointing to 1,103 unique URLs</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two failures are the two injected ones, each with its reason and the page that linked to it.
+<code>--retry-failed</code> puts them back in the queue on the next run.</p>
+<p>Output: <a href="output/coverage_report.xlsx"><code>coverage_report.xlsx</code></a> · <a href="output/coverage.csv"><code>coverage.csv</code></a> (one row
+per URL) · <a href="output/books.csv"><code>books.csv</code></a></p>
+<h2 id="run-it">Run it</h2>
+<pre><code class="language-bash">cd minicases/03-coverage-report
+python -m crawlcheck.run          # start, or resume where the last run stopped
+python -m crawlcheck.demo         # the demo above, about 18 minutes at 1 request per second
+pytest                            # 10 tests, offline
+</code></pre>
+<h2 id="design-choices">Design choices</h2>
+<ul>
+<li><strong>Completeness is data.</strong> A page that times out and a book that does not exist look the same in a CSV:
+  both are missing. The coverage table is what tells them apart.</li>
+<li><strong>Control totals, as in accounting.</strong> The site says it has 1,000 books; the report compares that with
+  the book URLs discovered and the records saved, and explains the difference.</li>
+<li><strong>Rollback journal, not WAL.</strong> The first version used SQLite's WAL mode. After the kill, its shared-memory
+  file sat in a cloud-synced folder and the restart could not open the database. The default journal is
+  just as crash-safe and leaves no extra file behind for a sync client to lock.</li>
+</ul>
+<p>Code: <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/03-coverage-report/crawlcheck/crawl.py"><code>crawl.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/03-coverage-report/crawlcheck/state.py"><code>state.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/03-coverage-report/crawlcheck/parse.py"><code>parse.py</code></a> ·
+<a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/03-coverage-report/crawlcheck/polite.py"><code>polite.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/03-coverage-report/crawlcheck/report.py"><code>report.py</code></a></p>
+</main>
+<footer>Demo data only: fictitious companies and figures, scraping practice sites and official public sources, each named on its page.</footer>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "neutral" });
+</script>
+</body>
+</html>

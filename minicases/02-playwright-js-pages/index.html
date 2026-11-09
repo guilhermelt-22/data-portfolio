@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playwright for JavaScript pages: infinite scroll read to the end, where a plain request sees nothing · Guilherme Teófilo</title>
+<meta name="description" content="Data cleaning, ETL, automation, web scraping and dashboards in Python, SQL, Excel and Looker Studio, with every number checked against its source.">
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+          --line:#e1e0d9; --accent:#2a78d6; --code:#f3f2ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+            --line:#2c2c2a; --accent:#3987e5; --code:#232322; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { border-bottom:1px solid var(--line); background:var(--surface); }
+  .bar { max-width:980px; margin:0 auto; padding:12px 16px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .brand { font-weight:700; color:var(--ink); text-decoration:none; margin-right:auto; }
+  .bar a.nav { color:var(--ink2); text-decoration:none; font-size:15px; }
+  .bar a.nav:hover { color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:30px; line-height:1.25; margin:8px 0 16px; }
+  h2 { font-size:22px; margin:36px 0 12px; padding-top:8px; border-top:1px solid var(--line); }
+  a { color:var(--accent); }
+  img { max-width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
+  blockquote { margin:16px 0; padding:10px 16px; border-left:4px solid var(--accent); background:var(--surface); color:var(--ink2); }
+  blockquote p { margin:4px 0; }
+  .table-wrap { overflow-x:auto; margin:16px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; background:var(--surface); }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--code); }
+  td img { border:none; }
+  code { background:var(--code); padding:1px 5px; border-radius:4px; font-size:14px; }
+  pre { background:var(--code); padding:12px 14px; border-radius:8px; overflow-x:auto; }
+  pre code { padding:0; background:none; }
+  pre.mermaid { background:var(--surface); border:1px solid var(--line); text-align:center; }
+  footer { max-width:980px; margin:0 auto; padding:16px 16px 40px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="../../">Guilherme Teófilo · Data analyst</a>
+  <a class="nav" href="../../#case-studies">Case studies</a>
+  <a class="nav" href="../../#mini-cases">Mini-cases</a>
+  <a class="nav" href="../../output/2026-10/dashboard.html">Live dashboard</a>
+  <a class="nav" href="https://github.com/guilhermelt-22/data-portfolio">Code on GitHub</a>
+</div></header>
+<main>
+<h1 id="playwright-for-javascript-pages-infinite-scroll-read-to-the-end-where-a-plain-request-sees-nothing">Playwright for JavaScript pages: infinite scroll read to the end, where a plain request sees nothing</h1>
+<blockquote>
+<p><strong>Demo on a scraping practice site.</strong> The source is <a href="https://quotes.toscrape.com/">Quotes to Scrape</a>, a
+sandbox built for people to practise web scraping. Its <code>/scroll</code> page loads quotes as you scroll, and its
+<code>/js</code> pages write the quotes with JavaScript.</p>
+</blockquote>
+<p><img alt="Plain request vs browser" src="img/summary.png" /></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Task</strong></td>
+<td>Collect every item from pages built by JavaScript: an infinite-scroll feed and a paginated listing rendered in the browser. Prove the result is complete.</td>
+</tr>
+<tr>
+<td><strong>Solution</strong></td>
+<td>Playwright for Python driving headless Chromium: scroll until two scrolls in a row bring nothing new, render each page and follow "Next" · the same pages fetched with a plain request for comparison · result reconciled quote by quote against the site's own JSON endpoint</td>
+</tr>
+<tr>
+<td><strong>Records</strong></td>
+<td><strong>100 of 100 quotes</strong> from the infinite scroll and <strong>100 of 100</strong> from the 10 JavaScript pages; the plain request found <strong>0</strong> on both</td>
+</tr>
+<tr>
+<td><strong>Time</strong></td>
+<td>Infinite scroll in <strong>26 seconds</strong> (11 scrolls, 1-second pause, 5-second wait for new items) · 10 JavaScript pages in <strong>12 seconds</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-a-plain-request-sees">What a plain request sees</h2>
+<p>A one-off script with requests and BeautifulSoup gets the full HTML of both pages, and <strong>0 quotes</strong>. The
+quotes are not in the HTML: on <code>/scroll</code> a script asks the server for them after the page loads, 10 at a
+time, as the visitor reaches the bottom; on <code>/js</code> a script writes them into the page. Nothing fails, and
+the CSV comes out empty or short. That silent failure is the risk.</p>
+<h2 id="what-the-browser-does">What the browser does</h2>
+<ol>
+<li><strong>Infinite scroll.</strong> Playwright opens the page in headless Chromium, waits for the first quotes, then
+   scrolls to the bottom and waits up to 5 seconds for the count to grow. It stops when two scrolls in a row
+   bring nothing new, so a slow answer does not end the crawl early, and it does not scroll forever either.
+   Measured: 10, 20, 30... 100 quotes, then two empty scrolls, then stop.</li>
+<li><strong>JavaScript pages.</strong> It renders each page, reads the quotes once they exist and follows the "Next" link
+   until there is none: 10 pages.</li>
+<li><strong>Politely.</strong> robots.txt first (the site publishes none, so nothing is disallowed), a generic user
+   agent, and at least 1 second between actions that make the page request something.</li>
+</ol>
+<h2 id="proof-that-nothing-is-missing">Proof that nothing is missing</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Method</th>
+<th><code>/scroll</code></th>
+<th><code>/js</code></th>
+<th>Requests</th>
+<th>Seconds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plain request (requests + BeautifulSoup)</td>
+<td>0 quotes</td>
+<td>0 quotes</td>
+<td>2</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>Playwright, headless Chromium</td>
+<td>100 quotes after 11 scrolls</td>
+<td>100 quotes from 10 pages</td>
+<td>54</td>
+<td>38.5</td>
+</tr>
+<tr>
+<td>Cross-check: the site's JSON endpoint</td>
+<td>100 quotes</td>
+<td>n/a</td>
+<td>10</td>
+<td>10.3</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three results hold <strong>the same 100 quotes</strong>, compared by a key built from each quote's text and author,
+with 0 duplicates. The browser's request count includes page assets (scripts and stylesheets).</p>
+<p>Output: <a href="output/scroll_quotes.csv"><code>scroll_quotes.csv</code></a> · <a href="output/js_quotes.csv"><code>js_quotes.csv</code></a> ·
+<a href="output/run_summary.json"><code>run_summary.json</code></a> · <a href="output/summary.html"><code>summary.html</code></a></p>
+<h2 id="the-lightest-tool-that-works">The lightest tool that works</h2>
+<p>The scroll page gets its data from a JSON endpoint (<code>/api/quotes?page=N</code>). When an endpoint like that exists
+and its use is allowed, reading it is faster and gentler than a browser: 10 requests instead of 14, no
+Chromium. Here it serves as the cross-check. The browser is for pages that only exist after JavaScript runs
+and have no usable endpoint behind them.</p>
+<h2 id="run-it">Run it</h2>
+<pre><code class="language-bash">cd minicases/02-playwright-js-pages
+python -m playwright install chromium   # once
+python -m jsquotes.run                  # the comparison above
+pytest                                  # 5 tests, offline: real Chromium on fake pages
+</code></pre>
+<p>The tests serve fake pages through Playwright's router, including a feed that stops after 4 batches, and
+check that the scroll loop stops after two empty scrolls and never asks for a batch past the last one.</p>
+<p>Code: <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/02-playwright-js-pages/jsquotes/collect.py"><code>collect.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/02-playwright-js-pages/jsquotes/run.py"><code>run.py</code></a></p>
+</main>
+<footer>Demo data only: fictitious companies and figures, scraping practice sites and official public sources, each named on its page.</footer>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "neutral" });
+</script>
+</body>
+</html>

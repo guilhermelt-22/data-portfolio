@@ -1,8 +1,9 @@
 """Build the GitHub Pages site from the repository's own README files (single source of truth).
 
-README.md            -> index.html
-data/README.md       -> data/index.html
-cases/*/README.md    -> cases/*/index.html
+README.md              -> index.html
+data/README.md         -> data/index.html
+cases/*/README.md      -> cases/*/index.html
+minicases/*/README.md  -> minicases/*/index.html (only the mini-cases linked from README.md)
 
 Links are rewritten so they work on the site: README links become page links, code and folder
 links point to the GitHub file viewer, and data files (xlsx, csv, html, png) stay relative.
@@ -20,7 +21,10 @@ import markdown
 ROOT = Path(__file__).resolve().parents[1]
 REPO_URL = "https://github.com/guilhermelt-22/data-portfolio"
 CODE_SUFFIXES = {".py", ".sql", ".toml", ".md"}
-PAGES = [ROOT / "README.md", ROOT / "data" / "README.md", *sorted((ROOT / "cases").glob("*/README.md"))]
+HOME = (ROOT / "README.md").read_text(encoding="utf-8")
+MINICASES = [p for p in sorted((ROOT / "minicases").glob("*/README.md"))
+             if f"minicases/{p.parent.name}/README.md" in HOME]  # unlisted work in progress stays off the site
+PAGES = [ROOT / "README.md", ROOT / "data" / "README.md", *sorted((ROOT / "cases").glob("*/README.md")), *MINICASES]
 
 TEMPLATE = """<!doctype html>
 <html lang="en">
@@ -66,13 +70,14 @@ TEMPLATE = """<!doctype html>
 <header><div class="bar">
   <a class="brand" href="{root}">Guilherme Teófilo · Data analyst</a>
   <a class="nav" href="{root}#case-studies">Case studies</a>
+  <a class="nav" href="{root}#mini-cases">Mini-cases</a>
   <a class="nav" href="{root}output/2026-10/dashboard.html">Live dashboard</a>
   <a class="nav" href="{repo}">Code on GitHub</a>
 </div></header>
 <main>
 {body}
 </main>
-<footer>All companies, people and figures on this site are fictitious demo data.</footer>
+<footer>Demo data only: fictitious companies and figures, scraping practice sites and official public sources, each named on its page.</footer>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
   const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;

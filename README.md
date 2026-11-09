@@ -33,6 +33,19 @@ Case 04 collects its data from the web, from two sites built for scraping practi
 
 ![Budget vs actual dashboard](cases/02-budget-vs-actual-dashboard/img/dashboard.png)
 
+## Mini-cases
+
+Short demos with one job each, in the format clients ask for: the task, the solution, how many records and
+how long it took. The scraping ones run on practice sites built for scraping; the exchange rates come from an
+official public API. Every number was measured on a real run.
+
+| Mini-case | Task | Records | Time |
+|---|---|---|---|
+| [**01 · Scrapy spider**](minicases/01-scrapy-quotes/README.md) | From list pages to detail pages, with pipelines that validate and drop duplicates, robots.txt and AutoThrottle | **100 quotes and 50 authors** from 186 items (86 duplicates dropped) | 93 s, 76 requests |
+| [**02 · Playwright for JavaScript pages**](minicases/02-playwright-js-pages/README.md) | Infinite scroll read to the end, next to a plain request that sees nothing | **100 of 100 quotes**; the plain request found 0 | 26 s for the scroll |
+| [**03 · Crawl coverage report**](minicases/03-coverage-report/README.md) | Every discovered URL ends collected, failed with its reason, or excluded; checkpoint and resume after the process is killed | **1,103 URLs**, every one accounted for; 999 books; both injected failures caught | 17.5 min at 1 request per second, killed and resumed |
+| [**04 · ECB exchange rates**](minicases/04-ecb-fx-rates/README.md) | Official API, incremental updates, TARGET holidays, checks for gaps and duplicates, CSV and Excel | **263,715 rates**, 44 currencies, daily since 1999 | 14 s in full, 0.7 s per update |
+
 ## Run it yourself
 
 ```bash
@@ -41,14 +54,16 @@ python data/generate.py                        # build the fictitious dataset
 python -m findata.report --period 2026-10      # case 01: Excel management pack
 python -m findata.dashboard --period 2026-10   # case 02: dashboard + BI tables
 python -m pricewatch.demo                      # case 04: live crawl + simulated next day (~2 min, needs Chrome)
-pytest                                         # 30 tests, all offline
+pytest                                         # every test, all offline
 ```
+
+Each mini-case runs from its own folder: the commands are on its page.
 
 Outputs land in [`output/2026-10/`](output/2026-10/) and [`output/pricewatch/`](output/pricewatch/).
 
 **Stack:** Python, SQL (DuckDB, SQLite), pandas, Plotly, Excel (xlsxwriter), requests, BeautifulSoup,
-Selenium, pytest. The finance engine starts from plain CSV/Excel exports, so it works with any ERP or
-accounting system.
+Selenium, Scrapy, Playwright, pytest. The finance engine starts from plain CSV/Excel exports, so it works
+with any ERP or accounting system.
 
 ## Working together
 

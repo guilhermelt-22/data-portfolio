@@ -25,5 +25,5 @@ packages = ["findata", "pricewatch"]
 findata = ["sql/*.sql"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "minicases"]
 pythonpath = ["."]

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECB exchange rates: daily reference rates since 1999 from the official API, updated incrementally · Guilherme Teófilo</title>
+<meta name="description" content="Data cleaning, ETL, automation, web scraping and dashboards in Python, SQL, Excel and Looker Studio, with every number checked against its source.">
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+          --line:#e1e0d9; --accent:#2a78d6; --code:#f3f2ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+            --line:#2c2c2a; --accent:#3987e5; --code:#232322; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { border-bottom:1px solid var(--line); background:var(--surface); }
+  .bar { max-width:980px; margin:0 auto; padding:12px 16px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .brand { font-weight:700; color:var(--ink); text-decoration:none; margin-right:auto; }
+  .bar a.nav { color:var(--ink2); text-decoration:none; font-size:15px; }
+  .bar a.nav:hover { color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:30px; line-height:1.25; margin:8px 0 16px; }
+  h2 { font-size:22px; margin:36px 0 12px; padding-top:8px; border-top:1px solid var(--line); }
+  a { color:var(--accent); }
+  img { max-width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
+  blockquote { margin:16px 0; padding:10px 16px; border-left:4px solid var(--accent); background:var(--surface); color:var(--ink2); }
+  blockquote p { margin:4px 0; }
+  .table-wrap { overflow-x:auto; margin:16px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; background:var(--surface); }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--code); }
+  td img { border:none; }
+  code { background:var(--code); padding:1px 5px; border-radius:4px; font-size:14px; }
+  pre { background:var(--code); padding:12px 14px; border-radius:8px; overflow-x:auto; }
+  pre code { padding:0; background:none; }
+  pre.mermaid { background:var(--surface); border:1px solid var(--line); text-align:center; }
+  footer { max-width:980px; margin:0 auto; padding:16px 16px 40px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="../../">Guilherme Teófilo · Data analyst</a>
+  <a class="nav" href="../../#case-studies">Case studies</a>
+  <a class="nav" href="../../#mini-cases">Mini-cases</a>
+  <a class="nav" href="../../output/2026-10/dashboard.html">Live dashboard</a>
+  <a class="nav" href="https://github.com/guilhermelt-22/data-portfolio">Code on GitHub</a>
+</div></header>
+<main>
+<h1 id="ecb-exchange-rates-daily-reference-rates-since-1999-from-the-official-api-updated-incrementally">ECB exchange rates: daily reference rates since 1999 from the official API, updated incrementally</h1>
+<blockquote>
+<p><strong>Official public API.</strong> The data comes from the European Central Bank's
+<a href="https://data.ecb.europa.eu/">Data Portal</a> (dataset EXR), read through its public API, which needs no key.
+Source: ECB statistics. The ECB allows free reuse, commercial use included, when the source is quoted
+and the statistics are not modified
+(<a href="https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html">usage policy</a>).
+Every rate here is as published.</p>
+</blockquote>
+<p><img alt="ECB rates report" src="img/report.png" /></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Task</strong></td>
+<td>Keep a complete history of the ECB's daily euro reference rates for finance work (revaluation, invoices in other currencies, budget rates). Update it every day without downloading everything again, and prove that nothing is missing.</td>
+</tr>
+<tr>
+<td><strong>Solution</strong></td>
+<td>Python and requests on the ECB's SDMX API · history in SQLite, updated incrementally · TARGET holiday calendar · checks for gaps, duplicates and freshness · CSV, Excel with a chart, HTML page</td>
+</tr>
+<tr>
+<td><strong>Records</strong></td>
+<td><strong>263,715 rates</strong>: 44 currency series (29 still published), 7,131 business days from 4 Jan 1999 to 6 Nov 2026</td>
+</tr>
+<tr>
+<td><strong>Time</strong></td>
+<td>Full history in <strong>14 seconds</strong> (one request) · daily update in <strong>0.7 seconds</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="how-it-works">How it works</h2>
+<ol>
+<li><strong>One function.</strong> <code>fetch_rates(["USD", "GBP"], start="2026-01-01")</code> returns a tidy table (date, currency,
+   rate). It retries when the portal is busy (it sometimes answers 503 or 504: one came up while this was
+   built) and never reads an HTML error page as data.</li>
+<li><strong>Incremental update.</strong> The local history knows its last day, and the next run asks the API only from
+   that day on. The last stored day is read again as an overlap check: if the ECB ever revised a rate, the
+   change is logged, not silently overwritten.</li>
+<li><strong>Holidays are not gaps.</strong> There is no rate on weekends and TARGET closing days: New Year's Day, Good
+   Friday, Easter Monday, 1 May, 25 and 26 December, plus two one-off closings on 31 December 1999 and 2001.
+   The source is not consistent about them: until 2012 the ECB published closing days as rows without a
+   value (2,387 of them), and since then the rows are simply absent. Both are handled the same way.</li>
+<li><strong>Checks on every run:</strong> one rate per currency per day, no rate on a closing day, every rate above zero,
+   no missing business day inside a currency's active range, data up to date.</li>
+</ol>
+<p>The demo measures the three cases: a full load into an empty history, a second run straight after (it
+receives the last day again and adds nothing), and a run after deleting the last 5 days from the local
+history, as if the previous run had been a week ago:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Run</th>
+<th>Asked the API from</th>
+<th>Rows received</th>
+<th>New rates</th>
+<th>Unchanged</th>
+<th>Revised</th>
+<th>Seconds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full history</td>
+<td>1999</td>
+<td>266,132</td>
+<td>263,715</td>
+<td>0</td>
+<td>0</td>
+<td>14.0</td>
+</tr>
+<tr>
+<td>Again, straight after</td>
+<td>6 Nov 2026</td>
+<td>29</td>
+<td>0</td>
+<td>29</td>
+<td>0</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>A week behind</td>
+<td>30 Oct 2026</td>
+<td>174</td>
+<td>145 (5 days)</td>
+<td>29</td>
+<td>0</td>
+<td>0.7</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-the-checks-found-in-the-real-data">What the checks found in the real data</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Duplicate date and currency pairs</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Rates on a weekend or closing day</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Rows published without a value</td>
+<td>2,417: 2,387 on closing days, 30 on business days</td>
+</tr>
+<tr>
+<td>Missing days in currencies still published</td>
+<td><strong>ISK suspended from 4 Dec 2008 to 31 Jan 2018</strong> (2,345 business days); ILS missing on 4 May 2007</td>
+</tr>
+<tr>
+<td>Discontinued series</td>
+<td>15, such as GRD (euro since 2001), BGN (euro since 2026), RUB (suspended in March 2022)</td>
+</tr>
+</tbody>
+</table></div>
+<p>These gaps are in the ECB's own data. The report shows them instead of filling them in: a model that
+carries the 2008 krona rate across nine years should know it is doing so.</p>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li><a href="output/ecb_fx_rates.xlsx"><code>ecb_fx_rates.xlsx</code></a>: checks, update log, coverage by currency, every rate
+  (one row per day, one column per currency) and a native Excel chart</li>
+<li><a href="output/fx_report.html"><code>fx_report.html</code></a>: the page in the picture, with an interactive chart</li>
+<li><a href="output/sample_last_30_days.csv"><code>sample_last_30_days.csv</code></a>. The run also writes the full history as CSV, in
+  long and wide format.</li>
+</ul>
+<h2 id="run-it">Run it</h2>
+<pre><code class="language-bash">cd minicases/04-ecb-fx-rates
+python -m ecbfx.update    # first run: the full history; after that, only the new days
+python -m ecbfx.demo      # the three runs above
+pytest                    # 18 tests, offline
+</code></pre>
+<p>The rates for a day appear around 16:00 CET, so a daily schedule (cron, Task Scheduler or GitHub Actions)
+can run at 16:30 CET. Other scripts can import the collector: <code>from ecbfx import fetch_rates</code>.</p>
+<p>Code: <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/04-ecb-fx-rates/ecbfx/api.py"><code>api.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/04-ecb-fx-rates/ecbfx/target.py"><code>target.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/04-ecb-fx-rates/ecbfx/store.py"><code>store.py</code></a> ·
+<a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/04-ecb-fx-rates/ecbfx/checks.py"><code>checks.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/04-ecb-fx-rates/ecbfx/report.py"><code>report.py</code></a></p>
+</main>
+<footer>Demo data only: fictitious companies and figures, scraping practice sites and official public sources, each named on its page.</footer>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "neutral" });
+</script>
+</body>
+</html>

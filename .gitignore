@@ -11,3 +11,8 @@ desktop.ini
 # price monitor: local history and raw HTML archive (rebuilt by python -m pricewatch.demo)
 output/pricewatch/*.sqlite
 output/pricewatch/archive/
+# mini-cases: local state (checkpoints, history) and large files rebuilt by each run
+minicases/*/output/*.sqlite
+minicases/*/output/*.sqlite-*
+minicases/04-ecb-fx-rates/output/ecb_rates_long.csv
+minicases/04-ecb-fx-rates/output/ecb_rates_wide.csv

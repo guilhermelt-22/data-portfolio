@@ -42,6 +42,7 @@
 <header><div class="bar">
   <a class="brand" href="./">Guilherme Teófilo · Data analyst</a>
   <a class="nav" href="./#case-studies">Case studies</a>
+  <a class="nav" href="./#mini-cases">Mini-cases</a>
   <a class="nav" href="./output/2026-10/dashboard.html">Live dashboard</a>
   <a class="nav" href="https://github.com/guilhermelt-22/data-portfolio">Code on GitHub</a>
 </div></header>
@@ -100,18 +101,59 @@ Case 04 collects its data from the web, from two sites built for scraping practi
 </tbody>
 </table></div>
 <p><img alt="Budget vs actual dashboard" src="cases/02-budget-vs-actual-dashboard/img/dashboard.png" /></p>
+<h2 id="mini-cases">Mini-cases</h2>
+<p>Short demos with one job each, in the format clients ask for: the task, the solution, how many records and
+how long it took. The scraping ones run on practice sites built for scraping; the exchange rates come from an
+official public API. Every number was measured on a real run.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Mini-case</th>
+<th>Task</th>
+<th>Records</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="minicases/01-scrapy-quotes/"><strong>01 · Scrapy spider</strong></a></td>
+<td>From list pages to detail pages, with pipelines that validate and drop duplicates, robots.txt and AutoThrottle</td>
+<td><strong>100 quotes and 50 authors</strong> from 186 items (86 duplicates dropped)</td>
+<td>93 s, 76 requests</td>
+</tr>
+<tr>
+<td><a href="minicases/02-playwright-js-pages/"><strong>02 · Playwright for JavaScript pages</strong></a></td>
+<td>Infinite scroll read to the end, next to a plain request that sees nothing</td>
+<td><strong>100 of 100 quotes</strong>; the plain request found 0</td>
+<td>26 s for the scroll</td>
+</tr>
+<tr>
+<td><a href="minicases/03-coverage-report/"><strong>03 · Crawl coverage report</strong></a></td>
+<td>Every discovered URL ends collected, failed with its reason, or excluded; checkpoint and resume after the process is killed</td>
+<td><strong>1,103 URLs</strong>, every one accounted for; 999 books; both injected failures caught</td>
+<td>17.5 min at 1 request per second, killed and resumed</td>
+</tr>
+<tr>
+<td><a href="minicases/04-ecb-fx-rates/"><strong>04 · ECB exchange rates</strong></a></td>
+<td>Official API, incremental updates, TARGET holidays, checks for gaps and duplicates, CSV and Excel</td>
+<td><strong>263,715 rates</strong>, 44 currencies, daily since 1999</td>
+<td>14 s in full, 0.7 s per update</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="run-it-yourself">Run it yourself</h2>
 <pre><code class="language-bash">pip install -e .[dev]
 python data/generate.py                        # build the fictitious dataset
 python -m findata.report --period 2026-10      # case 01: Excel management pack
 python -m findata.dashboard --period 2026-10   # case 02: dashboard + BI tables
 python -m pricewatch.demo                      # case 04: live crawl + simulated next day (~2 min, needs Chrome)
-pytest                                         # 30 tests, all offline
+pytest                                         # every test, all offline
 </code></pre>
+<p>Each mini-case runs from its own folder: the commands are on its page.</p>
 <p>Outputs land in <a href="https://github.com/guilhermelt-22/data-portfolio/tree/main/output/2026-10"><code>output/2026-10/</code></a> and <a href="https://github.com/guilhermelt-22/data-portfolio/tree/main/output/pricewatch"><code>output/pricewatch/</code></a>.</p>
 <p><strong>Stack:</strong> Python, SQL (DuckDB, SQLite), pandas, Plotly, Excel (xlsxwriter), requests, BeautifulSoup,
-Selenium, pytest. The finance engine starts from plain CSV/Excel exports, so it works with any ERP or
-accounting system.</p>
+Selenium, Scrapy, Playwright, pytest. The finance engine starts from plain CSV/Excel exports, so it works
+with any ERP or accounting system.</p>
 <h2 id="working-together">Working together</h2>
 <p>I take fixed-scope, fixed-price projects and ongoing monthly support. You get a short progress update
 every day until delivery, full source code with a one-page guide, and no lock-in. Each case study shows
@@ -120,7 +162,7 @@ that kind of deliverable on fictitious data.</p>
 <p><sub>All companies, people and figures in this repository are fictitious. Before/after timings: "after" is
 measured on the demo data; "before" is an estimate of a typical manual process.</sub></p>
 </main>
-<footer>All companies, people and figures on this site are fictitious demo data.</footer>
+<footer>Demo data only: fictitious companies and figures, scraping practice sites and official public sources, each named on its page.</footer>
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
   const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
