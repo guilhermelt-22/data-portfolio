@@ -37,7 +37,8 @@ Case 04 collects its data from the web, from two sites built for scraping practi
 
 Short demos with one job each, in the format clients ask for: the task, the solution, how many records and
 how long it took. The scraping ones run on practice sites built for scraping; the exchange rates come from an
-official public API. Every number was measured on a real run.
+official public API; the Shopify one uses a fictitious supplier and was tested in a Shopify development store.
+Every number was measured on a real run.
 
 | Mini-case | Task | Records | Time |
 |---|---|---|---|
@@ -45,6 +46,7 @@ official public API. Every number was measured on a real run.
 | [**02 · Playwright for JavaScript pages**](minicases/02-playwright-js-pages/README.md) | Infinite scroll read to the end, next to a plain request that sees nothing | **100 of 100 quotes**; the plain request found 0 | 26 s for the scroll |
 | [**03 · Crawl coverage report**](minicases/03-coverage-report/README.md) | Every discovered URL ends collected, failed with its reason, or excluded; checkpoint and resume after the process is killed | **1,103 URLs**, every one accounted for; 999 books; both injected failures caught | 17.5 min at 1 request per second, killed and resumed |
 | [**04 · ECB exchange rates**](minicases/04-ecb-fx-rates/README.md) | Official API, incremental updates, TARGET holidays, checks for gaps and duplicates, CSV and Excel | **263,715 rates**, 44 currencies, daily since 1999 | 14 s in full, 0.7 s per update |
+| [**06 · Supplier file to Shopify**](minicases/06-supplier-file-to-shopify/README.md) | A messy supplier price list becomes Shopify's product CSV, checked before upload; next month's list becomes a change report and update files | **343 rows → 37 products, 314 variants**, every row accounted for; both months tested in a Shopify store | 0.7 s, 0.9 s for the update |
 
 ## Run it yourself
 

@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supplier price list to Shopify import: every row accounted for, and next month&#x27;s update in one run · Guilherme Teófilo</title>
+<meta name="description" content="Data cleaning, ETL, automation, web scraping and dashboards in Python, SQL, Excel and Looker Studio, with every number checked against its source.">
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+          --line:#e1e0d9; --accent:#2a78d6; --code:#f3f2ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+            --line:#2c2c2a; --accent:#3987e5; --code:#232322; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { border-bottom:1px solid var(--line); background:var(--surface); }
+  .bar { max-width:980px; margin:0 auto; padding:12px 16px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .brand { font-weight:700; color:var(--ink); text-decoration:none; margin-right:auto; }
+  .bar a.nav { color:var(--ink2); text-decoration:none; font-size:15px; }
+  .bar a.nav:hover { color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:30px; line-height:1.25; margin:8px 0 16px; }
+  h2 { font-size:22px; margin:36px 0 12px; padding-top:8px; border-top:1px solid var(--line); }
+  a { color:var(--accent); }
+  img { max-width:100%; height:auto; border:1px solid var(--line); border-radius:8px; }
+  blockquote { margin:16px 0; padding:10px 16px; border-left:4px solid var(--accent); background:var(--surface); color:var(--ink2); }
+  blockquote p { margin:4px 0; }
+  .table-wrap { overflow-x:auto; margin:16px 0; }
+  table { border-collapse:collapse; width:100%; font-size:15px; background:var(--surface); }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--code); }
+  td img { border:none; }
+  code { background:var(--code); padding:1px 5px; border-radius:4px; font-size:14px; }
+  pre { background:var(--code); padding:12px 14px; border-radius:8px; overflow-x:auto; }
+  pre code { padding:0; background:none; }
+  pre.mermaid { background:var(--surface); border:1px solid var(--line); text-align:center; }
+  footer { max-width:980px; margin:0 auto; padding:16px 16px 40px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="../../">Guilherme Teófilo · Data analyst</a>
+  <a class="nav" href="../../#case-studies">Case studies</a>
+  <a class="nav" href="../../#mini-cases">Mini-cases</a>
+  <a class="nav" href="../../output/2026-10/dashboard.html">Live dashboard</a>
+  <a class="nav" href="https://github.com/guilhermelt-22/data-portfolio">Code on GitHub</a>
+</div></header>
+<main>
+<h1 id="supplier-price-list-to-shopify-import-every-row-accounted-for-and-next-months-update-in-one-run">Supplier price list to Shopify import: every row accounted for, and next month's update in one run</h1>
+<blockquote>
+<p><strong>Demonstration with fictitious data.</strong> Harrow Peak Wholesale, its products and barcodes are invented. The
+product images are simple illustrations drawn by code (<a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/06-supplier-file-to-shopify/vendorfeed/art.py"><code>art.py</code></a>) and served from this
+site. The output follows the column list of Shopify's own sample product CSV and the rules in Shopify's Help
+Center, and both months were imported into a Shopify development store on 13 Nov 2026: products, variants,
+stock, status and prices matched the files (details below).</p>
+</blockquote>
+<p><img alt="Import report" src="img/report.png" /></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Task</strong></td>
+<td>A store owner gets the supplier's price list in Excel every month and needs it in Shopify's product CSV: one product per style, colour and size as variants, prices, stock, barcodes and images. Doing it by hand takes hours each time the supplier updates prices.</td>
+</tr>
+<tr>
+<td><strong>Solution</strong></td>
+<td>Python and pandas · finds the header under title rows and maps renamed columns · standardises colours, sizes, weights and barcodes · writes Shopify's 61-column format · 11 checks against Shopify's rules before upload · next month: a change report and three update files</td>
+</tr>
+<tr>
+<td><strong>Records</strong></td>
+<td>First list: <strong>343 product rows</strong> → <strong>37 products, 314 variants</strong>, 8 rows held back with a question each. Second list: <strong>31 price changes</strong>, 3 new products, 6 new variants, 3 products to archive</td>
+</tr>
+<tr>
+<td><strong>Time</strong></td>
+<td><strong>0.7 seconds</strong> for the first import · <strong>0.9 seconds</strong> for next month's update, change report included</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="how-it-works">How it works</h2>
+<ol>
+<li><strong>Read the file as it arrives.</strong> The header is found wherever it is (here on row 4, under the supplier's
+   name and a note). Title rows, category banners and footer notes are labelled and set aside. Column names are
+   matched through a list of aliases, so next month's file can say "SKU" instead of "Item #" and "Retail"
+   instead of "MSRP", in a different order, and still read the same.</li>
+<li><strong>Clean each field, and log every change with its row number.</strong> "NVY", "navy" and "Navy" become Navy;
+   "LG", "lrg" and "Large" become L; "3.2 oz", "1.1 lbs" and "0.38 kg" become grams; "$12.50" becomes 12.50.
+   Product titles come from the shared start of the variants' descriptions ("MERINO HIKER SOCK NVY S" →
+   Merino Hiker Sock), and handles from the titles.</li>
+<li><strong>Never guess where the store owner should decide.</strong> The same SKU twice with different prices, two SKUs for
+   the same colour and size, or a row with no price at all is held back, with the question to answer. A
+   missing retail price is filled by a markup rule the store owner sets (here wholesale × 2, ending in .99) and
+   flagged for confirmation.</li>
+<li><strong>Write Shopify's format exactly.</strong> The 61 columns of Shopify's sample file, in the same order and spelling.
+   The first row of a product carries the product fields, each variant is a row with the same handle, and
+   each extra image is a row of its own. Products arrive as <strong>drafts</strong>, so nothing goes live before review.
+   The product category goes in as its Shopify taxonomy ID (<code>aa-1-18</code> for socks): the test import rejected the
+   English category path and accepted the IDs, which also work whatever language the store admin uses.</li>
+<li><strong>Check before upload.</strong> A Shopify import cannot be cancelled or undone, so the file is checked first:</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result on the first list</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Headers match Shopify's template</td>
+<td>61 columns, same names and order</td>
+</tr>
+<tr>
+<td>File: UTF-8, LF line endings, under 15 MB</td>
+<td>105 KB</td>
+</tr>
+<tr>
+<td>Every product: valid handle, one title row</td>
+<td>37 products</td>
+</tr>
+<tr>
+<td>Options: at most 3, one variant per combination</td>
+<td>314 variants</td>
+</tr>
+<tr>
+<td>SKUs unique</td>
+<td>314 SKUs</td>
+</tr>
+<tr>
+<td>Prices: numbers above zero, never below cost</td>
+<td>all</td>
+</tr>
+<tr>
+<td>Barcodes: valid check digit</td>
+<td>306 valid, 8 left blank on purpose</td>
+</tr>
+<tr>
+<td>Images: HTTPS, unique, positions from 1</td>
+<td>152 image rows</td>
+</tr>
+<tr>
+<td>Text limits (SEO title 70, SEO description 320, alt text 512)</td>
+<td>all within</td>
+</tr>
+<tr>
+<td>Allowed values (status, true/false, inventory, weight unit)</td>
+<td>all accepted</td>
+</tr>
+<tr>
+<td><strong>Every supplier row accounted for</strong></td>
+<td><strong>343 = 314 imported + 6 duplicates + 8 held back + 15 discontinued</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-the-first-list-had-in-it">What the first list had in it</h2>
+<p>The October file was built with these problems on purpose. The tests check that every one is caught.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Rows</th>
+<th>What happened</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Colours and sizes spelled several ways</td>
+<td>257 and 222</td>
+<td>Standardised</td>
+</tr>
+<tr>
+<td>Barcode lost its leading zero in Excel (11 digits)</td>
+<td>7</td>
+<td>Zero restored; check digit confirms it</td>
+</tr>
+<tr>
+<td>Barcode turned into <code>8.40123E+11</code> by Excel</td>
+<td>5</td>
+<td>Left blank: the digits are gone, the supplier has to resend them</td>
+</tr>
+<tr>
+<td>Barcode fails the check digit</td>
+<td>3</td>
+<td>Left blank, flagged</td>
+</tr>
+<tr>
+<td>Stock written as "50+", "-" or "N/A"</td>
+<td>9</td>
+<td>50, or 0 with a flag</td>
+</tr>
+<tr>
+<td>No retail price for three styles</td>
+<td>15</td>
+<td>Priced by the markup rule, flagged for confirmation</td>
+</tr>
+<tr>
+<td>Image links on http://</td>
+<td>2 styles</td>
+<td>Left out (Shopify only downloads HTTPS images), flagged</td>
+</tr>
+<tr>
+<td>Exact duplicate rows</td>
+<td>6</td>
+<td>Removed</td>
+</tr>
+<tr>
+<td>Same SKU with two wholesale prices</td>
+<td>2 SKUs</td>
+<td>Held back: which one is right?</td>
+</tr>
+<tr>
+<td>Two SKUs for the same colour and size</td>
+<td>1 pair</td>
+<td>Held back: which SKU should the store use?</td>
+</tr>
+<tr>
+<td>No price at all</td>
+<td>2</td>
+<td>Held back</td>
+</tr>
+<tr>
+<td>Discontinued items</td>
+<td>15</td>
+<td>Left out</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="next-month-the-part-that-repeats">Next month: the part that repeats</h2>
+<p>The November list renames and reorders the columns, raises prices on four styles, changes ten single
+prices, adds three products and a new colour, and drops three products. Compared SKU by SKU with what was
+imported in October:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Change</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price changes</td>
+<td>31 (24 up, 7 down)</td>
+</tr>
+<tr>
+<td>Cost up, retail unchanged: the margin falls</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Stock changes</td>
+<td>263</td>
+</tr>
+<tr>
+<td>New products</td>
+<td>3</td>
+</tr>
+<tr>
+<td>New variants of existing products</td>
+<td>6 (a new colour, plus the 3 rows held back in October, now resolved)</td>
+</tr>
+<tr>
+<td>Products to archive</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three files come out, each meant for Shopify's import with <strong>"Overwrite products with matching handles"</strong>:</p>
+<ul>
+<li><code>new_products.csv</code>: the new products in full, as drafts</li>
+<li><code>update_existing.csv</code>: only the columns that change (price, cost, stock, barcode) plus what Shopify needs
+  to find each variant. Shopify leaves the columns that are not in the file untouched, so descriptions and
+  photos edited in the store stay as they are. Every variant of a changed product is listed. New variants
+  arrive without a photo, and the change report lists them.</li>
+<li><code>archive.csv</code>: products the supplier no longer sells, set to archived instead of deleted, so order history
+  keeps them</li>
+</ul>
+<h2 id="tested-in-a-real-shopify-store">Tested in a real Shopify store</h2>
+<p>Both months were imported into a Shopify development store, and the store was compared with the files:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What the store showed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>October import</td>
+<td>37 products as drafts, 314 variants, 152 images; stock and variant count matched for all 37</td>
+</tr>
+<tr>
+<td>November: new products</td>
+<td>3 products, 19 variants</td>
+</tr>
+<tr>
+<td>November: update</td>
+<td>Prices changed (one hoodie from $64.99 to $70.99), 6 new variants added, stock matched for all 40 products, descriptions and photos untouched</td>
+</tr>
+<tr>
+<td>November: archive</td>
+<td>3 products archived, their variants kept</td>
+</tr>
+</tbody>
+</table></div>
+<p>The test import also caught three things the documentation does not say, now handled in the code:</p>
+<ol>
+<li>The product category written as an English path was rejected; the taxonomy ID is accepted.</li>
+<li>A variant image is refused unless the image itself is in the same file, so the update file has no image
+   columns (adding the product images would replace the store's photos).</li>
+<li>Changing only the status still needs every variant's options, so <code>archive.csv</code> lists them.</li>
+</ol>
+<p><img alt="The October import in the Shopify admin" src="img/shopify_products.png" /></p>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li><a href="output/october/shopify_products.csv"><code>shopify_products.csv</code></a>: the import file</li>
+<li><a href="output/october/import_report.xlsx"><code>import_report.xlsx</code></a>: checks, questions for the store owner, every fix
+  with its row, the product list, and the fate of every supplier row</li>
+<li><a href="output/october/import_report.html"><code>import_report.html</code></a>: the page in the picture</li>
+<li>November: <a href="output/november/changes_report.xlsx"><code>changes_report.xlsx</code></a>,
+  <a href="output/november/new_products.csv"><code>new_products.csv</code></a>, <a href="output/november/update_existing.csv"><code>update_existing.csv</code></a>,
+  <a href="output/november/archive.csv"><code>archive.csv</code></a></li>
+<li>The two supplier files: <a href="input/harrow_peak_fw26_october.xlsx"><code>october</code></a>, <a href="input/harrow_peak_fw26_november.xlsx"><code>november</code></a></li>
+</ul>
+<h2 id="run-it">Run it</h2>
+<pre><code class="language-bash">cd minicases/06-supplier-file-to-shopify
+python -m vendorfeed.demo        # builds both supplier files and runs both months
+python -m vendorfeed.art         # draws the product illustrations the files link to
+python -m vendorfeed.run input/harrow_peak_fw26_october.xlsx --out output/october
+python -m vendorfeed.run input/harrow_peak_fw26_november.xlsx --out output/november --previous output/october
+pytest                           # 14 tests, offline
+</code></pre>
+<p>A new supplier usually means a few lines in <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/06-supplier-file-to-shopify/vendorfeed/config.py"><code>config.py</code></a>: column aliases, category
+mapping, colour and size spellings, markup rule and default status. The code stays the same.</p>
+<p>Code: <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/06-supplier-file-to-shopify/vendorfeed/read.py"><code>read.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/06-supplier-file-to-shopify/vendorfeed/clean.py"><code>clean.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/06-supplier-file-to-shopify/vendorfeed/shopify.py"><code>shopify.py</code></a> ·
+<a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/06-supplier-file-to-shopify/vendorfeed/checks.py"><code>checks.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/06-supplier-file-to-shopify/vendorfeed/diff.py"><code>diff.py</code></a> · <a href="https://github.com/guilhermelt-22/data-portfolio/blob/main/minicases/06-supplier-file-to-shopify/vendorfeed/report.py"><code>report.py</code></a></p>
+</main>
+<footer>Demo data only: fictitious companies and figures, scraping practice sites and official public sources, each named on its page.</footer>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "neutral" });
+</script>
+</body>
+</html>

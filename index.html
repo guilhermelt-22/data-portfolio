@@ -104,7 +104,8 @@ Case 04 collects its data from the web, from two sites built for scraping practi
 <h2 id="mini-cases">Mini-cases</h2>
 <p>Short demos with one job each, in the format clients ask for: the task, the solution, how many records and
 how long it took. The scraping ones run on practice sites built for scraping; the exchange rates come from an
-official public API. Every number was measured on a real run.</p>
+official public API; the Shopify one uses a fictitious supplier and was tested in a Shopify development store.
+Every number was measured on a real run.</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -138,6 +139,12 @@ official public API. Every number was measured on a real run.</p>
 <td>Official API, incremental updates, TARGET holidays, checks for gaps and duplicates, CSV and Excel</td>
 <td><strong>263,715 rates</strong>, 44 currencies, daily since 1999</td>
 <td>14 s in full, 0.7 s per update</td>
+</tr>
+<tr>
+<td><a href="minicases/06-supplier-file-to-shopify/"><strong>06 · Supplier file to Shopify</strong></a></td>
+<td>A messy supplier price list becomes Shopify's product CSV, checked before upload; next month's list becomes a change report and update files</td>
+<td><strong>343 rows → 37 products, 314 variants</strong>, every row accounted for; both months tested in a Shopify store</td>
+<td>0.7 s, 0.9 s for the update</td>
 </tr>
 </tbody>
 </table></div>
