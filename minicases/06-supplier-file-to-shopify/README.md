@@ -3,8 +3,8 @@
 > **Demonstration with fictitious data.** Harrow Peak Wholesale, its products and barcodes are invented. The
 > product images are simple illustrations drawn by code ([`art.py`](vendorfeed/art.py)) and served from this
 > site. The output follows the column list of Shopify's own sample product CSV and the rules in Shopify's Help
-> Center, and was imported into a Shopify development store on 13 Nov 2026: 37 products, 314 variants and the
-> stock of every product matched the file.
+> Center, and both months were imported into a Shopify development store on 13 Nov 2026: products, variants,
+> stock, status and prices matched the files (details below).
 
 ![Import report](img/report.png)
 
@@ -87,11 +87,32 @@ imported in October:
 Three files come out, each meant for Shopify's import with **"Overwrite products with matching handles"**:
 
 - `new_products.csv`: the new products in full, as drafts
-- `update_existing.csv`: only the columns that change (price, cost, stock, barcode, variant image) plus what
-  Shopify needs to find each variant. Shopify leaves the columns that are not in the file untouched, so
-  descriptions and photos edited in the store stay as they are. Every variant of a changed product is listed.
+- `update_existing.csv`: only the columns that change (price, cost, stock, barcode) plus what Shopify needs
+  to find each variant. Shopify leaves the columns that are not in the file untouched, so descriptions and
+  photos edited in the store stay as they are. Every variant of a changed product is listed. New variants
+  arrive without a photo, and the change report lists them.
 - `archive.csv`: products the supplier no longer sells, set to archived instead of deleted, so order history
   keeps them
+
+## Tested in a real Shopify store
+
+Both months were imported into a Shopify development store, and the store was compared with the files:
+
+| Step | What the store showed |
+|---|---|
+| October import | 37 products as drafts, 314 variants, 152 images; stock and variant count matched for all 37 |
+| November: new products | 3 products, 19 variants |
+| November: update | Prices changed (one hoodie from $64.99 to $70.99), 6 new variants added, stock matched for all 40 products, descriptions and photos untouched |
+| November: archive | 3 products archived, their variants kept |
+
+The test import also caught three things the documentation does not say, now handled in the code:
+
+1. The product category written as an English path was rejected; the taxonomy ID is accepted.
+2. A variant image is refused unless the image itself is in the same file, so the update file has no image
+   columns (adding the product images would replace the store's photos).
+3. Changing only the status still needs every variant's options, so `archive.csv` lists them.
+
+![The October import in the Shopify admin](img/shopify_products.png)
 
 ## Deliverables
 

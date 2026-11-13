@@ -153,7 +153,7 @@ def changes_summary(changes, files) -> pd.DataFrame:
         ("Variants dropped by the supplier (stock set to 0)", len(changes["gone_variants"])),
         ("Products to archive", len(changes["archived_styles"])),
         ("Rows in new_products.csv", len(files["new_products"])),
-        ("Rows in update_existing.csv", len(files["update_existing"])), ("Rows in archive.csv", len(files["archive"])),
+        ("Rows in update_existing.csv", len(files["update_existing"])), ("Products in archive.csv", int((files["archive"]["Status"] == "archived").sum())),
     ], columns=["Change", "Count"])
 
 

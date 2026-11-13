@@ -1,4 +1,18 @@
-Title,URL handle,Status
-Merino Hiker Sock,merino-hiker-sock,archived
-Touchscreen Liner Glove,touchscreen-liner-glove,archived
-Trail Flask Bottle,trail-flask-bottle,archived
+Title,URL handle,Status,Option1 name,Option1 value,Option2 name,Option2 value,SKU
+Merino Hiker Sock,merino-hiker-sock,archived,Color,Olive,Size,S,HP-1001-OLV-S
+,merino-hiker-sock,,Color,Olive,Size,M,HP-1001-OLV-M
+,merino-hiker-sock,,Color,Olive,Size,L,HP-1001-OLV-L
+,merino-hiker-sock,,Color,Olive,Size,XL,HP-1001-OLV-XL
+,merino-hiker-sock,,Color,Sand,Size,S,HP-1001-SND-S
+,merino-hiker-sock,,Color,Sand,Size,M,HP-1001-SND-M
+,merino-hiker-sock,,Color,Sand,Size,L,HP-1001-SND-L
+,merino-hiker-sock,,Color,Sand,Size,XL,HP-1001-SND-XL
+Touchscreen Liner Glove,touchscreen-liner-glove,archived,Size,S,,,HP-1028-NVY-S
+,touchscreen-liner-glove,,Size,M,,,HP-1028-NVY-M
+,touchscreen-liner-glove,,Size,L,,,HP-1028-NVY-L
+,touchscreen-liner-glove,,Size,XL,,,HP-1028-NVY-XL
+Trail Flask Bottle,trail-flask-bottle,archived,Color,Ochre,Size,500 ml,HP-1036-OCH-500
+,trail-flask-bottle,,Color,Ochre,Size,750 ml,HP-1036-OCH-750
+,trail-flask-bottle,,Color,Ochre,Size,1 L,HP-1036-OCH-1L
+,trail-flask-bottle,,Color,Black,Size,500 ml,HP-1036-BLK-500
+,trail-flask-bottle,,Color,Black,Size,1 L,HP-1036-BLK-1L

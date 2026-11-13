@@ -7,8 +7,10 @@ SKU by SKU against that snapshot:
 - update_existing.csv: products that changed (price, cost, stock or new colours). It has only the columns
   that change, plus what Shopify needs to find the product and variant: with "Overwrite products with
   matching handles", Shopify leaves the columns that are not in the file untouched, so descriptions and
-  photos edited in the store are kept. Every variant of a touched product is listed; variants the supplier
-  dropped stay in with stock 0 instead of disappearing.
+  photos edited in the store are kept. There are no image columns: in a test import Shopify refused a variant
+  image whose file was not in the same CSV, and adding the product images would replace the store's photos.
+  New variants therefore arrive without a photo and are listed in the change report. Every variant of a
+  touched product is listed; variants the supplier dropped stay in with stock 0 instead of disappearing.
 - archive.csv: products the supplier no longer sells at all, set to archived (kept for order history)
 """
 from __future__ import annotations
@@ -18,8 +20,8 @@ import pandas as pd
 from .shopify import TEMPLATE, build, options_for
 
 UPDATE_COLUMNS = ["Title", "URL handle", "Option1 name", "Option1 value", "Option2 name", "Option2 value", "SKU",
-                  "Variant Barcodes", "Price", "Cost per item", "Inventory quantity", "Variant image URL"]
-ARCHIVE_COLUMNS = ["Title", "URL handle", "Status"]
+                  "Variant Barcodes", "Price", "Cost per item", "Inventory quantity"]
+ARCHIVE_COLUMNS = ["Title", "URL handle", "Status", "Option1 name", "Option1 value", "Option2 name", "Option2 value", "SKU"]
 
 
 def _money(x) -> float | None:
@@ -71,17 +73,29 @@ def update_files(store: pd.DataFrame, new: pd.DataFrame, changes: dict) -> dict[
         opts = options_for(grp)
         for k, (_, v) in enumerate(grp.iterrows()):
             row = dict.fromkeys(UPDATE_COLUMNS, "")
-            row.update({"Title": title, "URL handle": handle, "SKU": v["sku"], "Variant Barcodes": v["barcode"],
+            row.update({"Title": title if k == 0 else "", "URL handle": handle, "SKU": v["sku"], "Variant Barcodes": v["barcode"],
                         "Price": f"{v['price']:.2f}", "Cost per item": "" if pd.isna(v["wholesale"]) else f"{v['wholesale']:.2f}",
-                        "Inventory quantity": str(int(v["qty"])), "Variant image URL": v["variant_image"]})
+                        "Inventory quantity": str(int(v["qty"]))})
             for i, opt in enumerate(opts[:2], start=1):
                 row[f"Option{i} name"] = opt
                 row[f"Option{i} value"] = "Default Title" if opt == "Title" else v["color" if opt == "Color" else "size"]
             rows.append(row)
     update = pd.DataFrame(rows, columns=UPDATE_COLUMNS)
 
-    arch = store[store["style"].isin(changes["archived_styles"])].groupby("style").first()
-    archive = pd.DataFrame({"Title": arch["title"], "URL handle": arch["handle"], "Status": "archived"},
-                           columns=ARCHIVE_COLUMNS).reset_index(drop=True)
+    # Shopify asks for the variants' options even when only the status changes, so every variant is listed
+    arows = []
+    for style in changes["archived_styles"]:
+        grp = store[store["style"] == style]
+        opts = options_for(grp)
+        for k, (_, v) in enumerate(grp.iterrows()):
+            row = dict.fromkeys(ARCHIVE_COLUMNS, "")
+            row.update({"URL handle": v["handle"], "SKU": v["sku"]})
+            if k == 0:
+                row.update({"Title": v["title"], "Status": "archived"})
+            for i, opt in enumerate(opts[:2], start=1):
+                row[f"Option{i} name"] = opt
+                row[f"Option{i} value"] = "Default Title" if opt == "Title" else v["color" if opt == "Color" else "size"]
+            arows.append(row)
+    archive = pd.DataFrame(arows, columns=ARCHIVE_COLUMNS)
     assert all(c in TEMPLATE for c in UPDATE_COLUMNS + ARCHIVE_COLUMNS)
     return {"new_products": new_products, "update_existing": update, "archive": archive}

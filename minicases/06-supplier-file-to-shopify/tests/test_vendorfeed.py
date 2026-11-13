@@ -180,7 +180,10 @@ def test_november_update_files(runs):
     for style in second["changes"]["touched_styles"]:
         handle_skus = set(upd.loc[upd["SKU"].str.startswith(style + "-"), "SKU"])
         assert set(v.loc[v["style"] == style, "sku"]) <= handle_skus                         # every variant listed
-    assert set(files["archive"]["Status"]) == {"archived"} and len(files["archive"]) == 3
+    arch = files["archive"]
+    assert set(arch["Status"]) - {""} == {"archived"} and (arch["Status"] == "archived").sum() == 3
+    assert (arch["Option1 value"] != "").all() and (arch["SKU"] != "").all()                 # Shopify needs the options
+    assert (upd.groupby("URL handle")["Title"].apply(lambda s: (s != "").sum()) == 1).all()   # title on first row only
     for name in ("new_products", "update_existing", "archive"):
         df = pd.read_csv(tmp / "november" / f"{name}.csv", dtype=str, keep_default_na=False)
         assert all(c in TEMPLATE for c in df.columns)
