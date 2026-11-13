@@ -1,0 +1,9 @@
+row,sku,fate,reason
+64,HP-1007-SND-M,held back,"HP-1007-SND-M and HP-1007-SND-MD are both HP-1007 in Sand, size M. Which SKU should the store use?"
+65,HP-1007-SND-MD,held back,"HP-1007-SND-M and HP-1007-SND-MD are both HP-1007 in Sand, size M. Which SKU should the store use?"
+229,HP-1017-FGN-XL,held back,"SKU HP-1017-FGN-XL appears on rows 229, 230 with different values (wholesale $29.50 vs $30.75). Which one is right?"
+230,HP-1017-FGN-XL,held back,"SKU HP-1017-FGN-XL appears on rows 229, 230 with different values (wholesale $29.50 vs $30.75). Which one is right?"
+287,HP-1027-OLV-XL,held back,No wholesale or retail price: what should it sell for?
+327,HP-1035-BLK-1L,held back,"SKU HP-1035-BLK-1L appears on rows 327, 328 with different values (wholesale $13.50 vs $14.75). Which one is right?"
+328,HP-1035-BLK-1L,held back,"SKU HP-1035-BLK-1L appears on rows 327, 328 with different values (wholesale $13.50 vs $14.75). Which one is right?"
+350,HP-1038-BLK-500,held back,No wholesale or retail price: what should it sell for?
